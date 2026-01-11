@@ -242,7 +242,7 @@ export default function HandelEnGoudenEeuwPage() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-100 py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-100 py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
           {/* Abstract gold/treasure background */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-amber-600/20 to-transparent"></div>
@@ -250,44 +250,44 @@ export default function HandelEnGoudenEeuwPage() {
             <div className="absolute bottom-1/4 left-10 w-48 h-48 rounded-full bg-yellow-400/10 blur-3xl"></div>
           </div>
 
-          <div className="relative max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-amber-700 mb-4 leading-tight">
+          <div className="relative max-w-4xl mx-auto text-center px-4">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-amber-700 mb-3 sm:mb-4 leading-tight">
               De Wereld van de Gouden Eeuw
             </h1>
-            <p className="text-xl md:text-2xl text-amber-800 mb-6 font-medium">
+            <p className="text-lg sm:text-xl md:text-2xl text-amber-800 mb-4 sm:mb-6 font-medium px-2">
               Wereldhandel, Rijkdom & Schaduwkanten
             </p>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Hoorn was een van de belangrijkste havensteden van de VOC. In dit thema ontdekken leerlingen de wereld van handel, rijkdom en scheepvaart. Van geurende specerijen bij de kleuters tot kritisch nadenken over kolonialisme in groep 8.
             </p>
           </div>
         </section>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
           {/* Back button */}
           <Link 
             href="/themas"
-            className="inline-flex items-center text-amber-700 hover:text-amber-800 mb-6 transition-colors"
+            className="inline-flex items-center text-amber-700 hover:text-amber-800 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Terug naar thema overzicht
           </Link>
 
           {/* Main Content with Sidebar - 70/30 split */}
-          <div className="grid lg:grid-cols-10 gap-8">
+          <div className="grid lg:grid-cols-10 gap-6 lg:gap-8">
             {/* Main Content - 70% */}
             <div className="lg:col-span-7">
               {/* Tabs System */}
               <Tabs tabs={tabs} defaultTab="onderbouw" />
 
               {/* 5-Fasen Verticale Lijst */}
-              <div className="mt-12">
-                <div className="mb-6">
-                  <h3 className="font-serif text-2xl font-bold text-amber-700 mb-2">
+              <div className="mt-8 sm:mt-12">
+                <div className="mb-4 sm:mb-6">
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-amber-700 mb-2">
                     De didactische route
                   </h3>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {fasen.map((item, index) => {
                     const Icon = item.icon
                     return (
@@ -295,22 +295,22 @@ export default function HandelEnGoudenEeuwPage() {
                         key={index} 
                         className="border-l-4 border-l-amber-600"
                       >
-                        <CardContent className="p-6 sm:p-8">
-                          <div className="flex items-start gap-4">
+                        <CardContent className="p-4 sm:p-6 lg:p-8">
+                          <div className="flex items-start gap-3 sm:gap-4">
                             {/* Phase number badge */}
-                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-amber-600 text-white flex items-center justify-center text-lg font-bold shadow-lg">
+                            <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-600 text-white flex items-center justify-center text-base sm:text-lg font-bold shadow-lg">
                               {index + 1}
                             </div>
-                            <div className="flex-1">
-                              <div className="flex items-center gap-3 mb-3">
-                                <div className="w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center">
-                                  <Icon className="h-5 w-5" />
+                            <div className="flex-1 min-w-0">
+                              <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3 flex-wrap">
+                                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0">
+                                  <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
                                 </div>
-                                <h4 className="font-semibold text-amber-700 text-lg">
+                                <h4 className="font-semibold text-amber-700 text-base sm:text-lg">
                                   {item.fase}
                                 </h4>
                               </div>
-                              <p className="text-gray-700 leading-relaxed">
+                              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                                 {item.beschrijving}
                               </p>
                             </div>

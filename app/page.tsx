@@ -93,32 +93,32 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-b from-white to-gray-50 py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="relative bg-gradient-to-b from-white to-gray-50 py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
           {/* Subtle globe element in background */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
-            <div className="w-[600px] h-[600px] rounded-full border-4 border-deep-water-blue/20" style={{
+            <div className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-full border-4 border-deep-water-blue/20" style={{
               background: 'radial-gradient(circle, transparent 30%, rgba(30, 58, 95, 0.05) 30%, rgba(30, 58, 95, 0.05) 35%, transparent 35%, transparent 65%, rgba(30, 58, 95, 0.05) 65%, rgba(30, 58, 95, 0.05) 70%, transparent 70%)',
             }} />
           </div>
           
-          <div className="relative max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-deep-water-blue mb-8 leading-tight">
+          <div className="relative max-w-4xl mx-auto text-center px-4">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-deep-water-blue mb-4 sm:mb-6 md:mb-8 leading-tight">
               Welkom in De West-Friese Wereld
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Een ontdekkingsreis voor leerlingen, dwars door de geschiedenis, natuur en toekomst van onze regio.
             </p>
           </div>
         </section>
 
         {/* Het Model Section */}
-        <section className="py-32 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-deep-water-blue text-center mb-12">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-deep-water-blue text-center mb-6 sm:mb-8 md:mb-12">
               Het Model
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-10 md:mb-12">
               {/* 70/30 Rule Card */}
               <div className="bg-gradient-to-br from-deep-water-blue to-blue-800 rounded-lg p-8 text-white shadow-lg">
                 <div className="flex items-center mb-4">
@@ -201,16 +201,16 @@ export default function Home() {
         </section>
 
         {/* Ontdek onze 8 Werelden Section */}
-        <section className="py-32 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <section className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-deep-water-blue text-center mb-4">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-deep-water-blue text-center mb-3 sm:mb-4">
               Ontdek onze 8 Werelden
             </h2>
-            <p className="text-center text-gray-700 mb-16 max-w-2xl mx-auto">
+            <p className="text-center text-sm sm:text-base text-gray-700 mb-8 sm:mb-12 md:mb-16 max-w-2xl mx-auto px-4">
               Ontdek de acht thema's die de kern vormen van ons curriculum, elk met aandacht voor verschillende leeftijdsgroepen.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {THEMES.map((theme) => {
                 const Icon = theme.icon
                 return (

@@ -342,14 +342,14 @@ export default function VoedselEnGroeiPage() {
 
     return (
       <div>
-        <div className="border-b border-gray-200 mb-6">
-          <nav className="flex space-x-1" aria-label="Tabs">
+        <div className="border-b border-gray-200 mb-6 overflow-x-auto -mx-4 sm:mx-0">
+          <nav className="flex space-x-1 px-4 sm:px-0 min-w-max sm:min-w-0" aria-label="Tabs">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => handleTabChange(tab.id)}
                 className={`
-                  px-6 py-3 text-sm font-medium rounded-t-lg transition-colors flex flex-col items-center
+                  px-3 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium rounded-t-lg transition-colors flex flex-col items-center whitespace-nowrap flex-shrink-0
                   ${
                     activeTab === tab.id
                       ? 'bg-lime-700 text-white border-b-2 border-lime-700'
@@ -359,7 +359,7 @@ export default function VoedselEnGroeiPage() {
               >
                 <span>{tab.label}</span>
                 {tab.subtitle && (
-                  <span className={`text-xs mt-0.5 ${
+                  <span className={`text-[10px] sm:text-xs mt-0.5 ${
                     activeTab === tab.id ? 'text-white/90' : 'text-gray-500'
                   }`}>
                     {tab.subtitle}
@@ -369,7 +369,7 @@ export default function VoedselEnGroeiPage() {
             ))}
           </nav>
         </div>
-        <div className="min-h-[400px]">
+        <div className="min-h-[300px] sm:min-h-[400px]">
           {activeTabContent}
         </div>
       </div>
@@ -403,7 +403,7 @@ export default function VoedselEnGroeiPage() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-lime-50 via-green-50 to-lime-100 py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-lime-50 via-green-50 to-lime-100 py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
           {/* Abstract pattern background */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-lime-600/20 to-transparent"></div>
@@ -411,31 +411,31 @@ export default function VoedselEnGroeiPage() {
             <div className="absolute bottom-1/4 left-10 w-48 h-48 rounded-full bg-green-400/10 blur-3xl"></div>
           </div>
 
-          <div className="relative max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-lime-700 mb-4 leading-tight">
+          <div className="relative max-w-4xl mx-auto text-center px-4">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-lime-700 mb-3 sm:mb-4 leading-tight">
               De Wereld van de Tuin van Europa
             </h1>
-            <p className="text-xl md:text-2xl text-green-800 mb-6 font-medium">
+            <p className="text-lg sm:text-xl md:text-2xl text-green-800 mb-4 sm:mb-6 font-medium px-2">
               Seed Valley, Genetica & Voedseltoekomst
             </p>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
               West-Friesland is de groentetuin van Europa. Maar hoe maken we voedsel dat resistent is tegen klimaatverandering? In dit thema duiken leerlingen in de wonderlijke wereld van groei, van het eerste zaadje bij de kleuters tot DNA-technologie in groep 8.
             </p>
           </div>
         </section>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
           {/* Back button */}
           <Link 
             href="/themas"
-            className="inline-flex items-center text-lime-700 hover:text-lime-800 mb-6 transition-colors"
+            className="inline-flex items-center text-lime-700 hover:text-lime-800 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Terug naar thema overzicht
           </Link>
 
           {/* Main Content with Sidebar - 70/30 split */}
-          <div className="grid lg:grid-cols-10 gap-8">
+          <div className="grid lg:grid-cols-10 gap-6 lg:gap-8">
             {/* Main Content - 70% */}
             <div className="lg:col-span-7">
               {/* Tabs System */}
