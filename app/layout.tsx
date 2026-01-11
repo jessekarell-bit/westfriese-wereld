@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Merriweather } from 'next/font/google'
 import './globals.css'
+import ScrollRestoration from '@/components/ScrollRestoration'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -26,8 +27,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="nl" className={`${inter.variable} ${merriweather.variable}`}>
-      <body className="antialiased">{children}</body>
+    <html lang="nl" className={`${inter.variable} ${merriweather.variable}`} suppressHydrationWarning>
+      <body className="antialiased" suppressHydrationWarning>
+        <ScrollRestoration />
+        {children}
+      </body>
     </html>
   )
 }

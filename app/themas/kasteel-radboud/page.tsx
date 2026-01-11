@@ -405,7 +405,7 @@ export default function KasteelRadboudPage() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-rose-50 via-red-50 to-rose-100 py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-rose-50 via-red-50 to-rose-100 w-full px-6 py-12 md:p-20 overflow-hidden">
           {/* Abstract pattern background */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-rose-600/20 to-transparent"></div>
@@ -413,11 +413,11 @@ export default function KasteelRadboudPage() {
             <div className="absolute bottom-1/4 left-10 w-48 h-48 rounded-full bg-red-400/10 blur-3xl"></div>
           </div>
 
-          <div className="relative max-w-4xl mx-auto text-center px-4">
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-rose-800 mb-3 sm:mb-4 leading-tight">
+          <div className="relative max-w-4xl mx-auto text-center w-full">
+            <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-rose-800 mb-3 sm:mb-4 leading-tight">
               De Wereld van Kasteel Radboud
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-rose-900 mb-4 sm:mb-6 font-medium px-2">
+            <p className="text-lg sm:text-xl md:text-2xl text-rose-900 mb-4 sm:mb-6 font-medium">
               Ridders, macht en dwangburchten: Wie is hier eigenlijk de baas?
             </p>
             <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
