@@ -439,24 +439,24 @@ export default function BurgersEnStoommachinesPage() {
           {/* Main Content with Sidebar - 70/30 split */}
           <div className="grid lg:grid-cols-10 gap-6 lg:gap-8">
             {/* Main Content - 70% */}
-            <div className="lg:col-span-7">
+            <div className="lg:col-span-7 px-2 sm:px-0">
               {/* Tabs System */}
               <CustomTabs tabs={tabs} defaultTab="onderbouw" />
 
               {/* 5-Fasen Verticale Lijst */}
-              <div className="mt-12">
-                <div className="mb-6">
-                  <h3 className="font-serif text-2xl font-bold text-slate-700 mb-2">
+              <div className="mt-8 sm:mt-12">
+                <div className="mb-4 sm:mb-6 px-2 sm:px-0">
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-slate-700 mb-2">
                     De didactische route
                   </h3>
-                  <p className="text-lg font-medium text-slate-800 mb-1">
+                  <p className="text-base sm:text-lg font-medium text-slate-800 mb-1">
                     {activeRoute.titel}
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-xs sm:text-sm text-gray-600">
                     Focus: {activeRoute.focus}
                   </p>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {activeRoute.fasen.map((item, index) => {
                     const Icon = item.icon
                     return (
@@ -464,22 +464,22 @@ export default function BurgersEnStoommachinesPage() {
                         key={index} 
                         className="border-l-4 border-l-slate-600"
                       >
-                        <CardContent className="p-6 sm:p-8">
-                          <div className="flex items-start gap-4">
+                        <CardContent className="p-5 sm:p-6 lg:p-8">
+                          <div className="flex items-start gap-3 sm:gap-4">
                             {/* Phase number badge */}
-                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-slate-700 text-white flex items-center justify-center text-lg font-bold shadow-lg">
+                            <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-slate-700 text-white flex items-center justify-center text-base sm:text-lg font-bold shadow-lg">
                               {index + 1}
                             </div>
-                            <div className="flex-1">
-                              <div className="flex items-center gap-3 mb-3">
-                                <div className="w-10 h-10 rounded-full bg-slate-200 text-slate-800 flex items-center justify-center">
-                                  <Icon className="h-5 w-5" />
+                            <div className="flex-1 min-w-0">
+                              <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3 flex-wrap">
+                                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-slate-200 text-slate-800 flex items-center justify-center flex-shrink-0">
+                                  <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
                                 </div>
-                                <h4 className="font-semibold text-slate-700 text-lg">
+                                <h4 className="font-semibold text-slate-700 text-base sm:text-lg">
                                   {item.fase}
                                 </h4>
                               </div>
-                              <p className="text-gray-700 leading-relaxed">
+                              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                                 {item.beschrijving}
                               </p>
                             </div>

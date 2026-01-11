@@ -437,20 +437,20 @@ export default function VoedselEnGroeiPage() {
           {/* Main Content with Sidebar - 70/30 split */}
           <div className="grid lg:grid-cols-10 gap-6 lg:gap-8">
             {/* Main Content - 70% */}
-            <div className="lg:col-span-7">
+            <div className="lg:col-span-7 px-2 sm:px-0">
               {/* Tabs System */}
               <CustomTabs tabs={tabs} defaultTab="onderbouw" />
 
               {/* 5-Fasen Tijdlijn */}
-              <div className="mt-12">
-                <div className="mb-6">
-                  <h3 className="font-serif text-2xl font-bold text-lime-700 mb-2">
+              <div className="mt-8 sm:mt-12">
+                <div className="mb-4 sm:mb-6 px-2 sm:px-0">
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-lime-700 mb-2">
                     De didactische route
                   </h3>
-                  <p className="text-lg font-medium text-lime-800 mb-1">
+                  <p className="text-base sm:text-lg font-medium text-lime-800 mb-1">
                     {activeRoute.titel}
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-xs sm:text-sm text-gray-600">
                     Focus: {activeRoute.focus}
                   </p>
                 </div>
@@ -458,7 +458,7 @@ export default function VoedselEnGroeiPage() {
                   {/* Connector line for staircase effect - alleen op desktop */}
                   <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-lime-300/50 hidden md:block"></div>
                   
-                  <div className="space-y-4">
+                  <div className="space-y-3 sm:space-y-4">
                     {activeRoute.fasen.map((item, index) => {
                       const Icon = item.icon
                       // Trapsgewijze positie: fase 1 beneden, fase 5 boven
@@ -475,7 +475,7 @@ export default function VoedselEnGroeiPage() {
                             marginTop: index === 0 ? '0' : `-${mobileOffset}rem`,
                           }}
                         >
-                          <CardContent className="p-6 sm:p-8 pt-10 flex flex-col items-center justify-center">
+                          <CardContent className="p-5 sm:p-6 lg:p-8 pt-10 flex flex-col items-center justify-center">
                             {/* Phase number badge */}
                             <div className="absolute -left-3 top-6 w-8 h-8 rounded-full bg-lime-600 text-white flex items-center justify-center text-sm font-bold shadow-lg border-2 border-white z-10">
                               {index + 1}
@@ -483,7 +483,7 @@ export default function VoedselEnGroeiPage() {
                             <div className="flex-shrink-0 w-16 h-16 rounded-full bg-lime-600 text-white flex items-center justify-center mb-6 shadow-lg">
                               <Icon className="h-8 w-8" />
                             </div>
-                            <div className="flex-1 w-full text-center px-2 sm:px-4 max-w-2xl mx-auto">
+                            <div className="flex-1 w-full text-center px-3 sm:px-4 max-w-2xl mx-auto">
                               <h4 className="font-semibold text-lime-700 mb-3 text-base sm:text-lg">
                                 {item.fase}
                               </h4>

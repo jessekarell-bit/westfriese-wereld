@@ -276,13 +276,13 @@ export default function HandelEnGoudenEeuwPage() {
           {/* Main Content with Sidebar - 70/30 split */}
           <div className="grid lg:grid-cols-10 gap-6 lg:gap-8">
             {/* Main Content - 70% */}
-            <div className="lg:col-span-7">
+            <div className="lg:col-span-7 px-2 sm:px-0">
               {/* Tabs System */}
               <Tabs tabs={tabs} defaultTab="onderbouw" />
 
               {/* 5-Fasen Verticale Lijst */}
               <div className="mt-8 sm:mt-12">
-                <div className="mb-4 sm:mb-6">
+                <div className="mb-4 sm:mb-6 px-2 sm:px-0">
                   <h3 className="font-serif text-xl sm:text-2xl font-bold text-amber-700 mb-2">
                     De didactische route
                   </h3>
@@ -295,7 +295,7 @@ export default function HandelEnGoudenEeuwPage() {
                         key={index} 
                         className="border-l-4 border-l-amber-600"
                       >
-                        <CardContent className="p-4 sm:p-6 lg:p-8">
+                        <CardContent className="p-5 sm:p-6 lg:p-8">
                           <div className="flex items-start gap-3 sm:gap-4">
                             {/* Phase number badge */}
                             <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-600 text-white flex items-center justify-center text-base sm:text-lg font-bold shadow-lg">
