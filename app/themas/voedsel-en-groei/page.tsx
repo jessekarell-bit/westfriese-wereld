@@ -406,22 +406,22 @@ export default function VoedselEnGroeiPage() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-lime-50 via-green-50 to-lime-100 w-full px-6 py-12 md:p-20 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-lime-50 via-green-50 to-lime-100 w-full px-4 py-8 sm:px-6 sm:py-12 md:p-20 overflow-hidden">
           {/* Abstract pattern background */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-lime-600/20 to-transparent"></div>
-            <div className="absolute top-1/4 right-10 w-64 h-64 rounded-full bg-lime-400/10 blur-3xl"></div>
-            <div className="absolute bottom-1/4 left-10 w-48 h-48 rounded-full bg-green-400/10 blur-3xl"></div>
+            <div className="absolute top-1/4 right-10 w-64 h-64 rounded-full bg-lime-400/10 blur-3xl hidden sm:block"></div>
+            <div className="absolute bottom-1/4 left-10 w-48 h-48 rounded-full bg-green-400/10 blur-3xl hidden sm:block"></div>
           </div>
 
           <div className="relative max-w-4xl mx-auto text-center w-full">
-            <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-lime-700 mb-3 sm:mb-4 leading-tight">
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-lime-700 mb-2 sm:mb-3 md:mb-4 leading-tight px-2">
               De Wereld van de Tuin van Europa
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-green-800 mb-4 sm:mb-6 font-medium">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-green-800 mb-3 sm:mb-4 md:mb-6 font-medium px-2">
               Seed Valley, Genetica & Voedseltoekomst
             </p>
-            <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
               West-Friesland is de groentetuin van Europa. Maar hoe maken we voedsel dat resistent is tegen klimaatverandering? In dit thema duiken leerlingen in de wonderlijke wereld van groei, van het eerste zaadje bij de kleuters tot DNA-technologie in groep 8.
             </p>
           </div>

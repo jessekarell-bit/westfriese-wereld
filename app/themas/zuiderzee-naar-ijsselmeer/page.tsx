@@ -408,22 +408,22 @@ export default function ZuiderzeePage() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-cyan-50 via-blue-50 to-cyan-100 w-full px-6 py-12 md:p-20 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-cyan-50 via-blue-50 to-cyan-100 w-full px-4 py-8 sm:px-6 sm:py-12 md:p-20 overflow-hidden">
           {/* Abstract water background */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-cyan-600/20 to-transparent"></div>
-            <div className="absolute top-1/4 right-10 w-64 h-64 rounded-full bg-cyan-400/10 blur-3xl"></div>
-            <div className="absolute bottom-1/4 left-10 w-48 h-48 rounded-full bg-blue-400/10 blur-3xl"></div>
+            <div className="absolute top-1/4 right-10 w-64 h-64 rounded-full bg-cyan-400/10 blur-3xl hidden sm:block"></div>
+            <div className="absolute bottom-1/4 left-10 w-48 h-48 rounded-full bg-blue-400/10 blur-3xl hidden sm:block"></div>
           </div>
 
           <div className="relative max-w-4xl mx-auto text-center w-full">
-            <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-cyan-700 mb-3 sm:mb-4 leading-tight">
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-cyan-700 mb-2 sm:mb-3 md:mb-4 leading-tight px-2">
               De Wereld van Zuiderzee naar IJsselmeer
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-cyan-800 mb-4 sm:mb-6 font-medium">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-cyan-800 mb-3 sm:mb-4 md:mb-6 font-medium px-2">
               Van zout naar zoet: Het grootste waterbouwkundige project ter wereld
             </p>
-            <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
               Ooit voeren hier piraten en VOC-schepen op een woeste zoute zee. Nu is het de grootste zoetwatervoorraad van Nederland. Hoe tem je een zee? En wat gebeurt er met de vissen als het water verandert? Een thema over Cornelis Lely, de Afsluitdijk en nieuwe natuur.
             </p>
           </div>

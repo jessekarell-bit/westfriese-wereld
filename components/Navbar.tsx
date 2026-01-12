@@ -34,11 +34,11 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link href="/" className="flex items-center space-x-2 group">
-            <BookOpen className="h-6 w-6 text-deep-water-blue group-hover:text-polder-green transition-colors" />
-            <span className="text-xl font-serif font-bold text-deep-water-blue group-hover:text-polder-green transition-colors">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-14 sm:h-16">
+          <Link href="/" className="flex items-center space-x-1.5 sm:space-x-2 group min-w-0 flex-1">
+            <BookOpen className="h-5 w-5 sm:h-6 sm:w-6 text-deep-water-blue group-hover:text-polder-green transition-colors flex-shrink-0" />
+            <span className="text-base sm:text-lg md:text-xl font-serif font-bold text-deep-water-blue group-hover:text-polder-green transition-colors truncate">
               De West-Friese Wereld
             </span>
           </Link>
@@ -69,10 +69,10 @@ export default function Navbar() {
           <Sheet>
             <SheetTrigger asChild>
               <button 
-                className="md:hidden text-gray-700 hover:text-deep-water-blue transition-colors p-2"
+                className="md:hidden text-gray-700 hover:text-deep-water-blue transition-colors p-2 flex-shrink-0 ml-2"
                 aria-label="Open menu"
               >
-                <Menu className="h-6 w-6" />
+                <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
               </button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">

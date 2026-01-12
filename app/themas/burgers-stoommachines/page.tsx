@@ -408,22 +408,22 @@ export default function BurgersEnStoommachinesPage() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-slate-50 via-gray-50 to-slate-100 w-full px-6 py-12 md:p-20 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-slate-50 via-gray-50 to-slate-100 w-full px-4 py-8 sm:px-6 sm:py-12 md:p-20 overflow-hidden">
           {/* Abstract pattern background */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-600/20 to-transparent"></div>
-            <div className="absolute top-1/4 right-10 w-64 h-64 rounded-full bg-slate-400/10 blur-3xl"></div>
-            <div className="absolute bottom-1/4 left-10 w-48 h-48 rounded-full bg-gray-400/10 blur-3xl"></div>
+            <div className="absolute top-1/4 right-10 w-64 h-64 rounded-full bg-slate-400/10 blur-3xl hidden sm:block"></div>
+            <div className="absolute bottom-1/4 left-10 w-48 h-48 rounded-full bg-gray-400/10 blur-3xl hidden sm:block"></div>
           </div>
 
           <div className="relative max-w-4xl mx-auto text-center w-full">
-            <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-slate-700 mb-3 sm:mb-4 leading-tight">
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-slate-700 mb-2 sm:mb-3 md:mb-4 leading-tight px-2">
               De Wereld van Burgers & Stoommachines
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-slate-800 mb-4 sm:mb-6 font-medium">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-800 mb-3 sm:mb-4 md:mb-6 font-medium px-2">
               IJzer, rook en revolutie: De moderne tijd denderde West-Friesland binnen.
             </p>
-            <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
               Plotseling was er lawaai. De trekschuit ging te langzaam en de paarden werden vervangen door machines. Met de komst van Stoomtram 'Bello' veranderde alles. Maar brachten die machines alleen maar goeds? Een thema over uitvinders, fabrieksarbeiders en de strijd voor een eerlijk loon.
             </p>
           </div>
