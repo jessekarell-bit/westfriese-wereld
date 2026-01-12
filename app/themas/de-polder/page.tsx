@@ -354,7 +354,10 @@ export default function LandEnPolderPage() {
             {tabs.map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => handleTabChange(tab.id)}
+                onClick={(e) => {
+                  e.preventDefault()
+                  handleTabChange(tab.id)
+                }}
                 className={`
                   px-3 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium rounded-t-lg transition-colors flex flex-col items-center whitespace-nowrap flex-shrink-0
                   ${
