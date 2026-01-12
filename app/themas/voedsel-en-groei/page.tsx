@@ -441,7 +441,7 @@ export default function VoedselEnGroeiPage() {
               {/* Tabs System */}
               <CustomTabs tabs={tabs} defaultTab="onderbouw" />
 
-              {/* 5-Fasen Tijdlijn */}
+              {/* 5-Fasen Verticale Lijst */}
               <div className="mt-8 sm:mt-12">
                 <div className="mb-4 sm:mb-6 px-2 sm:px-0">
                   <h3 className="font-serif text-xl sm:text-2xl font-bold text-lime-700 mb-2">
@@ -454,48 +454,38 @@ export default function VoedselEnGroeiPage() {
                     Focus: {activeRoute.focus}
                   </p>
                 </div>
-                <div className="relative">
-                  {/* Connector line for staircase effect - alleen op desktop */}
-                  <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-lime-300/50 hidden md:block"></div>
-                  
-                  <div className="space-y-3 sm:space-y-4">
-                    {activeRoute.fasen.map((item, index) => {
-                      const Icon = item.icon
-                      // Trapsgewijze positie: fase 1 beneden, fase 5 boven
-                      // Kleinere stappen op mobile (0.5rem per fase), grotere op desktop (1rem per fase)
-                      const desktopOffset = index * 1.0 // 0, 1, 2, 3, 4 rem
-                      const mobileOffset = index * 0.5  // 0, 0.5, 1, 1.5, 2 rem
-                      return (
-                        <Card 
-                          key={index} 
-                          className={`border-l-4 border-l-lime-600 relative md:ml-8 transition-all duration-300 ${
-                            index === 0 ? '' : index === 1 ? 'md:-mt-4' : index === 2 ? 'md:-mt-8' : index === 3 ? 'md:-mt-12' : 'md:-mt-16'
-                          }`}
-                          style={{ 
-                            marginTop: index === 0 ? '0' : `-${mobileOffset}rem`,
-                          }}
-                        >
-                          <CardContent className="p-5 sm:p-6 lg:p-8 pt-10 flex flex-col items-center justify-center">
+                <div className="space-y-3 sm:space-y-4">
+                  {activeRoute.fasen.map((item, index) => {
+                    const Icon = item.icon
+                    return (
+                      <Card 
+                        key={index} 
+                        className="border-l-4 border-l-lime-600"
+                      >
+                        <CardContent className="p-5 sm:p-6 lg:p-8">
+                          <div className="flex items-start gap-3 sm:gap-4">
                             {/* Phase number badge */}
-                            <div className="absolute -left-3 top-6 w-8 h-8 rounded-full bg-lime-600 text-white flex items-center justify-center text-sm font-bold shadow-lg border-2 border-white z-10">
+                            <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-lime-600 text-white flex items-center justify-center text-base sm:text-lg font-bold shadow-lg">
                               {index + 1}
                             </div>
-                            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-lime-600 text-white flex items-center justify-center mb-6 shadow-lg">
-                              <Icon className="h-8 w-8" />
-                            </div>
-                            <div className="flex-1 w-full text-center px-3 sm:px-4 max-w-2xl mx-auto">
-                              <h4 className="font-semibold text-lime-700 mb-3 text-base sm:text-lg">
-                                {item.fase}
-                              </h4>
+                            <div className="flex-1 min-w-0">
+                              <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3 flex-wrap">
+                                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-lime-100 text-lime-700 flex items-center justify-center flex-shrink-0">
+                                  <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
+                                </div>
+                                <h4 className="font-semibold text-lime-700 text-base sm:text-lg">
+                                  {item.fase}
+                                </h4>
+                              </div>
                               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                                 {item.beschrijving}
                               </p>
                             </div>
-                          </CardContent>
-                        </Card>
-                      )
-                    })}
-                  </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    )
+                  })}
                 </div>
               </div>
             </div>
