@@ -6,6 +6,10 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Tabs from '@/components/Tabs'
 import MemberGate from '@/components/MemberGate'
+import { ThemeTabs } from '@/components/ThemeTabs'
+import { DidacticRoute } from '@/components/DidacticRoute'
+import { getThemeConfig, getActiveColor, getActiveBorderColor } from '@/src/data/theme-config'
+import { ThemeTab } from '@/src/types/theme'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -338,49 +342,8 @@ export default function KasteelRadboudPage() {
   }
 
   const activeRoute = getActiveRoute()
-
-  // Custom Tabs component die ook de route update
-  const CustomTabs = ({ tabs, defaultTab }: { tabs: any[], defaultTab?: string }) => {
-    const activeTabContent = tabs.find(tab => tab.id === activeTab)?.content
-
-    return (
-      <div className="w-full overflow-hidden">
-        <div className="border-b border-gray-200 mb-6 overflow-x-auto overflow-y-hidden -mx-2 sm:mx-0 scrollbar-hide" style={{ WebkitOverflowScrolling: 'touch' }}>
-          <nav className="flex space-x-1 px-2 sm:px-0" aria-label="Tabs" style={{ width: 'max-content' }}>
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={(e) => {
-                  e.preventDefault()
-                  handleTabChange(tab.id)
-                }}
-                className={`
-                  px-2.5 sm:px-6 py-2 sm:py-3 text-[11px] sm:text-sm font-medium rounded-t-lg transition-colors flex flex-col items-center whitespace-nowrap flex-shrink-0
-                  ${
-                    activeTab === tab.id
-                      ? 'bg-rose-800 text-white border-b-2 border-rose-800'
-                      : 'text-gray-700 hover:text-rose-800 hover:bg-gray-50'
-                  }
-                `}
-              >
-                <span className="leading-tight">{tab.label}</span>
-                {tab.subtitle && (
-                  <span className={`text-[9px] sm:text-xs mt-0.5 leading-tight ${
-                    activeTab === tab.id ? 'text-white/90' : 'text-gray-500'
-                  }`}>
-                    {tab.subtitle}
-                  </span>
-                )}
-              </button>
-            ))}
-          </nav>
-        </div>
-        <div className="min-h-[300px] sm:min-h-[400px]">
-          {activeTabContent}
-        </div>
-      </div>
-    )
-  }
+  const themeConfig = getThemeConfig('kasteel-radboud')
+  const colorScheme = themeConfig.colorScheme!
 
   // Rijke Teksten
   const boeken = {
@@ -444,55 +407,21 @@ export default function KasteelRadboudPage() {
             {/* Main Content - 70% */}
             <div className="lg:col-span-7 px-2 sm:px-0">
               {/* Tabs System */}
-              <CustomTabs tabs={tabs} defaultTab="onderbouw" />
+              <ThemeTabs 
+                tabs={tabs as ThemeTab[]} 
+                defaultTab="onderbouw"
+                activeColor={getActiveColor('kasteel-radboud')}
+                activeBorderColor={getActiveBorderColor('kasteel-radboud')}
+                onTabChange={handleTabChange}
+              />
 
               {/* 5-Fasen Verticale Lijst */}
-              <div className="mt-8 sm:mt-12">
-                <div className="mb-4 sm:mb-6 px-2 sm:px-0">
-                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-rose-800 mb-2">
-                    De didactische route
-                  </h3>
-                  <p className="text-base sm:text-lg font-medium text-rose-900 mb-1">
-                    {activeRoute.titel}
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-600">
-                    Focus: {activeRoute.focus}
-                  </p>
-                </div>
-                <div className="space-y-3 sm:space-y-4">
-                  {activeRoute.fasen.map((item, index) => {
-                    const Icon = item.icon
-                    return (
-                      <Card 
-                        key={index} 
-                        className="border-l-4 border-l-rose-600"
-                      >
-                        <CardContent className="p-5 sm:p-6 lg:p-8">
-                          <div className="flex items-start gap-3 sm:gap-4">
-                            {/* Phase number badge */}
-                            <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-rose-600 text-white flex items-center justify-center text-base sm:text-lg font-bold shadow-lg">
-                              {index + 1}
-                            </div>
-                            <div className="flex-1 min-w-0">
-                              <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3 flex-wrap">
-                                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-rose-100 text-rose-700 flex items-center justify-center flex-shrink-0">
-                                  <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
-                                </div>
-                                <h4 className="font-semibold text-rose-800 text-base sm:text-lg">
-                                  {item.fase}
-                                </h4>
-                              </div>
-                              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                                {item.beschrijving}
-                              </p>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    )
-                  })}
-                </div>
-              </div>
+              <DidacticRoute
+                phases={activeRoute.fasen}
+                title={activeRoute.titel}
+                focus={activeRoute.focus}
+                colorScheme={colorScheme}
+              />
             </div>
 
             {/* Sidebar - 30% */}
