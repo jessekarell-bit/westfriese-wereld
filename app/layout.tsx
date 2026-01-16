@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Merriweather } from 'next/font/google'
 import './globals.css'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import ScrollRestoration from '@/components/ScrollRestoration'
 import { AuthProvider } from '@/components/AuthProvider'
 import AuthGate from '@/components/AuthGate'
@@ -43,6 +44,7 @@ export default function RootLayout({
             {children}
           </AuthGate>
         </AuthProvider>
+        <SpeedInsights />
       </body>
     </html>
   )
