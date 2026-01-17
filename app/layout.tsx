@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Merriweather } from 'next/font/google'
+import { Inter, Merriweather, Montserrat, Open_Sans } from 'next/font/google'
 import './globals.css'
 import ScrollRestoration from '@/components/ScrollRestoration'
 import { AuthProvider } from '@/components/AuthProvider'
@@ -15,6 +15,20 @@ const merriweather = Merriweather({
   subsets: ['latin'],
   weight: ['300', '400', '700', '900'],
   variable: '--font-merriweather',
+  display: 'swap',
+})
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '600', '700', '800', '900'],
+  variable: '--font-montserrat',
+  display: 'swap',
+})
+
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-open-sans',
   display: 'swap',
 })
 
@@ -35,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="nl" className={`${inter.variable} ${merriweather.variable}`} suppressHydrationWarning>
+    <html lang="nl" className={`${inter.variable} ${merriweather.variable} ${montserrat.variable} ${openSans.variable}`} suppressHydrationWarning>
       <body className="antialiased" suppressHydrationWarning>
         <AuthProvider>
           <AuthGate>

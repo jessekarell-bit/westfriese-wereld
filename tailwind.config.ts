@@ -15,6 +15,8 @@ const config: Config = {
   			'polder-green': '#4a7c59',
   			'brick-red': '#c85a3d',
   			terracotta: '#b85450',
+  			'skowf-magenta': '#8B1F4F',
+  			'skowf-orange': '#F58220',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -64,6 +66,14 @@ const config: Config = {
   			serif: [
   				'var(--font-merriweather)',
   				'serif'
+  			],
+  			'montserrat': [
+  				'var(--font-montserrat)',
+  				'sans-serif'
+  			],
+  			'open-sans': [
+  				'var(--font-open-sans)',
+  				'sans-serif'
   			]
   		},
   		borderRadius: {

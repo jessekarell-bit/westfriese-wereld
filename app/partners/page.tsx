@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import SKOWFStrategicPartner from '@/components/SKOWFStrategicPartner'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -40,6 +41,9 @@ export default function PartnersPage() {
       <Navbar />
       
       <main className="flex-grow">
+        {/* SKOWF Strategic Partner Section */}
+        <SKOWFStrategicPartner />
+
         {/* Hero Section */}
         <section className="bg-slate-50 py-24 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
