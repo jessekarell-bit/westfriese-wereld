@@ -46,23 +46,23 @@ export default function SKOWFStrategicPartner() {
               {/* Decorative connecting lines */}
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent hidden lg:block"></div>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-6 md:gap-10 lg:gap-16">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-6 md:gap-10 lg:gap-16">
                 {/* SKOWF Logo - Prominent Brand Display */}
                 <div className="flex items-center relative z-10">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-white/30 shadow-2xl">
                     <div className="relative inline-flex items-center tracking-tight">
                       <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">S</span>
                       <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">K</span>
-                      {/* O with teal circle and arcs - Signature Brand Element */}
+                      {/* O with teal circle and arcs - Signature Brand Element - Proportional scaling */}
                       <span className="relative inline-block mx-0.5 sm:mx-1 md:mx-2">
-                        {/* Teal circle - Brand accent color - Responsive sizing that scales with text */}
-                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 rounded-full bg-[#00B7B6] shadow-2xl -z-10"></div>
-                        {/* Top arc - Elegant brand detail - Responsive */}
-                        <svg className="absolute -top-2 sm:-top-2.5 md:-top-3 lg:-top-4 left-1/2 -translate-x-1/2 w-8 h-4 sm:w-10 sm:h-5 md:w-12 md:h-6 lg:w-14 lg:h-8" viewBox="0 0 50 16" fill="none" preserveAspectRatio="xMidYMid meet">
+                        {/* Teal circle - Scales proportionally with letter size using em units */}
+                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[0.85em] h-[0.85em] rounded-full bg-[#00B7B6] shadow-2xl -z-10"></div>
+                        {/* Top arc - Scales proportionally */}
+                        <svg className="absolute -top-[0.15em] left-1/2 -translate-x-1/2 w-[0.6em] h-[0.3em]" viewBox="0 0 50 16" fill="none" preserveAspectRatio="xMidYMid meet">
                           <path d="M 5 10 Q 25 3 45 10" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
                         </svg>
-                        {/* Bottom arc - Responsive */}
-                        <svg className="absolute -bottom-2 sm:-bottom-2.5 md:-bottom-3 lg:-bottom-4 left-1/2 -translate-x-1/2 w-8 h-4 sm:w-10 sm:h-5 md:w-12 md:h-6 lg:w-14 lg:h-8" viewBox="0 0 50 16" fill="none" preserveAspectRatio="xMidYMid meet">
+                        {/* Bottom arc - Scales proportionally */}
+                        <svg className="absolute -bottom-[0.15em] left-1/2 -translate-x-1/2 w-[0.6em] h-[0.3em]" viewBox="0 0 50 16" fill="none" preserveAspectRatio="xMidYMid meet">
                           <path d="M 5 6 Q 25 13 45 6" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
                         </svg>
                         <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none relative z-10 drop-shadow-lg">O</span>
@@ -82,7 +82,7 @@ export default function SKOWFStrategicPartner() {
                       <Handshake className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 text-white" strokeWidth="2.5" fill="none" />
                     </div>
                     {/* Partnership text below icon */}
-                    <div className="absolute -bottom-6 sm:-bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                    <div className="absolute -bottom-7 sm:-bottom-8 md:-bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap mt-2">
                       <span className="font-montserrat font-bold text-white text-[10px] sm:text-xs md:text-sm bg-white/20 backdrop-blur-sm px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-white/30">
                         Samenwerking
                       </span>
@@ -107,8 +107,8 @@ export default function SKOWFStrategicPartner() {
             </div>
 
             {/* Partnership Statement */}
-            <div className="mt-8 sm:mt-12 text-center px-4">
-              <p className="font-montserrat font-bold text-white text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2 drop-shadow-lg tracking-normal">
+            <div className="mt-10 sm:mt-12 md:mt-16 text-center px-4">
+              <p className="font-montserrat font-bold text-white text-lg sm:text-xl md:text-2xl lg:text-3xl mb-3 sm:mb-4 drop-shadow-lg tracking-normal">
                 Samen bouwen aan betekenisvol onderwijs
               </p>
               <p className="font-open-sans text-white/90 text-sm sm:text-base md:text-lg font-medium tracking-normal">

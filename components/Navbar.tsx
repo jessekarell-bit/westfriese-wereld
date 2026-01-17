@@ -81,9 +81,9 @@ export default function Navbar() {
               </SheetHeader>
               
               <div className="flex flex-col space-y-6 mt-4">
-                <div className="flex items-center space-x-2 mb-6 pb-6 border-b border-gray-200">
-                  <BookOpen className="h-6 w-6 text-deep-water-blue" />
-                  <span className="text-xl font-serif font-bold text-deep-water-blue">
+                <div className="flex items-center space-x-1.5 sm:space-x-2 mb-6 pb-6 border-b border-gray-200">
+                  <BookOpen className="h-5 w-5 sm:h-6 sm:w-6 text-deep-water-blue flex-shrink-0" />
+                  <span className="text-base sm:text-lg md:text-xl font-serif font-bold text-deep-water-blue">
                     De West-Friese Wereld
                   </span>
                 </div>
