@@ -28,8 +28,8 @@ export default function SKOWFStrategicPartner() {
 
   return (
     <div className="bg-[#F9FAFB]">
-      {/* Hero Section with Gradient - SKOWF Branding */}
-      <section className="bg-gradient-to-r from-[#463f8a] via-[#5a4f9a] to-[#F39200] py-24 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden">
+      {/* Hero Section with Gradient - Partnership Branding */}
+      <section className="bg-gradient-to-r from-[#463f8a] to-[#1e3a5f] py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden">
         {/* Subtle pattern overlay for depth */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
@@ -40,35 +40,35 @@ export default function SKOWFStrategicPartner() {
         
         <div className="max-w-7xl mx-auto relative z-10">
           {/* Combined Logo - SKOWF Brand Identity - Prominent Partnership Display */}
-          <div className="mb-20">
+          <div className="mb-12 sm:mb-16 md:mb-20">
             {/* Logo Display with Enhanced Partnership Visual */}
             <div className="relative">
               {/* Decorative connecting lines */}
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent hidden lg:block"></div>
               
-              <div className="flex flex-row items-center justify-center gap-6 sm:gap-10 lg:gap-16">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-6 md:gap-10 lg:gap-16">
                 {/* SKOWF Logo - Prominent Brand Display */}
                 <div className="flex items-center relative z-10">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 border-2 border-white/30 shadow-2xl">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-white/30 shadow-2xl">
                     <div className="relative inline-flex items-center tracking-tight">
-                      <span className="font-montserrat font-extrabold text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-none drop-shadow-lg">S</span>
-                      <span className="font-montserrat font-extrabold text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-none drop-shadow-lg">K</span>
+                      <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">S</span>
+                      <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">K</span>
                       {/* O with teal circle and arcs - Signature Brand Element */}
-                      <span className="relative inline-block mx-2">
-                        {/* Teal circle - Brand accent color */}
-                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 sm:w-18 sm:h-18 lg:w-22 lg:h-22 xl:w-24 xl:h-24 rounded-full bg-[#00B7B6] shadow-2xl -z-10"></div>
-                        {/* Top arc - Elegant brand detail */}
-                        <svg className="absolute -top-3 left-1/2 -translate-x-1/2 w-12 h-6 sm:w-14 h-8" viewBox="0 0 50 16" fill="none">
-                          <path d="M 5 10 Q 25 3 45 10" stroke="white" strokeWidth="3" fill="none" strokeLinecap="round" />
+                      <span className="relative inline-block mx-0.5 sm:mx-1 md:mx-2">
+                        {/* Teal circle - Brand accent color - Responsive sizing that scales with text */}
+                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 rounded-full bg-[#00B7B6] shadow-2xl -z-10"></div>
+                        {/* Top arc - Elegant brand detail - Responsive */}
+                        <svg className="absolute -top-2 sm:-top-2.5 md:-top-3 lg:-top-4 left-1/2 -translate-x-1/2 w-8 h-4 sm:w-10 sm:h-5 md:w-12 md:h-6 lg:w-14 lg:h-8" viewBox="0 0 50 16" fill="none" preserveAspectRatio="xMidYMid meet">
+                          <path d="M 5 10 Q 25 3 45 10" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
                         </svg>
-                        {/* Bottom arc */}
-                        <svg className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-12 h-6 sm:w-14 h-8" viewBox="0 0 50 16" fill="none">
-                          <path d="M 5 6 Q 25 13 45 6" stroke="white" strokeWidth="3" fill="none" strokeLinecap="round" />
+                        {/* Bottom arc - Responsive */}
+                        <svg className="absolute -bottom-2 sm:-bottom-2.5 md:-bottom-3 lg:-bottom-4 left-1/2 -translate-x-1/2 w-8 h-4 sm:w-10 sm:h-5 md:w-12 md:h-6 lg:w-14 lg:h-8" viewBox="0 0 50 16" fill="none" preserveAspectRatio="xMidYMid meet">
+                          <path d="M 5 6 Q 25 13 45 6" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
                         </svg>
-                        <span className="font-montserrat font-extrabold text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-none relative z-10 drop-shadow-lg">O</span>
+                        <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none relative z-10 drop-shadow-lg">O</span>
                       </span>
-                      <span className="font-montserrat font-extrabold text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-none drop-shadow-lg">W</span>
-                      <span className="font-montserrat font-extrabold text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-none drop-shadow-lg">F</span>
+                      <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">W</span>
+                      <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">F</span>
                     </div>
                   </div>
                 </div>
@@ -78,12 +78,12 @@ export default function SKOWFStrategicPartner() {
                   <div className="relative">
                     {/* Glowing background effect */}
                     <div className="absolute inset-0 bg-white/30 rounded-full blur-xl animate-pulse"></div>
-                    <div className="relative p-6 md:p-8 rounded-full bg-white/20 backdrop-blur-md border-4 border-white/50 shadow-2xl">
-                      <Handshake className="h-20 w-20 sm:h-24 sm:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 text-white" strokeWidth="3" fill="none" />
+                    <div className="relative p-4 sm:p-6 md:p-8 rounded-full bg-white/20 backdrop-blur-md border-2 sm:border-4 border-white/50 shadow-2xl">
+                      <Handshake className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 text-white" strokeWidth="2.5" fill="none" />
                     </div>
                     {/* Partnership text below icon */}
-                    <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap">
-                      <span className="font-montserrat font-bold text-white text-xs sm:text-sm bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full border border-white/30">
+                    <div className="absolute -bottom-6 sm:-bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                      <span className="font-montserrat font-bold text-white text-[10px] sm:text-xs md:text-sm bg-white/20 backdrop-blur-sm px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-white/30">
                         Samenwerking
                       </span>
                     </div>
@@ -91,13 +91,13 @@ export default function SKOWFStrategicPartner() {
                 </div>
 
                 {/* De West-Friese Wereld Logo - Enhanced */}
-                <div className="flex flex-col items-center gap-4 relative z-10">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 border-2 border-white/30 shadow-2xl">
-                    <div className="flex flex-col items-center gap-3">
-                      <div className="p-4 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
-                        <BookOpen className="h-16 w-16 sm:h-20 sm:w-20 lg:h-24 lg:w-24 text-white" strokeWidth="3" fill="none" />
+                <div className="flex flex-col items-center gap-3 sm:gap-4 relative z-10">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-white/30 shadow-2xl">
+                    <div className="flex flex-col items-center gap-2 sm:gap-3">
+                      <div className="p-3 sm:p-4 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
+                        <BookOpen className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 text-white" strokeWidth="2.5" fill="none" />
                       </div>
-                      <span className="text-white font-montserrat font-bold text-lg sm:text-xl lg:text-2xl text-center whitespace-nowrap tracking-wide drop-shadow-lg">
+                      <span className="text-white font-montserrat font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-center whitespace-nowrap tracking-wide drop-shadow-lg">
                         De West-Friese Wereld
                       </span>
                     </div>
@@ -107,46 +107,52 @@ export default function SKOWFStrategicPartner() {
             </div>
 
             {/* Partnership Statement */}
-            <div className="mt-12 text-center">
-              <p className="font-montserrat font-bold text-white text-xl md:text-2xl lg:text-3xl mb-2 drop-shadow-lg">
+            <div className="mt-8 sm:mt-12 text-center px-4">
+              <p className="font-montserrat font-bold text-white text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2 drop-shadow-lg tracking-normal">
                 Samen bouwen aan betekenisvol onderwijs
               </p>
-              <p className="font-open-sans text-white/90 text-base md:text-lg font-medium">
-                Een unieke samenwerking tussen SKOWF en De West-Friese Wereld
+              <p className="font-open-sans text-white/90 text-sm sm:text-base md:text-lg font-medium tracking-normal">
+                Een unieke samenwerking tussen <span className="font-semibold tracking-wide">SKOWF</span> en <span className="font-semibold">De West-Friese Wereld</span>
               </p>
             </div>
           </div>
 
           {/* Partnership Emphasis Badge - Prominent Display */}
-          <div className="flex justify-center mb-10">
-            <div className="relative">
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#463f8a] via-[#5a4f9a] to-[#F39200] rounded-full blur-xl opacity-50 animate-pulse"></div>
-              <div className="relative bg-gradient-to-r from-[#463f8a] via-[#5a4f9a] to-[#F39200] rounded-full px-10 py-5 shadow-2xl border-4 border-white/40">
-                <div className="flex items-center gap-5">
-                  <span className="font-montserrat font-extrabold text-white text-xl md:text-2xl lg:text-3xl drop-shadow-lg">SKOWF</span>
-                  <div className="w-1.5 h-12 bg-white/70 rounded-full"></div>
-                  <span className="font-montserrat font-extrabold text-white text-xl md:text-2xl lg:text-3xl drop-shadow-lg">De West-Friese Wereld</span>
+          <div className="flex justify-center mb-8 sm:mb-10 px-4">
+            <div className="relative w-full max-w-2xl">
+              {/* Glow effect - Partnership gradient: SKOWF to De West-Friese Wereld */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#463f8a] to-[#1e3a5f] rounded-full blur-xl opacity-50 animate-pulse"></div>
+              {/* Main badge with gradient border - Partnership colors: SKOWF magenta to De West-Friese Wereld blue */}
+              <div className="relative rounded-full shadow-2xl overflow-hidden" style={{
+                background: 'linear-gradient(to right, #463f8a, #1e3a5f)',
+                padding: '4px'
+              }}>
+                <div className="bg-gradient-to-r from-[#463f8a] to-[#1e3a5f] rounded-full px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5">
+                  <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-5 flex-wrap">
+                    <span className="font-montserrat font-extrabold text-white text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl drop-shadow-lg tracking-wide">SKOWF</span>
+                    <div className="w-1 h-8 sm:h-10 md:h-12 bg-white/80 rounded-full flex-shrink-0 shadow-sm"></div>
+                    <span className="font-montserrat font-extrabold text-white text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl drop-shadow-lg text-center tracking-normal">De West-Friese Wereld</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Title - SKOWF Typography */}
-          <h1 className="font-montserrat text-5xl md:text-6xl lg:text-7xl font-extrabold text-white text-center mb-6 tracking-tight leading-tight drop-shadow-md">
+          <h1 className="font-montserrat text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white text-center mb-4 sm:mb-6 tracking-normal leading-tight drop-shadow-md px-4">
             SKOWF pioniert met<br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-white to-white/90 bg-clip-text text-transparent">De West-Friese Wereld</span>
           </h1>
 
           {/* Subtitle - Professional spacing */}
-          <p className="font-open-sans text-xl md:text-2xl lg:text-3xl text-white/95 text-center mb-8 max-w-5xl mx-auto font-semibold leading-relaxed">
+          <p className="font-open-sans text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/95 text-center mb-6 sm:mb-8 max-w-5xl mx-auto font-semibold leading-relaxed px-4 tracking-normal">
             Een doorlopende leerlijn van groep 1 t/m 8, geworteld in de regio.
           </p>
 
           {/* Intro Text - SKOWF Brand Voice */}
           <div className="max-w-4xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-xl">
-              <p className="font-open-sans text-lg md:text-xl text-white/95 text-center leading-relaxed font-medium">
+              <p className="font-open-sans text-lg md:text-xl text-white/95 text-center leading-relaxed font-medium tracking-normal">
                 Als strategisch partner omarmt <span className="font-montserrat font-bold text-white">SKOWF</span> de ambitie om het onderwijs contextrijker en betekenisvoller te maken. 
                 In deze pilotfase implementeren we een unieke verticale leerlijn.
               </p>
@@ -163,7 +169,7 @@ export default function SKOWFStrategicPartner() {
             <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-[#463f8a] mb-6">
               De Wereld begint in West-Friesland
             </h2>
-            <h3 className="font-montserrat text-xl md:text-2xl font-semibold text-[#F39200] mb-6">
+            <h3 className="font-montserrat text-xl md:text-2xl font-semibold bg-gradient-to-r from-[#463f8a] to-[#1e3a5f] bg-clip-text text-transparent mb-6">
               Onze visie op betekenisvol onderwijs
             </h3>
             
@@ -176,7 +182,7 @@ export default function SKOWFStrategicPartner() {
                 Voor ons begint die ontdekkingsreis dichtbij huis. Precies daar vinden de visie van SKOWF en het project De West-Friese Wereld elkaar.
               </p>
               
-              <h4 className="font-montserrat text-xl md:text-2xl font-semibold text-[#F39200] mt-8 mb-4">
+              <h4 className="font-montserrat text-xl md:text-2xl font-semibold bg-gradient-to-r from-[#463f8a] to-[#1e3a5f] bg-clip-text text-transparent mt-8 mb-4">
                 Vanuit eigen kracht de wereld in
               </h4>
               
@@ -184,21 +190,21 @@ export default function SKOWFStrategicPartner() {
                 De West-Friese Wereld is de vertaling van onze ambitie om betekenisvol onderwijs te bieden. Onderwijs dat niet abstract blijft, maar gaat leven.
               </p>
               
-              <h5 className="font-montserrat text-lg md:text-xl font-semibold text-[#F39200] mt-6 mb-3">
+              <h5 className="font-montserrat text-lg md:text-xl font-semibold bg-gradient-to-r from-[#463f8a] to-[#1e3a5f] bg-clip-text text-transparent mt-6 mb-3">
                 Verbinding met de omgeving:
               </h5>
               <p>
                 SKOWF ziet de school niet als een eiland, maar als het hart van de wijk en de regio. Met 'De West-Friese Wereld' maken we van West-Friesland ons klaslokaal. De Westfriese Omringdijk, de hightech van Seed Valley en de historie van de VOC zijn geen saaie lesstof, maar het startpunt van avontuurlijk leren.
               </p>
               
-              <h5 className="font-montserrat text-lg md:text-xl font-semibold text-[#F39200] mt-6 mb-3">
+              <h5 className="font-montserrat text-lg md:text-xl font-semibold bg-gradient-to-r from-[#463f8a] to-[#1e3a5f] bg-clip-text text-transparent mt-6 mb-3">
                 Van dichtbij naar ver:
               </h5>
               <p>
                 Wij geloven dat kinderen de grote wereld pas écht begrijpen als ze hun eigen omgeving kennen. Door te leren over het watermanagement in de polder, snappen ze de klimaatuitdagingen wereldwijd. De wortels liggen in de klei, de blik is gericht op de horizon.
               </p>
               
-              <h4 className="font-montserrat text-xl md:text-2xl font-semibold text-[#F39200] mt-8 mb-4">
+              <h4 className="font-montserrat text-xl md:text-2xl font-semibold bg-gradient-to-r from-[#463f8a] to-[#1e3a5f] bg-clip-text text-transparent mt-8 mb-4">
                 Samen inspirerend lerend
               </h4>
               
@@ -220,8 +226,8 @@ export default function SKOWFStrategicPartner() {
                 className={`
                   px-10 py-5 font-montserrat font-extrabold text-lg md:text-xl rounded-xl transition-all tracking-wide
                   ${activeYear === 'yearA'
-                    ? 'bg-gradient-to-r from-[#463f8a] to-[#5a4f9a] text-white shadow-xl transform scale-105 border-2 border-white/20'
-                    : 'bg-white text-[#463f8a] border-2 border-[#463f8a]/30 hover:border-[#F39200] hover:text-[#F39200] hover:shadow-md'
+                    ? 'bg-gradient-to-r from-[#463f8a] to-[#1e3a5f] text-white shadow-xl transform scale-105 border-2 border-white/20'
+                    : 'bg-white text-[#463f8a] border-2 border-[#463f8a]/30 hover:border-[#1e3a5f] hover:text-[#1e3a5f] hover:shadow-md'
                   }
                 `}
               >
@@ -232,8 +238,8 @@ export default function SKOWFStrategicPartner() {
                 className={`
                   px-10 py-5 font-montserrat font-extrabold text-lg md:text-xl rounded-xl transition-all tracking-wide
                   ${activeYear === 'yearB'
-                    ? 'bg-gradient-to-r from-[#463f8a] to-[#5a4f9a] text-white shadow-xl transform scale-105 border-2 border-white/20'
-                    : 'bg-white text-[#463f8a] border-2 border-[#463f8a]/30 hover:border-[#F39200] hover:text-[#F39200] hover:shadow-md'
+                    ? 'bg-gradient-to-r from-[#463f8a] to-[#1e3a5f] text-white shadow-xl transform scale-105 border-2 border-white/20'
+                    : 'bg-white text-[#463f8a] border-2 border-[#463f8a]/30 hover:border-[#1e3a5f] hover:text-[#1e3a5f] hover:shadow-md'
                   }
                 `}
               >
@@ -245,10 +251,10 @@ export default function SKOWFStrategicPartner() {
           {/* Theme Cards Grid */}
           <div className="grid md:grid-cols-2 gap-6">
             {activeThemes.map((theme) => (
-              <Card key={theme.id} className="bg-white shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-t-[#F39200] border-l border-r border-b border-gray-100 rounded-xl overflow-hidden">
+              <Card key={theme.id} className="bg-white shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-t-[#1e3a5f] border-l border-r border-b border-gray-100 rounded-xl overflow-hidden">
                 <CardHeader className="pb-5 bg-gradient-to-br from-white to-gray-50/50">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#463f8a] to-[#5a4f9a] text-white rounded-xl flex items-center justify-center font-montserrat font-extrabold text-xl shadow-md">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#463f8a] to-[#1e3a5f] text-white rounded-xl flex items-center justify-center font-montserrat font-extrabold text-xl shadow-md">
                       {theme.id}
                     </div>
                     <div className="flex-1">
@@ -304,12 +310,12 @@ export default function SKOWFStrategicPartner() {
             {pedagogy.map((item, idx) => {
               const Icon = item.icon
               return (
-                <Card key={idx} className="bg-white border-2 border-gray-200 hover:border-[#F39200] transition-all duration-300 hover:shadow-xl rounded-xl overflow-hidden">
+                <Card key={idx} className="bg-white border-2 border-gray-200 hover:border-[#1e3a5f] transition-all duration-300 hover:shadow-xl rounded-xl overflow-hidden">
                   <CardHeader className="text-center pb-4 bg-gradient-to-br from-white to-gray-50/30">
-                    <div className="w-20 h-20 bg-gradient-to-br from-[#463f8a] via-[#5a4f9a] to-[#F39200] rounded-full flex items-center justify-center mx-auto mb-5 shadow-lg">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#463f8a] to-[#1e3a5f] rounded-full flex items-center justify-center mx-auto mb-5 shadow-lg">
                       <Icon className="h-10 w-10 text-white" strokeWidth="2.5" />
                     </div>
-                    <Badge className="bg-gradient-to-r from-[#F39200] to-[#ffa733] text-white font-montserrat font-extrabold mb-3 rounded-full px-4 py-1.5 text-xs tracking-wide shadow-md">
+                    <Badge className="bg-gradient-to-r from-[#463f8a] to-[#1e3a5f] text-white font-montserrat font-extrabold mb-3 rounded-full px-4 py-1.5 text-xs tracking-wide shadow-md">
                       {item.phase}
                     </Badge>
                     <CardTitle className="font-montserrat text-xl font-extrabold text-[#463f8a] mb-2">
