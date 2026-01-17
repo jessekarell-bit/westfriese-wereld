@@ -48,7 +48,7 @@ export const themes: CurriculumData = {
       introduction: "De West-Friese Omringdijk is een van de oudste dijken van Nederland en vertelt het verhaal van de eeuwige strijd tegen het water. Dit thema verbindt lokale geschiedenis met actuele klimaatvraagstukken.",
       bouw: {
         onderbouw: {
-          description: "Sensory experience, 'Waterwolf' myth",
+          description: "Zintuiglijke ervaring, de mythe van de Waterwolf",
           learningGoals: [
             "Kinderen ervaren de dijk met al hun zintuigen",
             "Kennis maken met het verhaal van de Waterwolf",
@@ -61,7 +61,7 @@ export const themes: CurriculumData = {
           ]
         },
         middenbouw: {
-          description: "Landscape traces (wielen), dike construction, pile worm crisis",
+          description: "Landschapssporen (wielen), dijkbouw, paalwormcrisis",
           learningGoals: [
             "Herkenning van sporen in het landschap (wielen)",
             "Begrijpen hoe dijken worden gebouwd en onderhouden",
@@ -74,7 +74,7 @@ export const themes: CurriculumData = {
           ]
         },
         bovenbouw: {
-          description: "System thinking, water management, climate adaptation",
+          description: "Systeemdenken, waterbeheer, klimaatadaptatie",
           learningGoals: [
             "Systeemdenken toepassen op waterbeheer",
             "Begrijpen van klimaatadaptatie strategieën",
@@ -99,7 +99,7 @@ export const themes: CurriculumData = {
       introduction: "Ontdek hoe de Romeinen en de vrije Friezen elkaar ontmoetten aan de grens van het Romeinse Rijk. Dit thema verbindt lokale geschiedenis met klassieke beschavingen.",
       bouw: {
         onderbouw: {
-          description: "'Treasure hunting', then vs now",
+          description: "Schatgraven, vroeger versus nu",
           learningGoals: [
             "Verschil begrijpen tussen vroeger en nu",
             "Kennis maken met archeologie",
@@ -112,7 +112,7 @@ export const themes: CurriculumData = {
           ]
         },
         middenbouw: {
-          description: "Meeting at the border, trade, Romans vs 'Free Frisians'",
+          description: "Ontmoeting aan de grens, handel, Romeinen versus vrije Friezen",
           learningGoals: [
             "Begrijpen van grenzen en ontmoetingen",
             "Kennis van handel en uitwisseling",
@@ -125,7 +125,7 @@ export const themes: CurriculumData = {
           ]
         },
         bovenbouw: {
-          description: "Power, democracy, rule of law, Frisian Revolt",
+          description: "Macht, democratie, rechtsstaat, Friese opstand",
           learningGoals: [
             "Begrijpen van machtsstructuren",
             "Kennis van democratie en rechtspraak",
@@ -149,7 +149,7 @@ export const themes: CurriculumData = {
       introduction: "De polders van West-Friesland zijn meesterwerken van waterbeheer en ruimtelijke ordening. Van de Beemster tot moderne uitdagingen.",
       bouw: {
         onderbouw: {
-          description: "Jan Leeghwater (wizard), shapes and lines",
+          description: "Jan Leeghwater (tovenaar), vormen en lijnen",
           learningGoals: [
             "Kennis maken met Jan Leeghwater als 'tovenaar'",
             "Herkenning van vormen en lijnen in het landschap",
@@ -162,7 +162,7 @@ export const themes: CurriculumData = {
           ]
         },
         middenbouw: {
-          description: "Geometry (Beemster), drainage techniques (wind to steam)",
+          description: "Meetkunde (Beemster), drainage technieken (wind naar stoom)",
           learningGoals: [
             "Meetkunde toepassen op de Beemster",
             "Begrijpen van drainage technieken",
@@ -175,7 +175,7 @@ export const themes: CurriculumData = {
           ]
         },
         bovenbouw: {
-          description: "Spatial planning, conflicting interests (Data centers vs Agriculture)",
+          description: "Ruimtelijke ordening, conflicterende belangen (datacenters versus landbouw)",
           learningGoals: [
             "Begrijpen van ruimtelijke ordening",
             "Kritisch nadenken over belangenconflicten",
@@ -197,9 +197,9 @@ export const themes: CurriculumData = {
       id: "gouden-eeuw",
       name: "De Gouden Eeuw",
       bouw: {
-        onderbouw: "Spices (smell), warehouse as treasure chest",
-        middenbouw: "Harbor life, shipbuilding (fluitschip), trade",
-        bovenbouw: "Multiperspectivity, ethics of colonialism, slavery (WIC), J.P. Coen controversy"
+        onderbouw: "Specerijen (geur), pakhuis als schatkist",
+        middenbouw: "Havenleven, scheepsbouw (fluitschip), handel",
+        bovenbouw: "Multiperspectiviteit, ethiek van kolonialisme, slavernij (WIC), J.P. Coen controverse"
       }
     },
     {
@@ -207,8 +207,8 @@ export const themes: CurriculumData = {
       name: "Van Zuiderzee naar IJsselmeer",
       bouw: {
         onderbouw: "Van zout naar zoet: proeven, voelen en ontdekken",
-        middenbouw: "Salt to fresh water transition",
-        bovenbouw: "Ecological systems, social impact of Zuiderzee Act on fishermen"
+        middenbouw: "Overgang van zout naar zoet water",
+        bovenbouw: "Ecologische systemen, sociale impact van de Zuiderzeewet op vissers"
       }
     },
     {
@@ -216,8 +216,8 @@ export const themes: CurriculumData = {
       name: "Kasteel Radboud",
       bouw: {
         onderbouw: "Kastelen ontdekken: torens, verhalen en ridderleven",
-        middenbouw: "Roles (page, herbalist), medieval crafts",
-        bovenbouw: "Power & Law, coercive castle function, development of rule of law"
+        middenbouw: "Rollen (page, kruidenier), middeleeuwse ambachten",
+        bovenbouw: "Macht en recht, dwangburcht functie, ontwikkeling van de rechtsstaat"
       }
     },
     {
@@ -225,17 +225,17 @@ export const themes: CurriculumData = {
       name: "Burgers en Stoommachines",
       bouw: {
         onderbouw: "Eerste machines: geluiden, beweging en eenvoudige werktuigen",
-        middenbouw: "Steam power, factory work",
-        bovenbouw: "Social question, children's rights (Van Houten), democracy"
+        middenbouw: "Stoomkracht, fabriekswerk",
+        bovenbouw: "Sociale kwestie, kinderrechten (Van Houten), democratie"
       }
     },
     {
       id: "tuin-van-europa",
       name: "De Tuin van Europa",
       bouw: {
-        onderbouw: "Growing & caring, school as test garden",
-        middenbouw: "Nanne Groot, seed trade history",
-        bovenbouw: "Biotechnology, genetics (Mendel/DNA), ethical food security (Seed Valley)"
+        onderbouw: "Groei en verzorging, school als proeftuin",
+        middenbouw: "Nanne Groot, geschiedenis van de zaadhandel",
+        bovenbouw: "Biotechnologie, genetica (Mendel/DNA), ethische voedselzekerheid (Seed Valley)"
       }
     }
   ],
