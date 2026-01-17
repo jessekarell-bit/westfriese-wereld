@@ -110,43 +110,42 @@ export default function SKOWFStrategicPartner() {
   const [activeYear, setActiveYear] = useState<'yearA' | 'yearB'>('yearA')
   const activeThemes = curriculumData[activeYear]
 
-  const getLevelColor = (group: string) => {
-    if (group.includes('Onderbouw')) return 'bg-purple-100 text-skowf-magenta border-purple-200'
-    if (group.includes('Middenbouw 3-4')) return 'bg-orange-100 text-skowf-orange border-orange-200'
-    if (group.includes('Middenbouw 5-6')) return 'bg-amber-100 text-amber-700 border-amber-200'
-    if (group.includes('Bovenbouw')) return 'bg-blue-100 text-blue-700 border-blue-200'
-    return 'bg-gray-100 text-gray-700 border-gray-200'
+  const getBadgeColor = (group: string) => {
+    if (group.includes('Onderbouw')) return 'bg-green-100 text-green-800'
+    if (group.includes('Middenbouw')) return 'bg-blue-100 text-blue-800'
+    if (group.includes('Bovenbouw')) return 'bg-purple-100 text-purple-800'
+    return 'bg-gray-100 text-gray-800'
   }
 
   return (
-    <div className="bg-gray-50">
-      {/* Hero Section */}
-      <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 border-b-4 border-skowf-magenta">
+    <div className="bg-[#F9FAFB]">
+      {/* Hero Section with Gradient */}
+      <section className="bg-gradient-to-r from-[#463f8a] to-[#F39200] py-16 px-4 sm:px-6 lg:px-8 text-white">
         <div className="max-w-7xl mx-auto">
           {/* Logos */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-8">
-            <div className="w-48 h-24 bg-gray-100 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-              <span className="text-sm text-gray-500 font-montserrat font-semibold">School Logo</span>
+            <div className="w-48 h-24 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center border-2 border-white/30">
+              <span className="text-sm text-white font-montserrat font-semibold">School Logo</span>
             </div>
-            <div className="text-skowf-magenta font-bold text-2xl">+</div>
-            <div className="w-48 h-24 bg-skowf-magenta rounded-lg flex items-center justify-center">
+            <div className="text-white font-bold text-2xl">+</div>
+            <div className="w-48 h-24 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center border-2 border-white/30">
               <span className="text-white font-montserrat font-bold text-xl">SKOWF</span>
             </div>
           </div>
 
           {/* Title */}
-          <h1 className="font-montserrat text-4xl md:text-5xl lg:text-6xl font-bold text-skowf-magenta text-center mb-4">
+          <h1 className="font-montserrat text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-4">
             SKOWF pioniert met De West-Friese Wereld
           </h1>
 
           {/* Subtitle */}
-          <p className="font-open-sans text-xl md:text-2xl text-gray-700 text-center mb-6 max-w-4xl mx-auto">
+          <p className="font-open-sans text-xl md:text-2xl text-white/95 text-center mb-6 max-w-4xl mx-auto">
             Een doorlopende leerlijn van groep 1 t/m 8, geworteld in de regio.
           </p>
 
           {/* Intro Text */}
           <div className="max-w-4xl mx-auto">
-            <p className="font-open-sans text-lg text-gray-600 text-center leading-relaxed">
+            <p className="font-open-sans text-lg text-white/90 text-center leading-relaxed">
               Als strategisch partner omarmt SKOWF de ambitie om het onderwijs contextrijker en betekenisvoller te maken. 
               In deze pilotfase implementeren we een unieke verticale leerlijn.
             </p>
@@ -155,7 +154,7 @@ export default function SKOWFStrategicPartner() {
       </section>
 
       {/* Interactive Matrix Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#F9FAFB]">
         <div className="max-w-7xl mx-auto">
           {/* Tab System */}
           <div className="mb-8">
@@ -165,8 +164,8 @@ export default function SKOWFStrategicPartner() {
                 className={`
                   px-8 py-4 font-montserrat font-bold text-lg rounded-lg transition-all
                   ${activeYear === 'yearA'
-                    ? 'bg-skowf-magenta text-white shadow-lg transform scale-105'
-                    : 'bg-white text-skowf-magenta border-2 border-skowf-magenta hover:bg-purple-50'
+                    ? 'bg-[#463f8a] text-white shadow-lg'
+                    : 'bg-white text-[#1F2937] border-2 border-gray-300 hover:border-[#F39200] hover:text-[#F39200]'
                   }
                 `}
               >
@@ -177,8 +176,8 @@ export default function SKOWFStrategicPartner() {
                 className={`
                   px-8 py-4 font-montserrat font-bold text-lg rounded-lg transition-all
                   ${activeYear === 'yearB'
-                    ? 'bg-skowf-magenta text-white shadow-lg transform scale-105'
-                    : 'bg-white text-skowf-magenta border-2 border-skowf-magenta hover:bg-purple-50'
+                    ? 'bg-[#463f8a] text-white shadow-lg'
+                    : 'bg-white text-[#1F2937] border-2 border-gray-300 hover:border-[#F39200] hover:text-[#F39200]'
                   }
                 `}
               >
@@ -190,14 +189,14 @@ export default function SKOWFStrategicPartner() {
           {/* Theme Cards Grid */}
           <div className="grid md:grid-cols-2 gap-6">
             {activeThemes.map((theme) => (
-              <Card key={theme.id} className="bg-white shadow-md hover:shadow-xl transition-shadow border-l-4 border-l-skowf-orange">
+              <Card key={theme.id} className="bg-white shadow-md hover:shadow-xl transition-shadow border-t-4 border-t-[#F39200]">
                 <CardHeader className="pb-4">
                   <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-10 h-10 bg-skowf-magenta text-white rounded-full flex items-center justify-center font-montserrat font-bold text-lg">
+                    <div className="flex-shrink-0 w-10 h-10 bg-[#463f8a] text-white rounded-full flex items-center justify-center font-montserrat font-bold text-lg">
                       {theme.id}
                     </div>
                     <div className="flex-1">
-                      <CardTitle className="font-montserrat text-xl font-bold text-skowf-magenta mb-1">
+                      <CardTitle className="font-montserrat text-xl font-bold text-[#1F2937] mb-1">
                         {theme.title}
                       </CardTitle>
                       <p className="font-open-sans text-sm text-gray-600 italic">
@@ -211,25 +210,19 @@ export default function SKOWFStrategicPartner() {
                     {theme.levels.map((level, idx) => (
                       <div
                         key={idx}
-                        className={`p-4 rounded-lg border-2 ${getLevelColor(level.group)}`}
+                        className="p-4 rounded-lg bg-white border border-gray-200"
                       >
                         <div className="flex items-start gap-3">
                           <Badge 
-                            variant="outline" 
-                            className={`font-montserrat font-semibold text-xs flex-shrink-0 ${
-                              level.group.includes('Onderbouw') ? 'bg-purple-200 border-purple-300 text-skowf-magenta' :
-                              level.group.includes('Middenbouw 3-4') ? 'bg-orange-200 border-orange-300 text-skowf-orange' :
-                              level.group.includes('Middenbouw 5-6') ? 'bg-amber-200 border-amber-300 text-amber-700' :
-                              'bg-blue-200 border-blue-300 text-blue-700'
-                            }`}
+                            className={`font-montserrat font-semibold text-xs flex-shrink-0 rounded-full px-3 py-1 ${getBadgeColor(level.group)}`}
                           >
                             {level.group}
                           </Badge>
                           <div className="flex-1 min-w-0">
-                            <h4 className="font-montserrat font-bold text-sm mb-1">
+                            <h4 className="font-montserrat font-bold text-sm mb-1 text-[#1F2937]">
                               {level.focus}
                             </h4>
-                            <p className="font-open-sans text-xs text-gray-700 leading-relaxed">
+                            <p className="font-open-sans text-xs text-[#1F2937] leading-relaxed">
                               {level.desc}
                             </p>
                           </div>
@@ -247,7 +240,7 @@ export default function SKOWFStrategicPartner() {
       {/* Verantwoording Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-skowf-magenta text-center mb-12">
+          <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-[#463f8a] text-center mb-12">
             Pedagogische Verantwoording
           </h2>
           
@@ -255,20 +248,20 @@ export default function SKOWFStrategicPartner() {
             {curriculumData.pedagogy.map((item, idx) => {
               const Icon = item.icon
               return (
-                <Card key={idx} className="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 hover:border-skowf-orange transition-all hover:shadow-lg">
+                <Card key={idx} className="bg-white border-2 border-gray-200 hover:border-[#F39200] transition-all hover:shadow-lg">
                   <CardHeader className="text-center pb-3">
-                    <div className="w-16 h-16 bg-gradient-to-br from-skowf-magenta to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-[#463f8a] to-[#F39200] rounded-full flex items-center justify-center mx-auto mb-4">
                       <Icon className="h-8 w-8 text-white" />
                     </div>
-                    <Badge className="bg-skowf-orange text-white font-montserrat font-bold mb-2">
+                    <Badge className="bg-[#F39200] text-white font-montserrat font-bold mb-2 rounded-full px-3 py-1">
                       {item.phase}
                     </Badge>
-                    <CardTitle className="font-montserrat text-lg font-bold text-skowf-magenta">
+                    <CardTitle className="font-montserrat text-lg font-bold text-[#463f8a]">
                       {item.role}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="font-open-sans text-sm text-gray-700 text-center leading-relaxed">
+                    <p className="font-open-sans text-sm text-[#1F2937] text-center leading-relaxed">
                       {item.text}
                     </p>
                   </CardContent>
