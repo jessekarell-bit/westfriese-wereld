@@ -219,8 +219,8 @@ export default function SKOWFStrategicPartner() {
           </div>
 
           {/* Tab System - SKOWF Brand Styling */}
-          <div className="mb-12">
-            <div className="flex justify-center gap-4">
+          <div className="mb-12 flex justify-center">
+            <div className="flex justify-center gap-4 flex-wrap">
               <button
                 onClick={() => setActiveYear('yearA')}
                 className={`
@@ -301,12 +301,12 @@ export default function SKOWFStrategicPartner() {
 
       {/* Verantwoording Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-[#463f8a] text-center mb-16 tracking-tight">
             Pedagogische Verantwoording
           </h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto">
             {pedagogy.map((item, idx) => {
               const Icon = item.icon
               return (

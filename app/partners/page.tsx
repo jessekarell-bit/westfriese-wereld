@@ -46,7 +46,7 @@ export default function PartnersPage() {
 
         {/* Hero Section */}
         <section className="bg-slate-50 py-24 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-deep-water-blue mb-6 leading-tight">
               Bouw mee aan De West-Friese Wereld
             </h1>
@@ -58,12 +58,12 @@ export default function PartnersPage() {
 
         {/* De Drie Pijlers Section */}
         <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-deep-water-blue text-center mb-16">
               De Gouden Driehoek
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 mx-auto">
               {/* Card 1: Cultuur & Erfgoed */}
               <Card className="h-full hover:shadow-lg transition-shadow">
                 <CardHeader>
@@ -139,7 +139,7 @@ export default function PartnersPage() {
 
         {/* Logo Cloud Section */}
         <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-deep-water-blue text-center mb-4">
               Wij zoeken verbinding met...
             </h2>
@@ -147,7 +147,7 @@ export default function PartnersPage() {
               Samen bouwen we aan een netwerk dat de regio tot een levend klaslokaal maakt.
             </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mx-auto">
               {businessSectors.map((sector) => {
                 const Icon = sector.icon
                 return (
@@ -178,7 +178,7 @@ export default function PartnersPage() {
 
         {/* Call to Action Section */}
         <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-deep-water-blue mb-6">
               Wilt u partner worden of meer informatie?
             </h2>
@@ -186,7 +186,7 @@ export default function PartnersPage() {
               Neem contact met ons op of download onze visie-brochure om meer te leren over De West-Friese Wereld.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
               {/* Primary CTA: Download Brochure */}
               <Button size="lg" variant="default" className="group">
                 <FileDown className="h-5 w-5 mr-2 group-hover:animate-bounce" />
