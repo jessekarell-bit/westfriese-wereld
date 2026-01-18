@@ -529,7 +529,6 @@ export default function LandEnPolderPage() {
           </div>
         </div>
       </main>
-
       <Footer />
     </div>
   )
