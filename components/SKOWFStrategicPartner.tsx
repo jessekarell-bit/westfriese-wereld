@@ -46,44 +46,31 @@ export default function SKOWFStrategicPartner() {
               {/* Decorative connecting lines */}
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent hidden lg:block"></div>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-6 md:gap-10 lg:gap-16 w-full max-w-6xl mx-auto">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-4 md:gap-6 lg:gap-8 w-full max-w-4xl mx-auto">
                 {/* SKOWF Logo - Prominent Brand Display */}
-                <div className="flex items-center justify-center relative z-10 sm:flex-1">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-white/30 shadow-2xl">
+                <div className="flex items-center justify-center relative z-10 sm:flex-1 sm:max-w-[220px] md:max-w-[260px]">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-5 border-2 border-white/30 shadow-2xl">
                     <div className="relative inline-flex items-center tracking-tight justify-center">
-                      <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">S</span>
-                      <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">K</span>
-                      {/* O with teal circle and arcs - Signature Brand Element - Proportional scaling */}
-                      <span className="relative inline-block mx-0.5 sm:mx-1 md:mx-2">
-                        {/* Teal circle - Scales proportionally with letter size using em units */}
-                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#00B7B6] shadow-2xl -z-10" style={{ width: '0.8em', height: '0.8em' }}></div>
-                        {/* Top arc - Scales proportionally */}
-                        <svg className="absolute left-1/2 -translate-x-1/2" style={{ top: '-0.12em', width: '0.55em', height: '0.25em' }} viewBox="0 0 50 16" fill="none" preserveAspectRatio="xMidYMid meet">
-                          <path d="M 5 10 Q 25 3 45 10" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                        </svg>
-                        {/* Bottom arc - Scales proportionally */}
-                        <svg className="absolute left-1/2 -translate-x-1/2" style={{ bottom: '-0.12em', width: '0.55em', height: '0.25em' }} viewBox="0 0 50 16" fill="none" preserveAspectRatio="xMidYMid meet">
-                          <path d="M 5 6 Q 25 13 45 6" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                        </svg>
-                        <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none relative z-10 drop-shadow-lg">O</span>
-                      </span>
-                      <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">W</span>
-                      <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">F</span>
+                      <span className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-none drop-shadow-lg">S</span>
+                      <span className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-none drop-shadow-lg">K</span>
+                      <span className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-none drop-shadow-lg">O</span>
+                      <span className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-none drop-shadow-lg">W</span>
+                      <span className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-none drop-shadow-lg">F</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Handshake Icon - Enhanced Partnership Symbol - Centered */}
-                <div className="flex items-center justify-center relative z-20 w-full sm:w-auto sm:flex-[0.8]">
+                <div className="flex items-center justify-center relative z-20 w-full sm:w-auto sm:flex-[0.6] sm:max-w-[160px] md:max-w-[180px]">
                   <div className="relative">
                     {/* Glowing background effect */}
                     <div className="absolute inset-0 bg-white/30 rounded-full blur-xl animate-pulse"></div>
-                    <div className="relative p-4 sm:p-6 md:p-8 rounded-full bg-white/20 backdrop-blur-md border-2 sm:border-4 border-white/50 shadow-2xl">
-                      <Handshake className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 text-white" strokeWidth="2.5" fill="none" />
+                    <div className="relative p-3 sm:p-4 md:p-5 rounded-full bg-white/20 backdrop-blur-md border-2 sm:border-3 border-white/50 shadow-2xl">
+                      <Handshake className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 text-white" strokeWidth="2.5" fill="none" />
                     </div>
                     {/* Partnership text below icon */}
-                    <div className="absolute -bottom-7 sm:-bottom-8 md:-bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap mt-2">
-                      <span className="font-montserrat font-bold text-white text-[10px] sm:text-xs md:text-sm bg-white/20 backdrop-blur-sm px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-white/30">
+                    <div className="absolute -bottom-6 sm:-bottom-7 md:-bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap mt-2">
+                      <span className="font-montserrat font-bold text-white text-[9px] sm:text-[10px] md:text-xs bg-white/20 backdrop-blur-sm px-2 sm:px-2.5 py-0.5 rounded-full border border-white/30">
                         Samenwerking
                       </span>
                     </div>
@@ -91,13 +78,13 @@ export default function SKOWFStrategicPartner() {
                 </div>
 
                 {/* De West-Friese Wereld Logo - Enhanced */}
-                <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 relative z-10 sm:flex-1">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-white/30 shadow-2xl">
-                    <div className="flex flex-col items-center gap-2 sm:gap-3">
-                      <div className="p-3 sm:p-4 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
-                        <BookOpen className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 text-white" strokeWidth="2.5" fill="none" />
+                <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 relative z-10 sm:flex-1 sm:max-w-[220px] md:max-w-[260px]">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-5 border-2 border-white/30 shadow-2xl">
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="p-2 sm:p-2.5 md:p-3 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
+                        <BookOpen className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 text-white" strokeWidth="2.5" fill="none" />
                       </div>
-                      <span className="text-white font-montserrat font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-center whitespace-nowrap tracking-wide drop-shadow-lg">
+                      <span className="text-white font-montserrat font-bold text-xs sm:text-sm md:text-base lg:text-lg text-center whitespace-nowrap tracking-wide drop-shadow-lg">
                         De West-Friese Wereld
                       </span>
                     </div>
