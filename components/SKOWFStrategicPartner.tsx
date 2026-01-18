@@ -46,10 +46,10 @@ export default function SKOWFStrategicPartner() {
               {/* Decorative connecting lines */}
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent hidden lg:block"></div>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-6 md:gap-10 lg:gap-16 w-full">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-6 md:gap-10 lg:gap-16 w-full max-w-6xl mx-auto">
                 {/* SKOWF Logo - Prominent Brand Display */}
-                <div className="flex items-center justify-center relative z-10 sm:flex-1">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-white/30 shadow-2xl">
+                <div className="flex items-center justify-center relative z-10 w-full sm:w-auto sm:flex-1 sm:min-w-[200px] md:min-w-[280px]">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-white/30 shadow-2xl w-full flex justify-center">
                     <div className="relative inline-flex items-center tracking-tight">
                       <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">S</span>
                       <span className="font-montserrat font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white leading-none drop-shadow-lg">K</span>
@@ -74,7 +74,7 @@ export default function SKOWFStrategicPartner() {
                 </div>
 
                 {/* Handshake Icon - Enhanced Partnership Symbol - Centered */}
-                <div className="flex items-center justify-center relative z-20 sm:flex-1">
+                <div className="flex items-center justify-center relative z-20 w-full sm:w-auto sm:flex-[0.8]">
                   <div className="relative">
                     {/* Glowing background effect */}
                     <div className="absolute inset-0 bg-white/30 rounded-full blur-xl animate-pulse"></div>
@@ -91,8 +91,8 @@ export default function SKOWFStrategicPartner() {
                 </div>
 
                 {/* De West-Friese Wereld Logo - Enhanced */}
-                <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 relative z-10 sm:flex-1">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-white/30 shadow-2xl">
+                <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 relative z-10 w-full sm:w-auto sm:flex-1 sm:min-w-[200px] md:min-w-[280px]">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-white/30 shadow-2xl w-full flex flex-col items-center">
                     <div className="flex flex-col items-center gap-2 sm:gap-3">
                       <div className="p-3 sm:p-4 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
                         <BookOpen className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 text-white" strokeWidth="2.5" fill="none" />
