@@ -12,7 +12,7 @@ interface DidacticRouteProps {
 
 export function DidacticRoute({ phases, title, focus, colorScheme }: DidacticRouteProps) {
   return (
-    <div className="mt-8 sm:mt-12">
+    <div className="mt-8 sm:mt-12" id="didactic-route">
       <div className="mb-4 sm:mb-6 px-2 sm:px-0">
         <h3 className={`font-serif text-xl sm:text-2xl font-bold ${colorScheme.text} mb-2`}>
           De didactische route
@@ -30,7 +30,7 @@ export function DidacticRoute({ phases, title, focus, colorScheme }: DidacticRou
           return (
             <Card 
               key={index} 
-              className={`border-l-4 ${colorScheme.border}`}
+              className={`border-l-4 ${colorScheme.border} min-h-[120px]`}
             >
               <CardContent className="p-5 sm:p-6 lg:p-8">
                 <div className="flex items-start gap-3 sm:gap-4">
