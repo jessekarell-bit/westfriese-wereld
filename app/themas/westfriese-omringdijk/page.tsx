@@ -71,63 +71,63 @@ export default function WaterWorldPage() {
       ]
     },
     middenbouw34: {
-      titel: 'De Jonge Plantendokter',
-      focus: 'Historisch besef (Nanne Groot), waarnemen en de basis van handel',
+      titel: 'Speuren naar Sporen',
+      focus: 'De dijkdoorbraak van 1675 en het verschil tussen zand en klei',
       fasen: [
         {
-          fase: 'Doel',
-          beschrijving: 'De leerlingen leren over de geschiedenis van Nanne Jansz. Groot (de grondlegger van de zaadhandel) en begrijpen wat een plant nodig heeft om gezond te blijven. Ze leren dat zaden verhandeld worden.',
+          fase: 'Doelbepaling',
+          beschrijving: 'De leerlingen ontdekken het verschil tussen zand en klei en begrijpen waarom de dijk bij Scharwoude in 1675 doorbrak. Ze leren dat wielen (diepe gaten) littekens zijn van dijkdoorbraken die we nog steeds in het landschap zien.',
           icon: Shield
         },
         {
-          fase: 'Narratief',
-          beschrijving: '"De Man met de Mand": Het verhaal van Nanne Groot die met zijn mand vol zakjes (\'builtjes\') door het land liep om zaden te verkopen na de \'Karwijstorm\'. De leerlingen worden hulpjes van de Plantendokter die een zieke plant beter moeten maken.',
+          fase: 'Narratieve Inbedding',
+          beschrijving: '"De Tijdmachine naar 1675": De klas stapt in een tijdmachine en reist terug naar de stormnacht van 5 november 1675 bij Scharwoude. De leerlingen horen de noodklokken luiden. De "Waterwolf" is boos en beukt tegen de dijk. Waarom breekt de dijk juist hier? Was hij niet sterk genoeg? De leerlingen ontdekken dat de dijk op sommige plekken te zwak was en dat het water diepe gaten (wielen) heeft geslagen die we nu nog steeds in het landschap zien als littekens.',
           icon: BookOpen
         },
         {
           fase: 'Activering',
-          beschrijving: 'Bezoek aan Sow to Grow: Een excursie naar het museum in Enkhuizen. Leerlingen doen een speurtocht naar de herkomst van voedsel en zien hoe zaden vroeger en nu werden bewaard.',
+          beschrijving: 'Excursie naar de dijk: Een bezoek aan een echte dijk in de omgeving om te kijken naar de structuur en materialen. Of een bezoek aan een wiel (overblijfsel van een dijkdoorbraak) om te zien hoe diep het water heeft geslagen.',
           icon: MapPin
         },
         {
           fase: 'Concretisering',
-          beschrijving: 'Onderzoek en Ambacht: Onderzoek: Het Groei-Laboratorium: experimenteren met variabelen (wel/geen licht, wel/geen water) en dit bijhouden in een logboek. Geschiedenis: Naspelen van de reis van Nanne Groot: zaden afwegen op een balansweegschaal en verpakken in zakjes. Techniek: Zelf een mini-kas bouwen van kosteloos materiaal om het broeikaseffect te testen.',
-          icon: Lightbulb
+          beschrijving: '"Het Grote Lek": In de zandtafel of waterbak bouwen de leerlingen het landschap van 1675 na. Ze maken een dijk van alleen zand en een dijk van klei. Ze simuleren de storm (golven maken). De ontdekking: De zanddijk spoelt direct weg (het \'wiel\' ontstaat), terwijl de kleidijk het water veel beter tegenhoudt omdat klei \'plakt\'. Ze markeren op hun eigen kaart waar het misging.',
+          icon: Search
         },
         {
           fase: 'Afsluiting',
-          beschrijving: 'De West-Friese Oogstmarkt: De klas wordt een marktplein. Leerlingen presenteren hun mini-kassen en verkopen hun gekweekte planten of zaden. Ze vertellen het verhaal van Nanne Groot aan het publiek.',
+          beschrijving: 'De Sporenkaart: Leerlingen presenteren hun zelfgemaakte kaart met de zwakke plekken in de dijk en leggen uit waarom de dijk op die plek doorbrak. Ze tonen hun experimenten met zand en klei aan ouders of een andere klas.',
           icon: Users
         }
       ]
     },
     middenbouw56: {
-      titel: 'High-Tech in de Polder',
-      focus: 'Technologie, klimaatbeheersing en fotosynthese',
+      titel: 'Ingenieurs van de Klei',
+      focus: 'De Paalwormcrisis van 1730 en technische innovatie',
       fasen: [
         {
-          fase: 'Doel',
-          beschrijving: 'De leerlingen begrijpen dat moderne landbouw technologie is. Ze leren over fotosynthese (planten als energiefabrieken) en hoe techniek (kassen, robots) de natuur een handje helpt.',
+          fase: 'Doelbepaling',
+          beschrijving: 'De leerlingen analyseren de Paalwormcrisis van 1730 en begrijpen waarom houten palen niet meer werkten. Ze leren over technische innovatie: de overstap van hout naar steen en aarde. Ze onderzoeken materiaaleigenschappen (doorlaatbaarheid en erosiebestendigheid) en het belang van een flauw talud (schuine helling) om golven te breken.',
           icon: Shield
         },
         {
-          fase: 'Narratief',
-          beschrijving: '"De Slimme Kas": De leerlingen worden ontwerpers. Er is een probleem: het klimaat verandert en we hebben een kas nodig die zelf kan \'denken\' (temperatuur regelen, water geven).',
+          fase: 'Narratieve Inbedding',
+          beschrijving: '"De Stille Vijand": Het is 1730. De dijken lijken sterk, want ze worden beschermd door dikke houten palen. Maar er is paniek bij de dijkgraaf! Een onzichtbare vijand, de paalworm (Teredo navalis), eet het hout van binnenuit op. De palen breken als luciferhoutjes. De leerlingen worden benoemd tot "Ingenieurs van de Klei". Zij moeten een nieuwe manier bedenken om het land te beschermen, nu het hout niet meer werkt. Ze moeten de overstap maken van hout naar steen en aarde.',
           icon: BookOpen
         },
         {
           fase: 'Activering',
-          beschrijving: 'Bedrijfsbezoek of Gastles: Een bezoek aan een modern veredelingsbedrijf (zoals Enza of Syngenta) om robots en klimaatkamers te zien, of een practicum in het lab van Sow to Grow.',
+          beschrijving: 'Excursie naar de dijk: Een bezoek aan een echte dijk om de constructie te bekijken (talud, materialen). Of een gastles van een dijkwerker/waterbouwkundige die uitlegt hoe moderne dijken worden gebouwd.',
           icon: MapPin
         },
         {
           fase: 'Concretisering',
-          beschrijving: 'Ontwerpend Leren: Techniek/Digitaal: Het ontwerpen van een \'Slimme Kas\'. Gebruik van sensoren (bijv. Micro:bit) om vocht of temperatuur te meten. Biologie: Proefjes met fotosynthese (blad afplakken om effect van licht te zien).',
+          beschrijving: '"Het Dijk-Laboratorium": Leerlingen voeren materiaalproeven uit om de perfecte \'nieuwe dijk\' te ontwerpen die de paalworm niet lust. Het Experiment: Ze testen in bakken de doorlaatbaarheid en erosiebestendigheid van drie materialen: zand, klei en steen/grind. Ze bouwen een dwarsdoorsnede van een dijk met een flauw talud (schuine helling) om de golven te breken, in plaats van een rechte muur.',
           icon: Search
         },
         {
           fase: 'Afsluiting',
-          beschrijving: 'De Techniek-Expo: Leerlingen presenteren hun ontwerpen voor de kas van de toekomst en demonstreren hun sensoren of irrigatiesystemen aan experts of ouders.',
+          beschrijving: 'Presentatie aan de Dijkgraaf: Leerlingen presenteren hun technische oplossing aan de \'Dijkgraaf\' (bijv. een gastspreker of leerkracht in rol). Ze tonen hun dijkmodellen en leggen uit waarom hun ontwerp beter is dan de oude houten palen.',
           icon: Users
         }
       ]
@@ -213,11 +213,11 @@ export default function WaterWorldPage() {
         <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              De Jonge Plantendokter
+              Speuren naar Sporen
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Historisch besef (Nanne Groot), waarnemen en de basis van handel</p>
+              <p className="text-gray-700">De dijkdoorbraak van 1675 en het verschil tussen zand en klei</p>
             </div>
           </div>
 
@@ -227,7 +227,7 @@ export default function WaterWorldPage() {
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              "De Man met de Mand": Het verhaal van Nanne Groot die met zijn mand vol zakjes ('builtjes') door het land liep om zaden te verkopen na de 'Karwijstorm'. De leerlingen worden hulpjes van de Plantendokter die een zieke plant beter moeten maken.
+              "De Tijdmachine naar 1675": De klas stapt in een tijdmachine en reist terug naar de stormnacht van 5 november 1675 bij Scharwoude. De leerlingen horen de noodklokken luiden. De "Waterwolf" is boos en beukt tegen de dijk. Waarom breekt de dijk juist hier? Was hij niet sterk genoeg? De leerlingen ontdekken dat de dijk op sommige plekken te zwak was en dat het water diepe gaten (wielen) heeft geslagen die we nu nog steeds in het landschap zien als littekens.
             </p>
           </div>
 
@@ -237,7 +237,7 @@ export default function WaterWorldPage() {
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>Het Groei-Laboratorium:</strong> Experimenteren met variabelen (wel/geen licht, wel/geen water). Naspelen van de reis van Nanne Groot: zaden afwegen en verpakken. Zelf een mini-kas bouwen om het broeikaseffect te testen.</p>
+              <p><strong>"Het Grote Lek":</strong> In de zandtafel of waterbak bouwen de leerlingen het landschap van 1675 na. Ze maken een dijk van alleen zand en een dijk van klei. Ze simuleren de storm (golven maken). De ontdekking: De zanddijk spoelt direct weg (het 'wiel' ontstaat), terwijl de kleidijk het water veel beter tegenhoudt omdat klei 'plakt'. Ze markeren op hun eigen kaart waar het misging.</p>
             </div>
           </div>
         </div>
@@ -251,11 +251,11 @@ export default function WaterWorldPage() {
         <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              High-Tech in de Polder
+              Ingenieurs van de Klei
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Technologie, klimaatbeheersing en fotosynthese</p>
+              <p className="text-gray-700">De Paalwormcrisis van 1730 en technische innovatie</p>
             </div>
           </div>
 
@@ -265,7 +265,7 @@ export default function WaterWorldPage() {
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              "De Slimme Kas": De leerlingen worden ontwerpers. Er is een probleem: het klimaat verandert en we hebben een kas nodig die zelf kan 'denken' (temperatuur regelen, water geven).
+              "De Stille Vijand": Het is 1730. De dijken lijken sterk, want ze worden beschermd door dikke houten palen. Maar er is paniek bij de dijkgraaf! Een onzichtbare vijand, de paalworm (Teredo navalis), eet het hout van binnenuit op. De palen breken als luciferhoutjes. De leerlingen worden benoemd tot "Ingenieurs van de Klei". Zij moeten een nieuwe manier bedenken om het land te beschermen, nu het hout niet meer werkt. Ze moeten de overstap maken van hout naar steen en aarde.
             </p>
           </div>
 
@@ -275,7 +275,7 @@ export default function WaterWorldPage() {
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>Ontwerpend Leren:</strong> Het ontwerpen van een 'Slimme Kas' met sensoren (Micro:bit) om vocht of temperatuur te meten. Proefjes met fotosynthese (blad afplakken om effect van licht te zien).</p>
+              <p><strong>"Het Dijk-Laboratorium":</strong> Leerlingen voeren materiaalproeven uit om de perfecte 'nieuwe dijk' te ontwerpen die de paalworm niet lust. Het Experiment: Ze testen in bakken de doorlaatbaarheid en erosiebestendigheid van drie materialen: zand, klei en steen/grind. Ze bouwen een dwarsdoorsnede van een dijk met een flauw talud (schuine helling) om de golven te breken, in plaats van een rechte muur. Ze presenteren hun technische oplossing aan de 'Dijkgraaf'.</p>
             </div>
           </div>
         </div>

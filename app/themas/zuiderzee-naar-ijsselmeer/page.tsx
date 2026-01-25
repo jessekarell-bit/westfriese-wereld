@@ -71,63 +71,63 @@ export default function ZuiderzeePage() {
       ]
     },
     middenbouw34: {
-      titel: 'De Afsluitdijk',
-      focus: 'Cornelis Lely, Constructie & Eb/Vloed',
+      titel: 'De Muur in de Zee',
+      focus: 'Observatie, het verschil tussen zout/zoet en de sociale verandering',
       fasen: [
         {
-          fase: 'Verwondering',
-          beschrijving: 'Proef het verschil! (Zout water vs. Zoet water experiment).',
+          fase: 'Doelbepaling',
+          beschrijving: 'De leerlingen ontdekken het fysieke verschil tussen zout (zee) en zoet (meer) water en begrijpen dat de afsluiting in 1932 grote gevolgen had voor de mensen die er woonden (vissers vs. boeren). Ze leren navigeren op een kaart van "Toen" en "Nu".',
           icon: Shield
         },
         {
-          fase: 'Historie',
-          beschrijving: 'De watersnood van 1916 en het gedurfde plan van Lely.',
+          fase: 'Narratieve Inbedding',
+          beschrijving: '"De Muur in de Zee": Het verhaal wordt verteld vanuit twee kinderen in 1932: een visserszoon uit Enkhuizen (die bang is dat de vis verdwijnt) en een boerendochter uit de Wieringermeer (die blij is met het nieuwe land). De leerlingen beleven de verwarring: de zee wordt ineens een meer.',
           icon: BookOpen
         },
         {
-          fase: 'Ervaring',
-          beschrijving: 'Excursie naar het Zuiderzeemuseum (Enkhuizen) of het Vlietermonument (Afsluitdijk).',
+          fase: 'Activering',
+          beschrijving: 'Het Waterlab: In de klas staan twee bakken water (zout en zoet). De leerlingen doen een drijfproef met een ei (in zout water drijft het, in zoet zinkt het). Excursie: Bezoek aan het Zuiderzeemuseum met focus op de oude vissershuisjes en het leven van vóór de dijk.',
           icon: MapPin
         },
         {
-          fase: 'Onderzoek',
-          beschrijving: 'Bouw je eigen dijk: In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?',
+          fase: 'Concretisering',
+          beschrijving: 'Spel van Verandering: Onderzoek: Proefje met planten: wat gebeurt er als je een plant zout water geeft? (Hij gaat dood -> daarom was de Afsluitdijk nodig voor de boeren). Maken: Het bouwen van een Tijdlijn in de klas: Plaatjes van botters (vroeger) en tractoren (nu) op de juiste plek plakken. Rol: Rollenspel in de klas: de Visser tegen de Boer.',
           icon: Search
         },
         {
-          fase: 'Presentatie',
-          beschrijving: 'De Toekomst van het IJsselmeer: Leerlingen ontwerpen drijvende huizen.',
+          fase: 'Afsluiting',
+          beschrijving: 'Het Toneelstuk: De leerlingen voeren een kort toneelstuk of tableau vivant op voor ouders of een andere klas, waarin ze laten zien hoe de vissers afscheid namen van de zee en de boeren het nieuwe land verwelkomden.',
           icon: Users
         }
       ]
     },
     middenbouw56: {
-      titel: 'De Afsluitdijk',
-      focus: 'Cornelis Lely, Constructie & Eb/Vloed',
+      titel: 'De Ecologische Metamorfose',
+      focus: 'Systeemdenken, biologie (osmose/voedselketens) en watertechniek',
       fasen: [
         {
-          fase: 'Verwondering',
-          beschrijving: 'Proef het verschil! (Zout water vs. Zoet water experiment).',
+          fase: 'Doelbepaling',
+          beschrijving: 'De leerlingen analyseren de afsluiting als een ecologische schok. Ze leren over voedselketens (waarom verdween de haring?), het biologische principe van osmose (waarom overleeft een zeevis niet in zoet water?) en de techniek van water wegpompen.',
           icon: Shield
         },
         {
-          fase: 'Historie',
-          beschrijving: 'De watersnood van 1916 en het gedurfde plan van Lely.',
+          fase: 'Narratieve Inbedding',
+          beschrijving: '"Het Raadsel van de Verdwenen Haring": De leerlingen volgen Klaas, een jongen in 1933. Zijn vader komt thuis met lege netten. De haring is weg, maar er verschijnen vreemde glibberige dieren (palingen). De leerlingen fungeren als "Natuurdetectives" die moeten uitzoeken waarom de natuur in de war is.',
           icon: BookOpen
         },
         {
-          fase: 'Ervaring',
-          beschrijving: 'Excursie naar het Zuiderzeemuseum (Enkhuizen) of het Vlietermonument (Afsluitdijk).',
+          fase: 'Activering',
+          beschrijving: 'Watertoppers: Deelname aan het programma Watertoppers in het Zuiderzeemuseum. Hier ervaren ze fysiek hoe zwaar het is om water te verplaatsen met een vijzel en bouwen ze dijken. Ze zien de technische kant van de strijd tegen het water.',
           icon: MapPin
         },
         {
-          fase: 'Onderzoek',
-          beschrijving: 'Bouw je eigen dijk: In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?',
+          fase: 'Concretisering',
+          beschrijving: 'Het Laboratorium: Biologie: Osmose-proef: Een stukje komkommer in zout water leggen (wordt slap) vs. zoet water (blijft stevig). Dit verklaart waarom zeevissen uitdrogen in zoet water. Data: Grafieken maken van de visvangst in Enkhuizen (de kelderende lijn van de haring na 1932). Ecologie: Het reconstrueren van de voedselketen: van haring/bruinvis (toen) naar muggenlarve/snoekbaars (nu).',
           icon: Search
         },
         {
-          fase: 'Presentatie',
-          beschrijving: 'De Toekomst van het IJsselmeer: Leerlingen ontwerpen drijvende huizen.',
+          fase: 'Afsluiting',
+          beschrijving: 'Het Natuurbeheersplan: De klas wordt een adviesbureau. Ze ontwerpen een maquette of poster voor een nieuw stukje IJsselmeer (geïnspireerd op de Marker Wadden of Vismigratierivier) waar ruimte is voor zowel natuur als recreatie. Ze presenteren dit aan een "Dijkgraaf".',
           icon: Users
         }
       ]
@@ -213,11 +213,11 @@ export default function ZuiderzeePage() {
         <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              De Afsluitdijk
+              De Muur in de Zee
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Cornelis Lely, Constructie & Eb/Vloed</p>
+              <p className="text-gray-700">Observatie, het verschil tussen zout/zoet en de sociale verandering</p>
             </div>
           </div>
 
@@ -227,7 +227,7 @@ export default function ZuiderzeePage() {
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Bouw je eigen dijk: In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?
+              "De Muur in de Zee": Het verhaal wordt verteld vanuit twee kinderen in 1932: een visserszoon uit Enkhuizen (die bang is dat de vis verdwijnt) en een boerendochter uit de Wieringermeer (die blij is met het nieuwe land). De leerlingen beleven de verwarring: de zee wordt ineens een meer.
             </p>
           </div>
 
@@ -237,7 +237,8 @@ export default function ZuiderzeePage() {
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>Bouw je eigen dijk:</strong> In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?</p>
+              <p><strong>Het Waterlab:</strong> In de klas staan twee bakken water (zout en zoet). De leerlingen doen een drijfproef met een ei (in zout water drijft het, in zoet zinkt het).</p>
+              <p><strong>Spel van Verandering:</strong> Rollenspel in de klas: de Visser tegen de Boer.</p>
             </div>
           </div>
         </div>
@@ -251,11 +252,11 @@ export default function ZuiderzeePage() {
         <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              De Afsluitdijk
+              De Ecologische Metamorfose
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Cornelis Lely, Constructie & Eb/Vloed</p>
+              <p className="text-gray-700">Systeemdenken, biologie (osmose/voedselketens) en watertechniek</p>
             </div>
           </div>
 
@@ -265,7 +266,7 @@ export default function ZuiderzeePage() {
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Bouw je eigen dijk: In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?
+              "Het Raadsel van de Verdwenen Haring": De leerlingen volgen Klaas, een jongen in 1933. Zijn vader komt thuis met lege netten. De haring is weg, maar er verschijnen vreemde glibberige dieren (palingen). De leerlingen fungeren als "Natuurdetectives" die moeten uitzoeken waarom de natuur in de war is.
             </p>
           </div>
 
@@ -275,7 +276,8 @@ export default function ZuiderzeePage() {
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>Bouw je eigen dijk:</strong> In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?</p>
+              <p><strong>Watertoppers:</strong> Deelname aan het programma Watertoppers in het Zuiderzeemuseum. Hier ervaren ze fysiek hoe zwaar het is om water te verplaatsen met een vijzel en bouwen ze dijken.</p>
+              <p><strong>Het Laboratorium:</strong> Osmose-proef met komkommer, grafieken maken van visvangst, en voedselketen reconstrueren.</p>
             </div>
           </div>
         </div>
