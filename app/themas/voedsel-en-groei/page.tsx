@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Tabs from '@/components/Tabs'
@@ -169,7 +169,7 @@ export default function VoedselEnGroeiPage() {
       label: 'Onderbouw',
       subtitle: 'Groep 1-2',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-lime-700 mb-3">
               Het Wonderlijke Zaadje
@@ -207,7 +207,7 @@ export default function VoedselEnGroeiPage() {
       label: 'Middenbouw',
       subtitle: 'Groep 3-4',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-lime-700 mb-3">
               De Jonge Plantendokter
@@ -245,7 +245,7 @@ export default function VoedselEnGroeiPage() {
       label: 'Middenbouw',
       subtitle: 'Groep 5-6',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-lime-700 mb-3">
               High-Tech in de Polder
@@ -283,7 +283,7 @@ export default function VoedselEnGroeiPage() {
       label: 'Bovenbouw',
       subtitle: 'Groep 7-8',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-lime-700 mb-3">
               Architecten van het Voedsel
@@ -319,9 +319,34 @@ export default function VoedselEnGroeiPage() {
   ]
 
   // Handler voor tab wijziging
+  // Herstel scroll positie na content update
+  useEffect(() => {
+    if (scrollPositionRef.current > 0) {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          const didacticRouteElement = didacticRouteRef.current
+          if (didacticRouteElement) {
+            const currentTop = didacticRouteElement.getBoundingClientRect().top + window.scrollY
+            const difference = currentTop - scrollPositionRef.current
+            if (Math.abs(difference) > 5) {
+              window.scrollTo({
+                top: window.scrollY - difference,
+                behavior: 'instant'
+              })
+            }
+          }
+        })
+      })
+    }
+  }, [selectedBouw])
+
   const handleTabChange = (tabId: string) => {
+    const didacticRouteElement = didacticRouteRef.current
+    if (didacticRouteElement) {
+      scrollPositionRef.current = didacticRouteElement.getBoundingClientRect().top + window.scrollY
+    }
+    
     setActiveTab(tabId)
-    // Update selectedBouw op basis van de geselecteerde tab
     if (tabId === 'onderbouw') {
       setSelectedBouw('onderbouw')
     } else if (tabId === 'middenbouw34') {
@@ -414,12 +439,14 @@ export default function VoedselEnGroeiPage() {
               />
 
               {/* 5-Fasen Verticale Lijst */}
-              <DidacticRoute
-                phases={activeRoute.fasen}
-                title={activeRoute.titel}
-                focus={activeRoute.focus}
-                colorScheme={colorScheme}
-              />
+              <div ref={didacticRouteRef}>
+                <DidacticRoute
+                  phases={activeRoute.fasen}
+                  title={activeRoute.titel}
+                  focus={activeRoute.focus}
+                  colorScheme={colorScheme}
+                />
+              </div>
             </div>
 
             {/* Sidebar - 30% */}

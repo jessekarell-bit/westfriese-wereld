@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Tabs from '@/components/Tabs'
@@ -322,9 +322,34 @@ export default function KasteelRadboudPage() {
   ]
 
   // Handler voor tab wijziging
+  // Herstel scroll positie na content update
+  useEffect(() => {
+    if (scrollPositionRef.current > 0) {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          const didacticRouteElement = didacticRouteRef.current
+          if (didacticRouteElement) {
+            const currentTop = didacticRouteElement.getBoundingClientRect().top + window.scrollY
+            const difference = currentTop - scrollPositionRef.current
+            if (Math.abs(difference) > 5) {
+              window.scrollTo({
+                top: window.scrollY - difference,
+                behavior: 'instant'
+              })
+            }
+          }
+        })
+      })
+    }
+  }, [selectedBouw])
+
   const handleTabChange = (tabId: string) => {
+    const didacticRouteElement = didacticRouteRef.current
+    if (didacticRouteElement) {
+      scrollPositionRef.current = didacticRouteElement.getBoundingClientRect().top + window.scrollY
+    }
+    
     setActiveTab(tabId)
-    // Update selectedBouw op basis van de geselecteerde tab
     if (tabId === 'onderbouw') {
       setSelectedBouw('onderbouw')
     } else if (tabId === 'middenbouw34') {
@@ -416,12 +441,14 @@ export default function KasteelRadboudPage() {
               />
 
               {/* 5-Fasen Verticale Lijst */}
-              <DidacticRoute
-                phases={activeRoute.fasen}
-                title={activeRoute.titel}
-                focus={activeRoute.focus}
-                colorScheme={colorScheme}
-              />
+              <div ref={didacticRouteRef}>
+                <DidacticRoute
+                  phases={activeRoute.fasen}
+                  title={activeRoute.titel}
+                  focus={activeRoute.focus}
+                  colorScheme={colorScheme}
+                />
+              </div>
             </div>
 
             {/* Sidebar - 30% */}

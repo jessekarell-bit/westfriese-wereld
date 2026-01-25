@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import PhaseIndicator from '@/components/PhaseIndicator'
@@ -36,6 +36,8 @@ export default function WaterWorldPage() {
   // State voor geselecteerde tab en route
   const [activeTab, setActiveTab] = useState('onderbouw')
   const [selectedBouw, setSelectedBouw] = useState<'onderbouw' | 'middenbouw34' | 'middenbouw56' | 'bovenbouw'>('onderbouw')
+  const didacticRouteRef = useRef<HTMLDivElement>(null)
+  const scrollPositionRef = useRef<number>(0)
 
   // Routes per bouw
   const routes = {
@@ -172,7 +174,7 @@ export default function WaterWorldPage() {
       label: 'Onderbouw',
       subtitle: 'Groep 1-2',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
               Het Wonderlijke Zaadje
@@ -210,7 +212,7 @@ export default function WaterWorldPage() {
       label: 'Middenbouw',
       subtitle: 'Groep 3-4',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
               Speuren naar Sporen
@@ -248,7 +250,7 @@ export default function WaterWorldPage() {
       label: 'Middenbouw',
       subtitle: 'Groep 5-6',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
               Ingenieurs van de Klei
@@ -286,7 +288,7 @@ export default function WaterWorldPage() {
       label: 'Bovenbouw',
       subtitle: 'Groep 7-8',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
               Architecten van het Voedsel
@@ -321,8 +323,36 @@ export default function WaterWorldPage() {
     }
   ]
 
+  // Herstel scroll positie na content update
+  useEffect(() => {
+    if (scrollPositionRef.current > 0) {
+      // Gebruik dubbele requestAnimationFrame om te wachten tot de DOM volledig is bijgewerkt
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          const didacticRouteElement = didacticRouteRef.current
+          if (didacticRouteElement) {
+            const currentTop = didacticRouteElement.getBoundingClientRect().top + window.scrollY
+            const difference = currentTop - scrollPositionRef.current
+            if (Math.abs(difference) > 5) { // Corrigeren als het verschil significant is
+              window.scrollTo({
+                top: window.scrollY - difference,
+                behavior: 'instant'
+              })
+            }
+          }
+        })
+      })
+    }
+  }, [selectedBouw])
+
   // Handler voor tab wijziging
   const handleTabChange = (tabId: string) => {
+    // Sla de huidige scroll positie op relatief tot de didactic route
+    const didacticRouteElement = didacticRouteRef.current
+    if (didacticRouteElement) {
+      scrollPositionRef.current = didacticRouteElement.getBoundingClientRect().top + window.scrollY
+    }
+    
     setActiveTab(tabId)
     // Update selectedBouw op basis van de geselecteerde tab
     if (tabId === 'onderbouw') {
@@ -418,12 +448,14 @@ export default function WaterWorldPage() {
               />
 
               {/* 5-Fasen Verticale Lijst */}
-              <DidacticRoute
-                phases={activeRoute.fasen}
-                title={activeRoute.titel}
-                focus={activeRoute.focus}
-                colorScheme={colorScheme}
-              />
+              <div ref={didacticRouteRef}>
+                <DidacticRoute
+                  phases={activeRoute.fasen}
+                  title={activeRoute.titel}
+                  focus={activeRoute.focus}
+                  colorScheme={colorScheme}
+                />
+              </div>
             </div>
 
             {/* Sidebar - 30% */}

@@ -174,7 +174,7 @@ export default function ZuiderzeePage() {
       label: 'Onderbouw',
       subtitle: 'Groep 1-2',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
               Vissen & Boten
@@ -212,7 +212,7 @@ export default function ZuiderzeePage() {
       label: 'Middenbouw',
       subtitle: 'Groep 3-4',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
               De Muur in de Zee
@@ -251,7 +251,7 @@ export default function ZuiderzeePage() {
       label: 'Middenbouw',
       subtitle: 'Groep 5-6',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
               De Ecologische Metamorfose
@@ -290,7 +290,7 @@ export default function ZuiderzeePage() {
       label: 'Bovenbouw',
       subtitle: 'Groep 7-8',
       content: (
-        <div className="space-y-6">
+        <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
               Ecologie & Economie
@@ -328,19 +328,21 @@ export default function ZuiderzeePage() {
   // Herstel scroll positie na content update
   useEffect(() => {
     if (scrollPositionRef.current > 0) {
-      // Gebruik requestAnimationFrame om te wachten tot de DOM is bijgewerkt
+      // Gebruik dubbele requestAnimationFrame om te wachten tot de DOM volledig is bijgewerkt
       requestAnimationFrame(() => {
-        const didacticRouteElement = didacticRouteRef.current
-        if (didacticRouteElement) {
-          const currentTop = didacticRouteElement.getBoundingClientRect().top + window.scrollY
-          const difference = currentTop - scrollPositionRef.current
-          if (Math.abs(difference) > 10) { // Alleen corrigeren als het verschil significant is
-            window.scrollTo({
-              top: window.scrollY - difference,
-              behavior: 'instant'
-            })
+        requestAnimationFrame(() => {
+          const didacticRouteElement = didacticRouteRef.current
+          if (didacticRouteElement) {
+            const currentTop = didacticRouteElement.getBoundingClientRect().top + window.scrollY
+            const difference = currentTop - scrollPositionRef.current
+            if (Math.abs(difference) > 5) { // Corrigeren als het verschil significant is
+              window.scrollTo({
+                top: window.scrollY - difference,
+                behavior: 'instant'
+              })
+            }
           }
-        }
+        })
       })
     }
   }, [selectedBouw])

@@ -61,7 +61,7 @@ export function ThemeTabs({
           ))}
         </nav>
       </div>
-      <div className="min-h-[300px] sm:min-h-[400px]">
+      <div className="min-h-[400px] sm:min-h-[500px]">
         {activeTabContent}
       </div>
     </div>
