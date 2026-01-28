@@ -135,32 +135,32 @@ export default function WaterWorldPage() {
       ]
     },
     bovenbouw: {
-      titel: 'Architecten van het Voedsel',
-      focus: 'Genetica (DNA), Ethiek en Wereldvoedselvoorziening',
+      titel: 'Vechten of Meebewegen?',
+      focus: 'Klimaatscenario’s 2050: dijkverhoging, ruimte voor water en morele keuzes',
       fasen: [
         {
-          fase: 'Doel',
-          beschrijving: 'De leerlingen analyseren de rol van West-Friesland (Seed Valley) in de wereld. Ze leren over erfelijkheid (Mendel, DNA), veredeling en debatteren over ethische dilemma\'s (GMO, patenten).',
+          fase: 'Doelbepaling',
+          beschrijving: 'De leerlingen onderzoeken of de huidige dijk in 2050 nog veilig genoeg is bij stijgende zeespiegel en piekbuien. Ze leren dat keuzes over dijkverhoging of ruimte maken voor water altijd gevolgen hebben voor bewoners, natuur en economie.',
           icon: Shield
         },
         {
-          fase: 'Narratief',
-          beschrijving: '"Het Future Food Team": Een scenario vanuit het jaar 2050. De wereldbevolking groeit, het klimaat is extreem. De leerlingen krijgen de opdracht om een \'Supergewas\' te ontwikkelen dat de wereld kan voeden.',
+          fase: 'Narratieve Inbedding',
+          beschrijving: '"Vechten of Meebewegen?": De klas functioneert als een Raad van Advies voor het waterschap of het Toekomstteam West-Friesland. Ze worden geconfronteerd met klimaatscenario’s voor het jaar 2050 (stijgende zeespiegel, piekbuien). De centrale vraag is: Is de huidige dijk hoog genoeg, of moeten we ruimte maken voor water door bijvoorbeeld polders onder water te laten lopen?',
           icon: BookOpen
         },
         {
           fase: 'Activering',
-          beschrijving: 'Lab-Experience: Een verdiepend bezoek aan Sow to Grow of een gastles van een veredelaar waarbij DNA zichtbaar wordt gemaakt (bijv. uit een kiwi of banaan). Of de inzet van de Plant Rover in de klas.',
+          beschrijving: 'Kennismaking met echte dijk- en klimaatscenario’s via kaarten, video’s en een gastles of korte reportage over het werk van het waterschap en de gevolgen van extreem weer in West-Friesland.',
           icon: MapPin
         },
         {
           fase: 'Concretisering',
-          beschrijving: 'Wetenschap en Ethiek: Onderzoek: Simulatie van kruisingen (Mendel) om te zien hoe eigenschappen worden doorgegeven. Burgerschap: Het Grote GGO-Debat: "Mag je sleutelen aan de natuur om honger op te lossen?". Ontwerp: Het ontwerpen van het \'Supergewas\' met specifieke eigenschappen (bijv. zouttolerant).',
+          beschrijving: '"De Calamiteitenpolder": Simulatie en debat over een noodsituatie. Stel: de stad Hoorn dreigt te overstromen en de enige redding is het doorsteken van een dijk naar een dunbevolkte polder (een calamiteitenpolder). Mag je de boerderijen daar opofferen om de stad te redden (solidariteit versus eigendom)? Onderzoek met GIS-data (bijvoorbeeld EduGIS) naar overstromingsrisico’s in de eigen regio.',
           icon: Gavel
         },
         {
           fase: 'Afsluiting',
-          beschrijving: 'Het Wereldvoedselcongres: Een formele conferentie waar leerlingen hun \'Supergewas\' pitchen aan een jury en hun visie geven op de voedseltoekomst.',
+          beschrijving: 'Eindproduct: een formeel Adviesrapport "Visie 2050" aan het Hoogheemraadschap of de gemeente, waarin leerlingen hun voorstel onderbouwen en aangeven wanneer je moet vechten tegen het water en wanneer je beter met het water kunt meebewegen.',
           icon: Users
         }
       ]
@@ -291,11 +291,11 @@ export default function WaterWorldPage() {
         <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              Architecten van het Voedsel
+              Vechten of Meebewegen?
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Genetica (DNA), Ethiek en Wereldvoedselvoorziening</p>
+              <p className="text-gray-700">Klimaatscenario’s 2050: dijkverhoging, ruimte voor water en morele keuzes</p>
             </div>
           </div>
 
@@ -305,7 +305,7 @@ export default function WaterWorldPage() {
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              "Het Future Food Team": Een scenario vanuit het jaar 2050. De wereldbevolking groeit, het klimaat is extreem. De leerlingen krijgen de opdracht om een 'Supergewas' te ontwikkelen dat de wereld kan voeden.
+              "Vechten of Meebewegen?": De klas functioneert als een Raad van Advies voor het waterschap of het Toekomstteam West-Friesland. Ze krijgen klimaatscenario’s voor het jaar 2050 voorgeschoteld (stijgende zeespiegel, piekbuien) en onderzoeken of de huidige dijk hoog genoeg is of dat er ruimte gemaakt moet worden voor water, bijvoorbeeld door polders gecontroleerd onder water te laten lopen.
             </p>
           </div>
 
@@ -315,7 +315,9 @@ export default function WaterWorldPage() {
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>Wetenschap en Ethiek:</strong> Simulatie van kruisingen (Mendel). Het Grote GGO-Debat: "Mag je sleutelen aan de natuur om honger op te lossen?". Het ontwerpen van het 'Supergewas' met specifieke eigenschappen.</p>
+              <p><strong>"De Calamiteitenpolder":</strong> Simulatie en debat over een noodsituatie. Stel: de stad Hoorn dreigt te overstromen en de enige redding is het doorsteken van een dijk naar een dunbevolkte polder (een calamiteitenpolder). Mag je de boerderijen daar opofferen om de stad te redden (solidariteit versus eigendom)? Leerlingen onderbouwen hun standpunt met argumenten en lokale voorbeelden.</p>
+              <p><strong>Onderzoek met GIS-data:</strong> Leerlingen gebruiken bijvoorbeeld EduGIS of kaartmateriaal om risicoanalyses te maken van mogelijke overstromingsscenario’s in hun eigen regio en leggen verbanden met echte beleidskeuzes.</p>
+              <p><strong>Eindproduct:</strong> Het schrijven van een formeel Adviesrapport "Visie 2050" aan het Hoogheemraadschap of de gemeente, waarin zij hun voorkeursstrategie presenteren en verantwoorden.</p>
             </div>
           </div>
         </div>
