@@ -42,32 +42,32 @@ export default function WaterWorldPage() {
   // Routes per bouw
   const routes = {
     onderbouw: {
-      titel: 'Het Wonderlijke Zaadje',
-      focus: 'Verwondering, verzorging en de cyclus van groei',
+      titel: 'De Waterwolf en de Reus',
+      focus: 'Mythische verbeelding van waterveiligheid: de dijk als beschermer tegen het water',
       fasen: [
         {
           fase: 'Doel',
-          beschrijving: 'De leerlingen ontdekken dat een \'dood\' zaadje een levende plant wordt als je er goed voor zorgt (licht, water, aarde). Ze maken kennis met de kassen in hun omgeving als \'glazen paleizen\' waar planten wonen.',
+          beschrijving: 'De leerlingen ervaren op een speelse en veilige manier dat de dijk hen beschermt tegen het water. Ze ontdekken het verschil tussen zand en klei en zien dat sommige materialen beter werken om water tegen te houden dan andere.',
           icon: Shield
         },
         {
           fase: 'Narratief',
-          beschrijving: '"Het Geheim van het Kleine Zakje": De klas vindt een mysterieuze kist met \'toverbolletjes\' (zaden) en een brief van Kasper de Tuinder (of de Plantendokter). Hij vraagt de kinderen om op zijn kostbare zaden te passen en ze wakker te maken.',
+          beschrijving: '"De Waterwolf" (of: De Reus die het water tegenhoudt): Het abstracte concept van waterveiligheid wordt vertaald naar een mythisch verhaal. De zee wordt gepersonifieerd als de \'Waterwolf\', een hongerig beest dat happen uit het land wil nemen (\"het land opeten\"). De dijk is de grote, sterke beschermer (de Reus of de Muur) die ervoor zorgt dat de wolf niet binnen kan komen en dat de voeten droog blijven.',
           icon: BookOpen
         },
         {
           fase: 'Activering',
-          beschrijving: 'Expeditie Seed Valley: Een wandeling in de buurt om te kijken naar de grote kassen en akkers. De kinderen zetten een \'toverbril\' op om te zoeken naar dingen die groeien. Of een bezoek aan een lokale schooltuin/volkstuin.',
+          beschrijving: 'Introductiespel met handpoppen of verkleedkleren: één leerling speelt de Waterwolf, een ander de Reus/Dijk. De rest van de klas speelt bewoners achter de dijk. Zo wordt het verhaal fysiek en herkenbaar.',
           icon: MapPin
         },
         {
           fase: 'Concretisering',
-          beschrijving: 'Het Grote Groei-Experiment: Biologie: Bonen planten in doorzichtige potten om de wortels te zien groeien. Spel: De huishoek wordt een Tuincentrum/Groentewinkel waar zaden en bloemen worden verkocht. Techniek: Bouwen van een kas met blokken en doorzichtig plastic in de bouwhoek.',
+          beschrijving: 'Sensopathisch spel in de zand- en watertafel: kinderen bouwen dijken van zand en van klei. Ze ontdekken dat een dijk van zand direct wegspoelt als het water komt, terwijl klei \'plakt\' en het water veel beter tegenhoudt. In de bouwhoek bootsen ze het landschap na met blokken en blauwe doeken (water) en bouwen ze een veilige plek achter de dijk.',
           icon: Sprout
         },
         {
           fase: 'Afsluiting',
-          beschrijving: 'Het Oogstfeest: Ouders komen op bezoek in de \'Tuin van de Klas\'. De kinderen verkopen hun zelfgekweekte stekjes of tuinkers-beschuitjes en laten hun groei-dagboek zien.',
+          beschrijving: 'Kringmoment: samen het verhaal van de Waterwolf naspelen en benoemen wat de dijk doet. De kinderen laten hun dijken in de zand- en watertafel zien en vertellen welk materiaal het beste werkte.',
           icon: Users
         }
       ]
@@ -177,11 +177,11 @@ export default function WaterWorldPage() {
         <div className="space-y-6 min-h-[400px]">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              Het Wonderlijke Zaadje
+              De Waterwolf en de Reus
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Verwondering, verzorging en de cyclus van groei</p>
+              <p className="text-gray-700">Mythische verbeelding van waterveiligheid: de dijk als beschermer tegen het water</p>
             </div>
           </div>
 
@@ -191,7 +191,7 @@ export default function WaterWorldPage() {
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              "Het Geheim van het Kleine Zakje": De klas vindt een mysterieuze kist met 'toverbolletjes' (zaden) en een brief van Kasper de Tuinder (of de Plantendokter). Hij vraagt de kinderen om op zijn kostbare zaden te passen en ze wakker te maken.
+              "De Waterwolf" (of: De Reus die het water tegenhoudt): De zee wordt een hongerige Waterwolf die happen uit het land wil nemen. De dijk is de sterke Reus of Muur die de wolf tegenhoudt en de voeten van de kinderen droog houdt. Zo wordt waterveiligheid een spannend maar veilig verhaal.
             </p>
           </div>
 
@@ -201,7 +201,8 @@ export default function WaterWorldPage() {
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>Het Grote Groei-Experiment:</strong> Bonen planten in doorzichtige potten om de wortels te zien groeien. De huishoek wordt een Tuincentrum/Groentewinkel. Bouwen van een kas met blokken en doorzichtig plastic.</p>
+              <p><strong>Sensopathisch spel in de zand- en watertafel:</strong> Kinderen bouwen dijken van zand en van klei. Ze zien dat een zanddijk snel wegspoelt als het water komt, terwijl klei \'plakt\' en het water beter tegenhoudt.</p>
+              <p><strong>Constructie in de bouwhoek:</strong> Met blokken en blauwe doeken (water) bouwen ze een landschap met een dijk en een veilige plek achter de dijk.</p>
             </div>
           </div>
         </div>
