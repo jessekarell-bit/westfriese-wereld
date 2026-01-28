@@ -162,7 +162,7 @@ export default function DidactiekPage() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-white to-gray-50 py-24 px-4 sm:px-6 lg:px-8">
+        <section className="bg-gradient-to-b from-white to-gray-50 py-8 sm:py-12 md:py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-deep-water-blue mb-6 leading-tight">
               Onderwijs met de voeten in de klei en de blik op de wereld

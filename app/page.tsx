@@ -93,7 +93,7 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-b from-white to-gray-50 py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="relative bg-gradient-to-b from-white to-gray-50 py-8 sm:py-12 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
           {/* Subtle globe element in background */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
             <div className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-full border-4 border-deep-water-blue/20" style={{

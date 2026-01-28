@@ -45,7 +45,7 @@ export default function PartnersPage() {
         <SKOWFStrategicPartner />
 
         {/* Hero Section */}
-        <section className="bg-slate-50 py-24 px-4 sm:px-6 lg:px-8">
+        <section className="bg-slate-50 py-8 sm:py-12 md:py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-deep-water-blue mb-6 leading-tight">
               Bouw mee aan De West-Friese Wereld

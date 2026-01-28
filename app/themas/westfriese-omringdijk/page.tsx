@@ -37,7 +37,6 @@ export default function WaterWorldPage() {
   const [activeTab, setActiveTab] = useState('onderbouw')
   const [selectedBouw, setSelectedBouw] = useState<'onderbouw' | 'middenbouw34' | 'middenbouw56' | 'bovenbouw'>('onderbouw')
   const didacticRouteRef = useRef<HTMLDivElement>(null)
-  const scrollPositionRef = useRef<number>(0)
 
   // Routes per bouw
   const routes = {
@@ -326,36 +325,8 @@ export default function WaterWorldPage() {
     }
   ]
 
-  // Herstel scroll positie na content update
-  useEffect(() => {
-    if (scrollPositionRef.current > 0) {
-      // Gebruik dubbele requestAnimationFrame om te wachten tot de DOM volledig is bijgewerkt
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          const didacticRouteElement = didacticRouteRef.current
-          if (didacticRouteElement) {
-            const currentTop = didacticRouteElement.getBoundingClientRect().top + window.scrollY
-            const difference = currentTop - scrollPositionRef.current
-            if (Math.abs(difference) > 5) { // Corrigeren als het verschil significant is
-              window.scrollTo({
-                top: window.scrollY - difference,
-                behavior: 'instant'
-              })
-            }
-          }
-        })
-      })
-    }
-  }, [selectedBouw])
-
   // Handler voor tab wijziging
   const handleTabChange = (tabId: string) => {
-    // Sla de huidige scroll positie op relatief tot de didactic route
-    const didacticRouteElement = didacticRouteRef.current
-    if (didacticRouteElement) {
-      scrollPositionRef.current = didacticRouteElement.getBoundingClientRect().top + window.scrollY
-    }
-    
     setActiveTab(tabId)
     // Update selectedBouw op basis van de geselecteerde tab
     if (tabId === 'onderbouw') {

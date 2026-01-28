@@ -33,7 +33,6 @@ export default function KasteelRadboudPage() {
   const [activeTab, setActiveTab] = useState('onderbouw')
   const [selectedBouw, setSelectedBouw] = useState<'onderbouw' | 'middenbouw34' | 'middenbouw56' | 'bovenbouw'>('onderbouw')
   const didacticRouteRef = useRef<HTMLDivElement>(null)
-  const scrollPositionRef = useRef<number>(0)
 
   // Routes per bouw
   const routes = {
@@ -324,33 +323,7 @@ export default function KasteelRadboudPage() {
   ]
 
   // Handler voor tab wijziging
-  // Herstel scroll positie na content update
-  useEffect(() => {
-    if (scrollPositionRef.current > 0) {
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          const didacticRouteElement = didacticRouteRef.current
-          if (didacticRouteElement) {
-            const currentTop = didacticRouteElement.getBoundingClientRect().top + window.scrollY
-            const difference = currentTop - scrollPositionRef.current
-            if (Math.abs(difference) > 5) {
-              window.scrollTo({
-                top: window.scrollY - difference,
-                behavior: 'instant'
-              })
-            }
-          }
-        })
-      })
-    }
-  }, [selectedBouw])
-
   const handleTabChange = (tabId: string) => {
-    const didacticRouteElement = didacticRouteRef.current
-    if (didacticRouteElement) {
-      scrollPositionRef.current = didacticRouteElement.getBoundingClientRect().top + window.scrollY
-    }
-    
     setActiveTab(tabId)
     if (tabId === 'onderbouw') {
       setSelectedBouw('onderbouw')
