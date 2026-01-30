@@ -1,10 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import { BookOpen, Menu, LogOut } from 'lucide-react'
-import { useAuth } from './AuthProvider'
-import { Button } from './ui/button'
+import { BookOpen, Menu } from 'lucide-react'
 import {
   Sheet,
   SheetContent,
@@ -15,9 +12,6 @@ import {
 } from '@/components/ui/sheet'
 
 export default function Navbar() {
-  const { logout } = useAuth()
-  const router = useRouter()
-  
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/themas', label: 'Themas' },
@@ -26,11 +20,6 @@ export default function Navbar() {
     { href: '/partners', label: 'Partners' },
     { href: '/verantwoording', label: 'Verantwoording' },
   ]
-
-  const handleLogout = () => {
-    logout()
-    router.push('/')
-  }
 
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -54,15 +43,6 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleLogout}
-              className="flex items-center gap-2"
-            >
-              <LogOut className="h-4 w-4" />
-              Uitloggen
-            </Button>
           </div>
 
           {/* Mobile Navigation */}
@@ -100,18 +80,6 @@ export default function Navbar() {
                     </SheetClose>
                   ))}
                 </nav>
-                <div className="pt-4 border-t border-gray-200">
-                  <SheetClose asChild>
-                    <Button
-                      variant="outline"
-                      onClick={handleLogout}
-                      className="w-full flex items-center justify-center gap-2"
-                    >
-                      <LogOut className="h-4 w-4" />
-                      Uitloggen
-                    </Button>
-                  </SheetClose>
-                </div>
               </div>
             </SheetContent>
           </Sheet>

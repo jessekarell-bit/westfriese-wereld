@@ -2,8 +2,6 @@ import type { Metadata } from 'next'
 import { Inter, Merriweather, Montserrat, Open_Sans } from 'next/font/google'
 import './globals.css'
 import ScrollRestoration from '@/components/ScrollRestoration'
-import { AuthProvider } from '@/components/AuthProvider'
-import AuthGate from '@/components/AuthGate'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -51,12 +49,8 @@ export default function RootLayout({
   return (
     <html lang="nl" className={`${inter.variable} ${merriweather.variable} ${montserrat.variable} ${openSans.variable}`} suppressHydrationWarning>
       <body className="antialiased" suppressHydrationWarning>
-        <AuthProvider>
-          <AuthGate>
-            <ScrollRestoration />
-            {children}
-          </AuthGate>
-        </AuthProvider>
+        <ScrollRestoration />
+        {children}
       </body>
     </html>
   )
