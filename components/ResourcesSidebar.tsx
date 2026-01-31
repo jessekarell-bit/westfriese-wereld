@@ -1,16 +1,28 @@
 import { BookOpen, MapPin } from 'lucide-react'
 import { Resource } from '@/src/data/curriculum'
+import { themeColorSchemes } from '@/src/data/theme-config'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import MemberGate from '@/components/MemberGate'
 
 interface ResourcesSidebarProps {
   resources?: Resource[]
   themeName: string
+  themeId?: string
 }
 
-export default function ResourcesSidebar({ resources = [], themeName }: ResourcesSidebarProps) {
+const themeColorIdMap: Record<string, string> = {
+  'gouden-eeuw': 'handel-en-gouden-eeuw',
+  'zuiderzee-ijsselmeer': 'zuiderzee-naar-ijsselmeer',
+  'tuin-van-europa': 'voedsel-en-groei',
+}
+
+export default function ResourcesSidebar({ resources = [], themeName, themeId }: ResourcesSidebarProps) {
   const boeken = resources.filter(r => r.type === 'boek')
   const excursies = resources.filter(r => r.type === 'excursie')
+  const configKey = themeId ? (themeColorIdMap[themeId] ?? themeId) : null
+  const colorScheme = configKey ? themeColorSchemes[configKey] : null
+  const iconColor = colorScheme?.text ?? 'text-deep-water-blue'
+  const listBorder = colorScheme ? colorScheme.border : 'border-l-2 border-polder-green'
 
   return (
     <div className="space-y-6 sticky top-24">
@@ -18,7 +30,7 @@ export default function ResourcesSidebar({ resources = [], themeName }: Resource
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center text-lg">
-            <BookOpen className="h-5 w-5 text-deep-water-blue mr-2" />
+            <BookOpen className={`h-5 w-5 ${iconColor} mr-2`} />
             Rijke Teksten
           </CardTitle>
         </CardHeader>
@@ -27,7 +39,7 @@ export default function ResourcesSidebar({ resources = [], themeName }: Resource
             {boeken.length > 0 ? (
               <ul className="space-y-3">
                 {boeken.map((resource, index) => (
-                  <li key={index} className="border-l-2 border-polder-green pl-3">
+                  <li key={index} className={`${listBorder} pl-3`}>
                     <p className="font-medium text-gray-900 text-sm">{resource.title}</p>
                     {resource.description && (
                       <p className="text-xs text-gray-600 mt-1">{resource.description}</p>
@@ -48,7 +60,7 @@ export default function ResourcesSidebar({ resources = [], themeName }: Resource
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center text-lg">
-            <MapPin className="h-5 w-5 text-deep-water-blue mr-2" />
+            <MapPin className={`h-5 w-5 ${iconColor} mr-2`} />
             Eropuit
           </CardTitle>
         </CardHeader>
@@ -56,7 +68,7 @@ export default function ResourcesSidebar({ resources = [], themeName }: Resource
           {excursies.length > 0 ? (
             <ul className="space-y-3">
               {excursies.map((resource, index) => (
-                <li key={index} className="border-l-2 border-brick-red pl-3">
+                <li key={index} className={`${listBorder} pl-3`}>
                   <p className="font-medium text-gray-900 text-sm">{resource.title}</p>
                   {resource.description && (
                     <p className="text-xs text-gray-600 mt-1">{resource.description}</p>

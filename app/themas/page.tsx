@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { Card, CardContent } from '@/components/ui/card'
 import { themes } from '@/src/data/curriculum'
+import { themeColorSchemes } from '@/src/data/theme-config'
 import {
   Waves,
   MessageCircle,
@@ -14,6 +15,21 @@ import {
   Sprout,
   BookOpen as BookOpenIcon,
 } from 'lucide-react'
+
+// Map curriculum theme id naar theme-config slug voor kleuren
+const themeColorIdMap: Record<string, string> = {
+  'westfriese-omringdijk': 'westfriese-omringdijk',
+  'grieken-romeinen': 'grieken-romeinen',
+  'de-polder': 'de-polder',
+  'gouden-eeuw': 'handel-en-gouden-eeuw',
+  'handel-en-gouden-eeuw': 'handel-en-gouden-eeuw',
+  'zuiderzee-ijsselmeer': 'zuiderzee-naar-ijsselmeer',
+  'zuiderzee-naar-ijsselmeer': 'zuiderzee-naar-ijsselmeer',
+  'kasteel-radboud': 'kasteel-radboud',
+  'burgers-stoommachines': 'burgers-stoommachines',
+  'tuin-van-europa': 'voedsel-en-groei',
+  'voedsel-en-groei': 'voedsel-en-groei',
+}
 
 // Map themes to icons (gebruik dezelfde icons als op homepage)
 const themeIcons: Record<string, any> = {
@@ -110,6 +126,8 @@ export default function ThemesOverviewPage() {
                 const summary = getThemeSummary(theme)
                 // Gebruik nieuwe titel als die bestaat, anders de oude naam
                 const displayTitle = themeTitleMap[theme.id] || theme.name
+                // Themakleur voor icoon (zoals op themapagina's)
+                const colorScheme = themeColorSchemes[themeColorIdMap[theme.id]] || themeColorSchemes['westfriese-omringdijk']
               
               // Map theme IDs naar de juiste pagina links
               const themeLinkMap: Record<string, string> = {
@@ -129,9 +147,9 @@ export default function ThemesOverviewPage() {
                   <Card className="h-full flex flex-col hover:shadow-xl transition-all duration-300 border-gray-200 hover:border-polder-green cursor-pointer">
                     <CardContent className="p-6 pt-6 flex flex-col flex-grow">
                       <div className="flex flex-col items-center text-center flex-grow">
-                        {/* Icon */}
-                        <div className="bg-gradient-to-br from-deep-water-blue to-blue-700 rounded-full p-4 mb-4 group-hover:scale-110 transition-transform flex-shrink-0">
-                          <Icon className="h-8 w-8 text-white" />
+                        {/* Icon met themakleur (zoals op themapagina's) */}
+                        <div className={`${colorScheme.bg} rounded-full p-4 mb-4 group-hover:scale-110 transition-transform flex-shrink-0`}>
+                          <Icon className={`h-8 w-8 ${colorScheme.text}`} />
                         </div>
                         
                         {/* Title - gebruik nieuwe "De Wereld van..." titel */}

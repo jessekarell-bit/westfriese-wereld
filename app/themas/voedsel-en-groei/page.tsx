@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Tabs from '@/components/Tabs'
@@ -33,7 +33,6 @@ export default function VoedselEnGroeiPage() {
   // State voor geselecteerde tab en route
   const [activeTab, setActiveTab] = useState('onderbouw')
   const [selectedBouw, setSelectedBouw] = useState<'onderbouw' | 'middenbouw34' | 'middenbouw56' | 'bovenbouw'>('onderbouw')
-  const didacticRouteRef = useRef<HTMLDivElement>(null)
 
   // Routes per bouw
   const routes = {
@@ -170,7 +169,7 @@ export default function VoedselEnGroeiPage() {
       label: 'Onderbouw',
       subtitle: 'Groep 1-2',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-lime-700 mb-3">
               Het Wonderlijke Zaadje
@@ -182,8 +181,8 @@ export default function VoedselEnGroeiPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-lime-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-lime-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -192,8 +191,8 @@ export default function VoedselEnGroeiPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Sprout className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-lime-600 mb-2 flex items-center">
+              <Sprout className="h-5 w-5 mr-2 text-lime-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -208,7 +207,7 @@ export default function VoedselEnGroeiPage() {
       label: 'Middenbouw',
       subtitle: 'Groep 3-4',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-lime-700 mb-3">
               De Jonge Plantendokter
@@ -220,8 +219,8 @@ export default function VoedselEnGroeiPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-lime-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-lime-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -230,8 +229,8 @@ export default function VoedselEnGroeiPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Lightbulb className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-lime-600 mb-2 flex items-center">
+              <Lightbulb className="h-5 w-5 mr-2 text-lime-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -246,7 +245,7 @@ export default function VoedselEnGroeiPage() {
       label: 'Middenbouw',
       subtitle: 'Groep 5-6',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-lime-700 mb-3">
               High-Tech in de Polder
@@ -258,8 +257,8 @@ export default function VoedselEnGroeiPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-lime-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-lime-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -268,8 +267,8 @@ export default function VoedselEnGroeiPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Search className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-lime-600 mb-2 flex items-center">
+              <Search className="h-5 w-5 mr-2 text-lime-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -284,7 +283,7 @@ export default function VoedselEnGroeiPage() {
       label: 'Bovenbouw',
       subtitle: 'Groep 7-8',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-lime-700 mb-3">
               Architecten van het Voedsel
@@ -296,8 +295,8 @@ export default function VoedselEnGroeiPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-lime-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-lime-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -306,8 +305,8 @@ export default function VoedselEnGroeiPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Gavel className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-lime-600 mb-2 flex items-center">
+              <Gavel className="h-5 w-5 mr-2 text-lime-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -322,6 +321,7 @@ export default function VoedselEnGroeiPage() {
   // Handler voor tab wijziging
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId)
+    // Update selectedBouw op basis van de geselecteerde tab
     if (tabId === 'onderbouw') {
       setSelectedBouw('onderbouw')
     } else if (tabId === 'middenbouw34') {
@@ -414,14 +414,12 @@ export default function VoedselEnGroeiPage() {
               />
 
               {/* 5-Fasen Verticale Lijst */}
-              <div ref={didacticRouteRef}>
-                <DidacticRoute
-                  phases={activeRoute.fasen}
-                  title={activeRoute.titel}
-                  focus={activeRoute.focus}
-                  colorScheme={colorScheme}
-                />
-              </div>
+              <DidacticRoute
+                phases={activeRoute.fasen}
+                title={activeRoute.titel}
+                focus={activeRoute.focus}
+                colorScheme={colorScheme}
+              />
             </div>
 
             {/* Sidebar - 30% */}
@@ -430,7 +428,7 @@ export default function VoedselEnGroeiPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <BookOpen className="h-5 w-5 text-deep-water-blue mr-2" />
+                    <BookOpen className="h-5 w-5 text-lime-700 mr-2" />
                     Boekenplank (rijke teksten)
                   </CardTitle>
                 </CardHeader>
@@ -493,7 +491,7 @@ export default function VoedselEnGroeiPage() {
               <Card className="bg-gradient-to-br from-green-50 to-lime-50 border-green-200">
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <Microscope className="h-5 w-5 text-deep-water-blue mr-2" />
+                    <Microscope className="h-5 w-5 text-green-700 mr-2" />
                     Sow to Grow
                   </CardTitle>
                 </CardHeader>
@@ -515,7 +513,7 @@ export default function VoedselEnGroeiPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <FileText className="h-5 w-5 text-deep-water-blue mr-2" />
+                    <FileText className="h-5 w-5 text-lime-700 mr-2" />
                     Leerkracht toolkit
                   </CardTitle>
                 </CardHeader>
@@ -528,7 +526,7 @@ export default function VoedselEnGroeiPage() {
                           href="#"
                           className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-lime-600 hover:bg-lime-50 transition-colors group"
                         >
-                          <FileText className="h-5 w-5 text-deep-water-blue group-hover:text-deep-water-blue flex-shrink-0 mr-3" />
+                          <FileText className="h-5 w-5 text-lime-600 group-hover:text-lime-700 flex-shrink-0 mr-3" />
                           <div className="flex-1 min-w-0">
                             <span className="text-sm font-medium text-gray-900 group-hover:text-lime-700 block truncate">
                               {item.title}
@@ -538,7 +536,7 @@ export default function VoedselEnGroeiPage() {
                             <Badge variant="outline" className="text-xs whitespace-nowrap">
                               {item.type}
                             </Badge>
-                            <Download className="h-4 w-4 text-gray-400 group-hover:text-polder-green flex-shrink-0" />
+                            <Download className="h-4 w-4 text-gray-400 group-hover:text-lime-600 flex-shrink-0" />
                           </div>
                         </a>
                       ))}

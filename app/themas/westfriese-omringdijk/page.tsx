@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import PhaseIndicator from '@/components/PhaseIndicator'
@@ -36,130 +36,129 @@ export default function WaterWorldPage() {
   // State voor geselecteerde tab en route
   const [activeTab, setActiveTab] = useState('onderbouw')
   const [selectedBouw, setSelectedBouw] = useState<'onderbouw' | 'middenbouw34' | 'middenbouw56' | 'bovenbouw'>('onderbouw')
-  const didacticRouteRef = useRef<HTMLDivElement>(null)
 
   // Routes per bouw
   const routes = {
     onderbouw: {
-      titel: 'De Waterwolf en de Reus',
-      focus: 'Mythische verbeelding van waterveiligheid: de dijk als beschermer tegen het water',
+      titel: 'Het Wonderlijke Zaadje',
+      focus: 'Verwondering, verzorging en de cyclus van groei',
       fasen: [
         {
           fase: 'Doel',
-          beschrijving: 'De leerlingen ervaren op een speelse en veilige manier dat de dijk hen beschermt tegen het water. Ze ontdekken het verschil tussen zand en klei en zien dat sommige materialen beter werken om water tegen te houden dan andere.',
+          beschrijving: 'De leerlingen ontdekken dat een \'dood\' zaadje een levende plant wordt als je er goed voor zorgt (licht, water, aarde). Ze maken kennis met de kassen in hun omgeving als \'glazen paleizen\' waar planten wonen.',
           icon: Shield
         },
         {
           fase: 'Narratief',
-          beschrijving: '"De Waterwolf" (of: De Reus die het water tegenhoudt): Het abstracte concept van waterveiligheid wordt vertaald naar een mythisch verhaal. De zee wordt gepersonifieerd als de \'Waterwolf\', een hongerig beest dat happen uit het land wil nemen (\"het land opeten\"). De dijk is de grote, sterke beschermer (de Reus of de Muur) die ervoor zorgt dat de wolf niet binnen kan komen en dat de voeten droog blijven.',
+          beschrijving: '"Het Geheim van het Kleine Zakje": De klas vindt een mysterieuze kist met \'toverbolletjes\' (zaden) en een brief van Kasper de Tuinder (of de Plantendokter). Hij vraagt de kinderen om op zijn kostbare zaden te passen en ze wakker te maken.',
           icon: BookOpen
         },
         {
           fase: 'Activering',
-          beschrijving: 'Introductiespel met handpoppen of verkleedkleren: één leerling speelt de Waterwolf, een ander de Reus/Dijk. De rest van de klas speelt bewoners achter de dijk. Zo wordt het verhaal fysiek en herkenbaar.',
+          beschrijving: 'Expeditie Seed Valley: Een wandeling in de buurt om te kijken naar de grote kassen en akkers. De kinderen zetten een \'toverbril\' op om te zoeken naar dingen die groeien. Of een bezoek aan een lokale schooltuin/volkstuin.',
           icon: MapPin
         },
         {
           fase: 'Concretisering',
-          beschrijving: 'Sensopathisch spel in de zand- en watertafel: kinderen bouwen dijken van zand en van klei. Ze ontdekken dat een dijk van zand direct wegspoelt als het water komt, terwijl klei \'plakt\' en het water veel beter tegenhoudt. In de bouwhoek bootsen ze het landschap na met blokken en blauwe doeken (water) en bouwen ze een veilige plek achter de dijk.',
+          beschrijving: 'Het Grote Groei-Experiment: Biologie: Bonen planten in doorzichtige potten om de wortels te zien groeien. Spel: De huishoek wordt een Tuincentrum/Groentewinkel waar zaden en bloemen worden verkocht. Techniek: Bouwen van een kas met blokken en doorzichtig plastic in de bouwhoek.',
           icon: Sprout
         },
         {
           fase: 'Afsluiting',
-          beschrijving: 'Kringmoment: samen het verhaal van de Waterwolf naspelen en benoemen wat de dijk doet. De kinderen laten hun dijken in de zand- en watertafel zien en vertellen welk materiaal het beste werkte.',
+          beschrijving: 'Het Oogstfeest: Ouders komen op bezoek in de \'Tuin van de Klas\'. De kinderen verkopen hun zelfgekweekte stekjes of tuinkers-beschuitjes en laten hun groei-dagboek zien.',
           icon: Users
         }
       ]
     },
     middenbouw34: {
-      titel: 'Speuren naar Sporen',
-      focus: 'De dijkdoorbraak van 1675 en het verschil tussen zand en klei',
+      titel: 'De Jonge Plantendokter',
+      focus: 'Historisch besef (Nanne Groot), waarnemen en de basis van handel',
       fasen: [
         {
-          fase: 'Doelbepaling',
-          beschrijving: 'De leerlingen ontdekken het verschil tussen zand en klei en begrijpen waarom de dijk bij Scharwoude in 1675 doorbrak. Ze leren dat wielen (diepe gaten) littekens zijn van dijkdoorbraken die we nog steeds in het landschap zien.',
+          fase: 'Doel',
+          beschrijving: 'De leerlingen leren over de geschiedenis van Nanne Jansz. Groot (de grondlegger van de zaadhandel) en begrijpen wat een plant nodig heeft om gezond te blijven. Ze leren dat zaden verhandeld worden.',
           icon: Shield
         },
         {
-          fase: 'Narratieve Inbedding',
-          beschrijving: '"De Tijdmachine naar 1675": De klas stapt in een tijdmachine en reist terug naar de stormnacht van 5 november 1675 bij Scharwoude. De leerlingen horen de noodklokken luiden. De "Waterwolf" is boos en beukt tegen de dijk. Waarom breekt de dijk juist hier? Was hij niet sterk genoeg? De leerlingen ontdekken dat de dijk op sommige plekken te zwak was en dat het water diepe gaten (wielen) heeft geslagen die we nu nog steeds in het landschap zien als littekens.',
+          fase: 'Narratief',
+          beschrijving: '"De Man met de Mand": Het verhaal van Nanne Groot die met zijn mand vol zakjes (\'builtjes\') door het land liep om zaden te verkopen na de \'Karwijstorm\'. De leerlingen worden hulpjes van de Plantendokter die een zieke plant beter moeten maken.',
           icon: BookOpen
         },
         {
           fase: 'Activering',
-          beschrijving: 'Excursie naar de dijk: Een bezoek aan een echte dijk in de omgeving om te kijken naar de structuur en materialen. Of een bezoek aan een wiel (overblijfsel van een dijkdoorbraak) om te zien hoe diep het water heeft geslagen.',
+          beschrijving: 'Bezoek aan Sow to Grow: Een excursie naar het museum in Enkhuizen. Leerlingen doen een speurtocht naar de herkomst van voedsel en zien hoe zaden vroeger en nu werden bewaard.',
           icon: MapPin
         },
         {
           fase: 'Concretisering',
-          beschrijving: '"Het Grote Lek": In de zandtafel of waterbak bouwen de leerlingen het landschap van 1675 na. Ze maken een dijk van alleen zand en een dijk van klei. Ze simuleren de storm (golven maken). De ontdekking: De zanddijk spoelt direct weg (het \'wiel\' ontstaat), terwijl de kleidijk het water veel beter tegenhoudt omdat klei \'plakt\'. Ze markeren op hun eigen kaart waar het misging.',
-          icon: Search
+          beschrijving: 'Onderzoek en Ambacht: Onderzoek: Het Groei-Laboratorium: experimenteren met variabelen (wel/geen licht, wel/geen water) en dit bijhouden in een logboek. Geschiedenis: Naspelen van de reis van Nanne Groot: zaden afwegen op een balansweegschaal en verpakken in zakjes. Techniek: Zelf een mini-kas bouwen van kosteloos materiaal om het broeikaseffect te testen.',
+          icon: Lightbulb
         },
         {
           fase: 'Afsluiting',
-          beschrijving: 'De Sporenkaart: Leerlingen presenteren hun zelfgemaakte kaart met de zwakke plekken in de dijk en leggen uit waarom de dijk op die plek doorbrak. Ze tonen hun experimenten met zand en klei aan ouders of een andere klas.',
+          beschrijving: 'De West-Friese Oogstmarkt: De klas wordt een marktplein. Leerlingen presenteren hun mini-kassen en verkopen hun gekweekte planten of zaden. Ze vertellen het verhaal van Nanne Groot aan het publiek.',
           icon: Users
         }
       ]
     },
     middenbouw56: {
-      titel: 'Ingenieurs van de Klei',
-      focus: 'De Paalwormcrisis van 1730 en technische innovatie',
+      titel: 'High-Tech in de Polder',
+      focus: 'Technologie, klimaatbeheersing en fotosynthese',
       fasen: [
         {
-          fase: 'Doelbepaling',
-          beschrijving: 'De leerlingen analyseren de Paalwormcrisis van 1730 en begrijpen waarom houten palen niet meer werkten. Ze leren over technische innovatie: de overstap van hout naar steen en aarde. Ze onderzoeken materiaaleigenschappen (doorlaatbaarheid en erosiebestendigheid) en het belang van een flauw talud (schuine helling) om golven te breken.',
+          fase: 'Doel',
+          beschrijving: 'De leerlingen begrijpen dat moderne landbouw technologie is. Ze leren over fotosynthese (planten als energiefabrieken) en hoe techniek (kassen, robots) de natuur een handje helpt.',
           icon: Shield
         },
         {
-          fase: 'Narratieve Inbedding',
-          beschrijving: '"De Stille Vijand": Het is 1730. De dijken lijken sterk, want ze worden beschermd door dikke houten palen. Maar er is paniek bij de dijkgraaf! Een onzichtbare vijand, de paalworm (Teredo navalis), eet het hout van binnenuit op. De palen breken als luciferhoutjes. De leerlingen worden benoemd tot "Ingenieurs van de Klei". Zij moeten een nieuwe manier bedenken om het land te beschermen, nu het hout niet meer werkt. Ze moeten de overstap maken van hout naar steen en aarde.',
+          fase: 'Narratief',
+          beschrijving: '"De Slimme Kas": De leerlingen worden ontwerpers. Er is een probleem: het klimaat verandert en we hebben een kas nodig die zelf kan \'denken\' (temperatuur regelen, water geven).',
           icon: BookOpen
         },
         {
           fase: 'Activering',
-          beschrijving: 'Excursie naar de dijk: Een bezoek aan een echte dijk om de constructie te bekijken (talud, materialen). Of een gastles van een dijkwerker/waterbouwkundige die uitlegt hoe moderne dijken worden gebouwd.',
+          beschrijving: 'Bedrijfsbezoek of Gastles: Een bezoek aan een modern veredelingsbedrijf (zoals Enza of Syngenta) om robots en klimaatkamers te zien, of een practicum in het lab van Sow to Grow.',
           icon: MapPin
         },
         {
           fase: 'Concretisering',
-          beschrijving: '"Het Dijk-Laboratorium": Leerlingen voeren materiaalproeven uit om de perfecte \'nieuwe dijk\' te ontwerpen die de paalworm niet lust. Het Experiment: Ze testen in bakken de doorlaatbaarheid en erosiebestendigheid van drie materialen: zand, klei en steen/grind. Ze bouwen een dwarsdoorsnede van een dijk met een flauw talud (schuine helling) om de golven te breken, in plaats van een rechte muur.',
+          beschrijving: 'Ontwerpend Leren: Techniek/Digitaal: Het ontwerpen van een \'Slimme Kas\'. Gebruik van sensoren (bijv. Micro:bit) om vocht of temperatuur te meten. Biologie: Proefjes met fotosynthese (blad afplakken om effect van licht te zien).',
           icon: Search
         },
         {
           fase: 'Afsluiting',
-          beschrijving: 'Presentatie aan de Dijkgraaf: Leerlingen presenteren hun technische oplossing aan de \'Dijkgraaf\' (bijv. een gastspreker of leerkracht in rol). Ze tonen hun dijkmodellen en leggen uit waarom hun ontwerp beter is dan de oude houten palen.',
+          beschrijving: 'De Techniek-Expo: Leerlingen presenteren hun ontwerpen voor de kas van de toekomst en demonstreren hun sensoren of irrigatiesystemen aan experts of ouders.',
           icon: Users
         }
       ]
     },
     bovenbouw: {
-      titel: 'Vechten of Meebewegen?',
-      focus: 'Klimaatscenario’s 2050: dijkverhoging, ruimte voor water en morele keuzes',
+      titel: 'Architecten van het Voedsel',
+      focus: 'Genetica (DNA), Ethiek en Wereldvoedselvoorziening',
       fasen: [
         {
-          fase: 'Doelbepaling',
-          beschrijving: 'De leerlingen onderzoeken of de huidige dijk in 2050 nog veilig genoeg is bij stijgende zeespiegel en piekbuien. Ze leren dat keuzes over dijkverhoging of ruimte maken voor water altijd gevolgen hebben voor bewoners, natuur en economie.',
+          fase: 'Doel',
+          beschrijving: 'De leerlingen analyseren de rol van West-Friesland (Seed Valley) in de wereld. Ze leren over erfelijkheid (Mendel, DNA), veredeling en debatteren over ethische dilemma\'s (GMO, patenten).',
           icon: Shield
         },
         {
-          fase: 'Narratieve Inbedding',
-          beschrijving: '"Vechten of Meebewegen?": De klas functioneert als een Raad van Advies voor het waterschap of het Toekomstteam West-Friesland. Ze worden geconfronteerd met klimaatscenario’s voor het jaar 2050 (stijgende zeespiegel, piekbuien). De centrale vraag is: Is de huidige dijk hoog genoeg, of moeten we ruimte maken voor water door bijvoorbeeld polders onder water te laten lopen?',
+          fase: 'Narratief',
+          beschrijving: '"Het Future Food Team": Een scenario vanuit het jaar 2050. De wereldbevolking groeit, het klimaat is extreem. De leerlingen krijgen de opdracht om een \'Supergewas\' te ontwikkelen dat de wereld kan voeden.',
           icon: BookOpen
         },
         {
           fase: 'Activering',
-          beschrijving: 'Kennismaking met echte dijk- en klimaatscenario’s via kaarten, video’s en een gastles of korte reportage over het werk van het waterschap en de gevolgen van extreem weer in West-Friesland.',
+          beschrijving: 'Lab-Experience: Een verdiepend bezoek aan Sow to Grow of een gastles van een veredelaar waarbij DNA zichtbaar wordt gemaakt (bijv. uit een kiwi of banaan). Of de inzet van de Plant Rover in de klas.',
           icon: MapPin
         },
         {
           fase: 'Concretisering',
-          beschrijving: '"De Calamiteitenpolder": Simulatie en debat over een noodsituatie. Stel: de stad Hoorn dreigt te overstromen en de enige redding is het doorsteken van een dijk naar een dunbevolkte polder (een calamiteitenpolder). Mag je de boerderijen daar opofferen om de stad te redden (solidariteit versus eigendom)? Onderzoek met GIS-data (bijvoorbeeld EduGIS) naar overstromingsrisico’s in de eigen regio.',
+          beschrijving: 'Wetenschap en Ethiek: Onderzoek: Simulatie van kruisingen (Mendel) om te zien hoe eigenschappen worden doorgegeven. Burgerschap: Het Grote GGO-Debat: "Mag je sleutelen aan de natuur om honger op te lossen?". Ontwerp: Het ontwerpen van het \'Supergewas\' met specifieke eigenschappen (bijv. zouttolerant).',
           icon: Gavel
         },
         {
           fase: 'Afsluiting',
-          beschrijving: 'Eindproduct: een formeel Adviesrapport "Visie 2050" aan het Hoogheemraadschap of de gemeente, waarin leerlingen hun voorstel onderbouwen en aangeven wanneer je moet vechten tegen het water en wanneer je beter met het water kunt meebewegen.',
+          beschrijving: 'Het Wereldvoedselcongres: Een formele conferentie waar leerlingen hun \'Supergewas\' pitchen aan een jury en hun visie geven op de voedseltoekomst.',
           icon: Users
         }
       ]
@@ -173,35 +172,34 @@ export default function WaterWorldPage() {
       label: 'Onderbouw',
       subtitle: 'Groep 1-2',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              De Waterwolf en de Reus
+              Het Wonderlijke Zaadje
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Mythische verbeelding van waterveiligheid: de dijk als beschermer tegen het water</p>
+              <p className="text-gray-700">Verwondering, verzorging en de cyclus van groei</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              "De Waterwolf" (of: De Reus die het water tegenhoudt): De zee wordt een hongerige Waterwolf die happen uit het land wil nemen. De dijk is de sterke Reus of Muur die de wolf tegenhoudt en de voeten van de kinderen droog houdt. Zo wordt waterveiligheid een spannend maar veilig verhaal.
+              "Het Geheim van het Kleine Zakje": De klas vindt een mysterieuze kist met 'toverbolletjes' (zaden) en een brief van Kasper de Tuinder (of de Plantendokter). Hij vraagt de kinderen om op zijn kostbare zaden te passen en ze wakker te maken.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Sprout className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <Sprout className="h-5 w-5 mr-2 text-cyan-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>Sensopathisch spel in de zand- en watertafel:</strong> Kinderen bouwen dijken van zand en van klei. Ze zien dat een zanddijk snel wegspoelt als het water komt, terwijl klei \'plakt\' en het water beter tegenhoudt.</p>
-              <p><strong>Constructie in de bouwhoek:</strong> Met blokken en blauwe doeken (water) bouwen ze een landschap met een dijk en een veilige plek achter de dijk.</p>
+              <p><strong>Het Grote Groei-Experiment:</strong> Bonen planten in doorzichtige potten om de wortels te zien groeien. De huishoek wordt een Tuincentrum/Groentewinkel. Bouwen van een kas met blokken en doorzichtig plastic.</p>
             </div>
           </div>
         </div>
@@ -212,34 +210,34 @@ export default function WaterWorldPage() {
       label: 'Middenbouw',
       subtitle: 'Groep 3-4',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              Speuren naar Sporen
+              De Jonge Plantendokter
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">De dijkdoorbraak van 1675 en het verschil tussen zand en klei</p>
+              <p className="text-gray-700">Historisch besef (Nanne Groot), waarnemen en de basis van handel</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              "De Tijdmachine naar 1675": De klas stapt in een tijdmachine en reist terug naar de stormnacht van 5 november 1675 bij Scharwoude. De leerlingen horen de noodklokken luiden. De "Waterwolf" is boos en beukt tegen de dijk. Waarom breekt de dijk juist hier? Was hij niet sterk genoeg? De leerlingen ontdekken dat de dijk op sommige plekken te zwak was en dat het water diepe gaten (wielen) heeft geslagen die we nu nog steeds in het landschap zien als littekens.
+              "De Man met de Mand": Het verhaal van Nanne Groot die met zijn mand vol zakjes ('builtjes') door het land liep om zaden te verkopen na de 'Karwijstorm'. De leerlingen worden hulpjes van de Plantendokter die een zieke plant beter moeten maken.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Lightbulb className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <Lightbulb className="h-5 w-5 mr-2 text-cyan-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>"Het Grote Lek":</strong> In de zandtafel of waterbak bouwen de leerlingen het landschap van 1675 na. Ze maken een dijk van alleen zand en een dijk van klei. Ze simuleren de storm (golven maken). De ontdekking: De zanddijk spoelt direct weg (het 'wiel' ontstaat), terwijl de kleidijk het water veel beter tegenhoudt omdat klei 'plakt'. Ze markeren op hun eigen kaart waar het misging.</p>
+              <p><strong>Het Groei-Laboratorium:</strong> Experimenteren met variabelen (wel/geen licht, wel/geen water). Naspelen van de reis van Nanne Groot: zaden afwegen en verpakken. Zelf een mini-kas bouwen om het broeikaseffect te testen.</p>
             </div>
           </div>
         </div>
@@ -250,34 +248,34 @@ export default function WaterWorldPage() {
       label: 'Middenbouw',
       subtitle: 'Groep 5-6',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              Ingenieurs van de Klei
+              High-Tech in de Polder
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">De Paalwormcrisis van 1730 en technische innovatie</p>
+              <p className="text-gray-700">Technologie, klimaatbeheersing en fotosynthese</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              "De Stille Vijand": Het is 1730. De dijken lijken sterk, want ze worden beschermd door dikke houten palen. Maar er is paniek bij de dijkgraaf! Een onzichtbare vijand, de paalworm (Teredo navalis), eet het hout van binnenuit op. De palen breken als luciferhoutjes. De leerlingen worden benoemd tot "Ingenieurs van de Klei". Zij moeten een nieuwe manier bedenken om het land te beschermen, nu het hout niet meer werkt. Ze moeten de overstap maken van hout naar steen en aarde.
+              "De Slimme Kas": De leerlingen worden ontwerpers. Er is een probleem: het klimaat verandert en we hebben een kas nodig die zelf kan 'denken' (temperatuur regelen, water geven).
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Search className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <Search className="h-5 w-5 mr-2 text-cyan-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>"Het Dijk-Laboratorium":</strong> Leerlingen voeren materiaalproeven uit om de perfecte 'nieuwe dijk' te ontwerpen die de paalworm niet lust. Het Experiment: Ze testen in bakken de doorlaatbaarheid en erosiebestendigheid van drie materialen: zand, klei en steen/grind. Ze bouwen een dwarsdoorsnede van een dijk met een flauw talud (schuine helling) om de golven te breken, in plaats van een rechte muur. Ze presenteren hun technische oplossing aan de 'Dijkgraaf'.</p>
+              <p><strong>Ontwerpend Leren:</strong> Het ontwerpen van een 'Slimme Kas' met sensoren (Micro:bit) om vocht of temperatuur te meten. Proefjes met fotosynthese (blad afplakken om effect van licht te zien).</p>
             </div>
           </div>
         </div>
@@ -288,36 +286,34 @@ export default function WaterWorldPage() {
       label: 'Bovenbouw',
       subtitle: 'Groep 7-8',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              Vechten of Meebewegen?
+              Architecten van het Voedsel
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Klimaatscenario’s 2050: dijkverhoging, ruimte voor water en morele keuzes</p>
+              <p className="text-gray-700">Genetica (DNA), Ethiek en Wereldvoedselvoorziening</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              "Vechten of Meebewegen?": De klas functioneert als een Raad van Advies voor het waterschap of het Toekomstteam West-Friesland. Ze krijgen klimaatscenario’s voor het jaar 2050 voorgeschoteld (stijgende zeespiegel, piekbuien) en onderzoeken of de huidige dijk hoog genoeg is of dat er ruimte gemaakt moet worden voor water, bijvoorbeeld door polders gecontroleerd onder water te laten lopen.
+              "Het Future Food Team": Een scenario vanuit het jaar 2050. De wereldbevolking groeit, het klimaat is extreem. De leerlingen krijgen de opdracht om een 'Supergewas' te ontwikkelen dat de wereld kan voeden.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Gavel className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <Gavel className="h-5 w-5 mr-2 text-cyan-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>"De Calamiteitenpolder":</strong> Simulatie en debat over een noodsituatie. Stel: de stad Hoorn dreigt te overstromen en de enige redding is het doorsteken van een dijk naar een dunbevolkte polder (een calamiteitenpolder). Mag je de boerderijen daar opofferen om de stad te redden (solidariteit versus eigendom)? Leerlingen onderbouwen hun standpunt met argumenten en lokale voorbeelden.</p>
-              <p><strong>Onderzoek met GIS-data:</strong> Leerlingen gebruiken bijvoorbeeld EduGIS of kaartmateriaal om risicoanalyses te maken van mogelijke overstromingsscenario’s in hun eigen regio en leggen verbanden met echte beleidskeuzes.</p>
-              <p><strong>Eindproduct:</strong> Het schrijven van een formeel Adviesrapport "Visie 2050" aan het Hoogheemraadschap of de gemeente, waarin zij hun voorkeursstrategie presenteren en verantwoorden.</p>
+              <p><strong>Wetenschap en Ethiek:</strong> Simulatie van kruisingen (Mendel). Het Grote GGO-Debat: "Mag je sleutelen aan de natuur om honger op te lossen?". Het ontwerpen van het 'Supergewas' met specifieke eigenschappen.</p>
             </div>
           </div>
         </div>
@@ -422,14 +418,12 @@ export default function WaterWorldPage() {
               />
 
               {/* 5-Fasen Verticale Lijst */}
-              <div ref={didacticRouteRef}>
-                <DidacticRoute
-                  phases={activeRoute.fasen}
-                  title={activeRoute.titel}
-                  focus={activeRoute.focus}
-                  colorScheme={colorScheme}
-                />
-              </div>
+              <DidacticRoute
+                phases={activeRoute.fasen}
+                title={activeRoute.titel}
+                focus={activeRoute.focus}
+                colorScheme={colorScheme}
+              />
             </div>
 
             {/* Sidebar - 30% */}
@@ -438,7 +432,7 @@ export default function WaterWorldPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <BookOpen className="h-5 w-5 text-deep-water-blue mr-2" />
+                    <BookOpen className="h-5 w-5 text-cyan-700 mr-2" />
                     Boekenplank (rijke teksten)
                   </CardTitle>
                 </CardHeader>
@@ -499,7 +493,7 @@ export default function WaterWorldPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <FileText className="h-5 w-5 text-deep-water-blue mr-2" />
+                    <FileText className="h-5 w-5 text-cyan-700 mr-2" />
                     Leerkracht toolkit
                   </CardTitle>
                 </CardHeader>
@@ -512,9 +506,9 @@ export default function WaterWorldPage() {
                           href="#"
                           className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-cyan-600 hover:bg-cyan-50 transition-colors group"
                         >
-                          <FileText className="h-5 w-5 text-deep-water-blue group-hover:text-polder-green flex-shrink-0 mr-3" />
+                          <FileText className="h-5 w-5 text-cyan-600 group-hover:text-cyan-700 flex-shrink-0 mr-3" />
                           <div className="flex-1 min-w-0">
-                            <span className="text-sm font-medium text-gray-900 group-hover:text-polder-green block truncate">
+                            <span className="text-sm font-medium text-gray-900 group-hover:text-cyan-700 block truncate">
                               {item.title}
                             </span>
                           </div>
@@ -522,7 +516,7 @@ export default function WaterWorldPage() {
                             <Badge variant="outline" className="text-xs whitespace-nowrap">
                               {item.type}
                             </Badge>
-                            <Download className="h-4 w-4 text-gray-400 group-hover:text-polder-green flex-shrink-0" />
+                            <Download className="h-4 w-4 text-gray-400 group-hover:text-cyan-600 flex-shrink-0" />
                           </div>
                         </a>
                       ))}

@@ -59,7 +59,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
         
         <main className="flex-grow">
           {/* Hero Section with abstract pattern */}
-          <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 py-8 sm:py-12 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+          <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
             {/* Abstract pattern background */}
             <div className="absolute inset-0 opacity-5">
               <div className="absolute top-0 left-0 w-96 h-96 bg-deep-water-blue rounded-full blur-3xl"></div>
@@ -69,7 +69,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
             
             <div className="relative max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-50 border border-amber-200 rounded-full mb-6">
-                <Construction className="h-5 w-5 text-deep-water-blue" />
+                <Construction className="h-5 w-5 text-amber-600" />
                 <Badge variant="outline" className="bg-amber-50 border-amber-200 text-amber-700 px-3 py-1">
                   In Ontwikkeling
                 </Badge>
@@ -100,7 +100,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-3 bg-amber-100 rounded-lg">
-                      <Construction className="h-6 w-6 text-deep-water-blue" />
+                      <Construction className="h-6 w-6 text-amber-700" />
                     </div>
                     <CardTitle className="font-serif text-xl text-deep-water-blue">
                       Wat komt eraan?
@@ -305,6 +305,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
               <ResourcesSidebar 
                 resources={theme.resources} 
                 themeName={theme.name}
+                themeId={theme.id}
               />
             </div>
           </div>

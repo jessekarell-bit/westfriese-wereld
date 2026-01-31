@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import PhaseIndicator from '@/components/PhaseIndicator'
@@ -36,7 +36,6 @@ export default function GriekenRomeinenPage() {
   // State voor geselecteerde tab en route
   const [activeTab, setActiveTab] = useState('onderbouw')
   const [selectedBouw, setSelectedBouw] = useState<'onderbouw' | 'middenbouw34' | 'middenbouw56' | 'bovenbouw'>('onderbouw')
-  const didacticRouteRef = useRef<HTMLDivElement>(null)
 
   // Routes per bouw
   const routes = {
@@ -173,7 +172,7 @@ export default function GriekenRomeinenPage() {
       label: 'Onderbouw',
       subtitle: 'Groep 1-2',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-stone-700 mb-3">
               Schatgravers in de Zandbak
@@ -185,8 +184,8 @@ export default function GriekenRomeinenPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-stone-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-stone-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -195,8 +194,8 @@ export default function GriekenRomeinenPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Hammer className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-stone-600 mb-2 flex items-center">
+              <Hammer className="h-5 w-5 mr-2 text-stone-600" />
               Kernactiviteit
             </h4>
             <p className="text-gray-700 leading-relaxed">
@@ -211,7 +210,7 @@ export default function GriekenRomeinenPage() {
       label: 'Middenbouw',
       subtitle: 'Groep 3-4',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-stone-700 mb-3">
               Ontmoeting aan de Grens
@@ -223,8 +222,8 @@ export default function GriekenRomeinenPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-stone-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-stone-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -233,8 +232,8 @@ export default function GriekenRomeinenPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Coins className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-stone-600 mb-2 flex items-center">
+              <Coins className="h-5 w-5 mr-2 text-stone-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -249,7 +248,7 @@ export default function GriekenRomeinenPage() {
       label: 'Middenbouw',
       subtitle: 'Groep 5-6',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-stone-700 mb-3">
               De Archeologische Puzzel
@@ -261,8 +260,8 @@ export default function GriekenRomeinenPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-stone-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-stone-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -271,8 +270,8 @@ export default function GriekenRomeinenPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Search className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-stone-600 mb-2 flex items-center">
+              <Search className="h-5 w-5 mr-2 text-stone-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -287,7 +286,7 @@ export default function GriekenRomeinenPage() {
       label: 'Bovenbouw',
       subtitle: 'Groep 7-8',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-stone-700 mb-3">
               Democratie, Dwang en de Friese Vrijheidsstrijd
@@ -299,8 +298,8 @@ export default function GriekenRomeinenPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-stone-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-stone-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -309,8 +308,8 @@ export default function GriekenRomeinenPage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Users className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-stone-600 mb-2 flex items-center">
+              <Users className="h-5 w-5 mr-2 text-stone-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -325,6 +324,7 @@ export default function GriekenRomeinenPage() {
   // Handler voor tab wijziging
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId)
+    // Update selectedBouw op basis van de geselecteerde tab
     if (tabId === 'onderbouw') {
       setSelectedBouw('onderbouw')
     } else if (tabId === 'middenbouw34') {
@@ -417,14 +417,12 @@ export default function GriekenRomeinenPage() {
               />
 
               {/* 5-Fasen Verticale Lijst */}
-              <div ref={didacticRouteRef}>
-                <DidacticRoute
-                  phases={activeRoute.fasen}
-                  title={activeRoute.titel}
-                  focus={activeRoute.focus}
-                  colorScheme={colorScheme}
-                />
-              </div>
+              <DidacticRoute
+                phases={activeRoute.fasen}
+                title={activeRoute.titel}
+                focus={activeRoute.focus}
+                colorScheme={colorScheme}
+              />
             </div>
 
             {/* Sidebar - 30% */}
@@ -433,7 +431,7 @@ export default function GriekenRomeinenPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <BookOpen className="h-5 w-5 text-deep-water-blue mr-2" />
+                    <BookOpen className="h-5 w-5 text-stone-700 mr-2" />
                     Boekenplank (rijke teksten)
                   </CardTitle>
                 </CardHeader>
@@ -472,7 +470,7 @@ export default function GriekenRomeinenPage() {
               <Card className="bg-gradient-to-br from-stone-50 to-orange-50 border-stone-200">
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <Users className="h-5 w-5 text-deep-water-blue mr-2" />
+                    <Users className="h-5 w-5 text-stone-700 mr-2" />
                     Partner uitgelicht
                   </CardTitle>
                 </CardHeader>
@@ -494,7 +492,7 @@ export default function GriekenRomeinenPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <FileText className="h-5 w-5 text-deep-water-blue mr-2" />
+                    <FileText className="h-5 w-5 text-stone-700 mr-2" />
                     Leerkracht toolkit
                   </CardTitle>
                 </CardHeader>
@@ -507,9 +505,9 @@ export default function GriekenRomeinenPage() {
                           href="#"
                           className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-stone-600 hover:bg-stone-50 transition-colors group"
                         >
-                          <FileText className="h-5 w-5 text-deep-water-blue group-hover:text-polder-green flex-shrink-0 mr-3" />
+                          <FileText className="h-5 w-5 text-stone-600 group-hover:text-stone-700 flex-shrink-0 mr-3" />
                           <div className="flex-1 min-w-0">
-                            <span className="text-sm font-medium text-gray-900 group-hover:text-polder-green block truncate">
+                            <span className="text-sm font-medium text-gray-900 group-hover:text-stone-700 block truncate">
                               {item.title}
                             </span>
                           </div>
@@ -517,7 +515,7 @@ export default function GriekenRomeinenPage() {
                             <Badge variant="outline" className="text-xs whitespace-nowrap">
                               {item.type}
                             </Badge>
-                            <Download className="h-4 w-4 text-gray-400 group-hover:text-polder-green flex-shrink-0" />
+                            <Download className="h-4 w-4 text-gray-400 group-hover:text-stone-600 flex-shrink-0" />
                           </div>
                         </a>
                       ))}

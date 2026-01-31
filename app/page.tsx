@@ -93,7 +93,7 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-b from-white to-gray-50 py-8 sm:py-12 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="relative bg-gradient-to-b from-white to-gray-50 py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
           {/* Subtle globe element in background */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
             <div className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-full border-4 border-deep-water-blue/20" style={{
@@ -176,7 +176,7 @@ export default function Home() {
             {/* 5-Phase Structure */}
             <div className="bg-gray-50 rounded-lg p-8 border border-gray-200">
               <div className="flex items-center mb-6">
-                <BookOpenIcon className="h-8 w-8 text-deep-water-blue mr-3" />
+                <BookOpenIcon className="h-8 w-8 text-brick-red mr-3" />
                 <h3 className="font-serif text-2xl font-bold text-deep-water-blue">5-fase structuur</h3>
               </div>
               <div className="grid md:grid-cols-5 gap-4">
@@ -221,7 +221,7 @@ export default function Home() {
                   >
                     <Card className="h-full border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 hover:border-polder-green cursor-pointer">
                       <CardHeader>
-                        <div className="mb-4 flex items-center justify-center text-deep-water-blue">
+                        <div className={`mb-4 flex items-center justify-center ${theme.color}`}>
                           <Icon className="h-12 w-12 group-hover:scale-110 transition-transform" />
                         </div>
                         <CardTitle className="font-serif text-xl font-bold text-deep-water-blue mb-2 group-hover:text-polder-green transition-colors">

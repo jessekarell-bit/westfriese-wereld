@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Tabs from '@/components/Tabs'
@@ -36,7 +36,6 @@ export default function ZuiderzeePage() {
   // State voor geselecteerde tab en route
   const [activeTab, setActiveTab] = useState('onderbouw')
   const [selectedBouw, setSelectedBouw] = useState<'onderbouw' | 'middenbouw34' | 'middenbouw56' | 'bovenbouw'>('onderbouw')
-  const didacticRouteRef = useRef<HTMLDivElement>(null)
 
   // Routes per bouw
   const routes = {
@@ -72,63 +71,63 @@ export default function ZuiderzeePage() {
       ]
     },
     middenbouw34: {
-      titel: 'De Muur in de Zee',
-      focus: 'Observatie, het verschil tussen zout/zoet en de sociale verandering',
+      titel: 'De Afsluitdijk',
+      focus: 'Cornelis Lely, Constructie & Eb/Vloed',
       fasen: [
         {
-          fase: 'Doelbepaling',
-          beschrijving: 'De leerlingen ontdekken het fysieke verschil tussen zout (zee) en zoet (meer) water en begrijpen dat de afsluiting in 1932 grote gevolgen had voor de mensen die er woonden (vissers vs. boeren). Ze leren navigeren op een kaart van "Toen" en "Nu".',
+          fase: 'Verwondering',
+          beschrijving: 'Proef het verschil! (Zout water vs. Zoet water experiment).',
           icon: Shield
         },
         {
-          fase: 'Narratieve Inbedding',
-          beschrijving: '"De Muur in de Zee": Het verhaal wordt verteld vanuit twee kinderen in 1932: een visserszoon uit Enkhuizen (die bang is dat de vis verdwijnt) en een boerendochter uit de Wieringermeer (die blij is met het nieuwe land). De leerlingen beleven de verwarring: de zee wordt ineens een meer.',
+          fase: 'Historie',
+          beschrijving: 'De watersnood van 1916 en het gedurfde plan van Lely.',
           icon: BookOpen
         },
         {
-          fase: 'Activering',
-          beschrijving: 'Het Waterlab: In de klas staan twee bakken water (zout en zoet). De leerlingen doen een drijfproef met een ei (in zout water drijft het, in zoet zinkt het). Excursie: Bezoek aan het Zuiderzeemuseum met focus op de oude vissershuisjes en het leven van vóór de dijk.',
+          fase: 'Ervaring',
+          beschrijving: 'Excursie naar het Zuiderzeemuseum (Enkhuizen) of het Vlietermonument (Afsluitdijk).',
           icon: MapPin
         },
         {
-          fase: 'Concretisering',
-          beschrijving: 'Spel van Verandering: Onderzoek: Proefje met planten: wat gebeurt er als je een plant zout water geeft? (Hij gaat dood -> daarom was de Afsluitdijk nodig voor de boeren). Maken: Het bouwen van een Tijdlijn in de klas: Plaatjes van botters (vroeger) en tractoren (nu) op de juiste plek plakken. Rol: Rollenspel in de klas: de Visser tegen de Boer.',
+          fase: 'Onderzoek',
+          beschrijving: 'Bouw je eigen dijk: In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?',
           icon: Search
         },
         {
-          fase: 'Afsluiting',
-          beschrijving: 'Het Toneelstuk: De leerlingen voeren een kort toneelstuk of tableau vivant op voor ouders of een andere klas, waarin ze laten zien hoe de vissers afscheid namen van de zee en de boeren het nieuwe land verwelkomden.',
+          fase: 'Presentatie',
+          beschrijving: 'De Toekomst van het IJsselmeer: Leerlingen ontwerpen drijvende huizen.',
           icon: Users
         }
       ]
     },
     middenbouw56: {
-      titel: 'De Ecologische Metamorfose',
-      focus: 'Systeemdenken, biologie (osmose/voedselketens) en watertechniek',
+      titel: 'De Afsluitdijk',
+      focus: 'Cornelis Lely, Constructie & Eb/Vloed',
       fasen: [
         {
-          fase: 'Doelbepaling',
-          beschrijving: 'De leerlingen analyseren de afsluiting als een ecologische schok. Ze leren over voedselketens (waarom verdween de haring?), het biologische principe van osmose (waarom overleeft een zeevis niet in zoet water?) en de techniek van water wegpompen.',
+          fase: 'Verwondering',
+          beschrijving: 'Proef het verschil! (Zout water vs. Zoet water experiment).',
           icon: Shield
         },
         {
-          fase: 'Narratieve Inbedding',
-          beschrijving: '"Het Raadsel van de Verdwenen Haring": De leerlingen volgen Klaas, een jongen in 1933. Zijn vader komt thuis met lege netten. De haring is weg, maar er verschijnen vreemde glibberige dieren (palingen). De leerlingen fungeren als "Natuurdetectives" die moeten uitzoeken waarom de natuur in de war is.',
+          fase: 'Historie',
+          beschrijving: 'De watersnood van 1916 en het gedurfde plan van Lely.',
           icon: BookOpen
         },
         {
-          fase: 'Activering',
-          beschrijving: 'Watertoppers: Deelname aan het programma Watertoppers in het Zuiderzeemuseum. Hier ervaren ze fysiek hoe zwaar het is om water te verplaatsen met een vijzel en bouwen ze dijken. Ze zien de technische kant van de strijd tegen het water.',
+          fase: 'Ervaring',
+          beschrijving: 'Excursie naar het Zuiderzeemuseum (Enkhuizen) of het Vlietermonument (Afsluitdijk).',
           icon: MapPin
         },
         {
-          fase: 'Concretisering',
-          beschrijving: 'Het Laboratorium: Biologie: Osmose-proef: Een stukje komkommer in zout water leggen (wordt slap) vs. zoet water (blijft stevig). Dit verklaart waarom zeevissen uitdrogen in zoet water. Data: Grafieken maken van de visvangst in Enkhuizen (de kelderende lijn van de haring na 1932). Ecologie: Het reconstrueren van de voedselketen: van haring/bruinvis (toen) naar muggenlarve/snoekbaars (nu).',
+          fase: 'Onderzoek',
+          beschrijving: 'Bouw je eigen dijk: In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?',
           icon: Search
         },
         {
-          fase: 'Afsluiting',
-          beschrijving: 'Het Natuurbeheersplan: De klas wordt een adviesbureau. Ze ontwerpen een maquette of poster voor een nieuw stukje IJsselmeer (geïnspireerd op de Marker Wadden of Vismigratierivier) waar ruimte is voor zowel natuur als recreatie. Ze presenteren dit aan een "Dijkgraaf".',
+          fase: 'Presentatie',
+          beschrijving: 'De Toekomst van het IJsselmeer: Leerlingen ontwerpen drijvende huizen.',
           icon: Users
         }
       ]
@@ -173,7 +172,7 @@ export default function ZuiderzeePage() {
       label: 'Onderbouw',
       subtitle: 'Groep 1-2',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
               Vissen & Boten
@@ -185,8 +184,8 @@ export default function ZuiderzeePage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -195,8 +194,8 @@ export default function ZuiderzeePage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Ship className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <Ship className="h-5 w-5 mr-2 text-cyan-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -211,35 +210,34 @@ export default function ZuiderzeePage() {
       label: 'Middenbouw',
       subtitle: 'Groep 3-4',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              De Muur in de Zee
+              De Afsluitdijk
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Observatie, het verschil tussen zout/zoet en de sociale verandering</p>
+              <p className="text-gray-700">Cornelis Lely, Constructie & Eb/Vloed</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              "De Muur in de Zee": Het verhaal wordt verteld vanuit twee kinderen in 1932: een visserszoon uit Enkhuizen (die bang is dat de vis verdwijnt) en een boerendochter uit de Wieringermeer (die blij is met het nieuwe land). De leerlingen beleven de verwarring: de zee wordt ineens een meer.
+              Bouw je eigen dijk: In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Lightbulb className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <Lightbulb className="h-5 w-5 mr-2 text-cyan-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>Het Waterlab:</strong> In de klas staan twee bakken water (zout en zoet). De leerlingen doen een drijfproef met een ei (in zout water drijft het, in zoet zinkt het).</p>
-              <p><strong>Spel van Verandering:</strong> Rollenspel in de klas: de Visser tegen de Boer.</p>
+              <p><strong>Bouw je eigen dijk:</strong> In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?</p>
             </div>
           </div>
         </div>
@@ -250,35 +248,34 @@ export default function ZuiderzeePage() {
       label: 'Middenbouw',
       subtitle: 'Groep 5-6',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
-              De Ecologische Metamorfose
+              De Afsluitdijk
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Systeemdenken, biologie (osmose/voedselketens) en watertechniek</p>
+              <p className="text-gray-700">Cornelis Lely, Constructie & Eb/Vloed</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              "Het Raadsel van de Verdwenen Haring": De leerlingen volgen Klaas, een jongen in 1933. Zijn vader komt thuis met lege netten. De haring is weg, maar er verschijnen vreemde glibberige dieren (palingen). De leerlingen fungeren als "Natuurdetectives" die moeten uitzoeken waarom de natuur in de war is.
+              Bouw je eigen dijk: In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Search className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <Search className="h-5 w-5 mr-2 text-cyan-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>Watertoppers:</strong> Deelname aan het programma Watertoppers in het Zuiderzeemuseum. Hier ervaren ze fysiek hoe zwaar het is om water te verplaatsen met een vijzel en bouwen ze dijken.</p>
-              <p><strong>Het Laboratorium:</strong> Osmose-proef met komkommer, grafieken maken van visvangst, en voedselketen reconstrueren.</p>
+              <p><strong>Bouw je eigen dijk:</strong> In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?</p>
             </div>
           </div>
         </div>
@@ -289,7 +286,7 @@ export default function ZuiderzeePage() {
       label: 'Bovenbouw',
       subtitle: 'Groep 7-8',
       content: (
-        <div className="space-y-6 min-h-[400px]">
+        <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
               Ecologie & Economie
@@ -301,8 +298,8 @@ export default function ZuiderzeePage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -311,8 +308,8 @@ export default function ZuiderzeePage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Fish className="h-5 w-5 mr-2 text-deep-water-blue" />
+            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
+              <Fish className="h-5 w-5 mr-2 text-cyan-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -419,14 +416,12 @@ export default function ZuiderzeePage() {
               />
 
               {/* 5-Fasen Verticale Lijst */}
-              <div ref={didacticRouteRef}>
-                <DidacticRoute
-                  phases={activeRoute.fasen}
-                  title={activeRoute.titel}
-                  focus={activeRoute.focus}
-                  colorScheme={colorScheme}
-                />
-              </div>
+              <DidacticRoute
+                phases={activeRoute.fasen}
+                title={activeRoute.titel}
+                focus={activeRoute.focus}
+                colorScheme={colorScheme}
+              />
             </div>
 
             {/* Sidebar - 30% */}
@@ -435,7 +430,7 @@ export default function ZuiderzeePage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <BookOpen className="h-5 w-5 text-deep-water-blue mr-2" />
+                    <BookOpen className="h-5 w-5 text-cyan-700 mr-2" />
                     Boekenplank (rijke teksten)
                   </CardTitle>
                 </CardHeader>
@@ -474,7 +469,7 @@ export default function ZuiderzeePage() {
               <Card className="bg-gradient-to-br from-cyan-50 to-blue-50 border-cyan-200">
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <Users className="h-5 w-5 text-deep-water-blue mr-2" />
+                    <Users className="h-5 w-5 text-cyan-700 mr-2" />
                     Partner uitgelicht
                   </CardTitle>
                 </CardHeader>
@@ -496,7 +491,7 @@ export default function ZuiderzeePage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <FileText className="h-5 w-5 text-deep-water-blue mr-2" />
+                    <FileText className="h-5 w-5 text-cyan-700 mr-2" />
                     Leerkracht toolkit
                   </CardTitle>
                 </CardHeader>
@@ -509,9 +504,9 @@ export default function ZuiderzeePage() {
                           href="#"
                           className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-cyan-600 hover:bg-cyan-50 transition-colors group"
                         >
-                          <FileText className="h-5 w-5 text-deep-water-blue group-hover:text-polder-green flex-shrink-0 mr-3" />
+                          <FileText className="h-5 w-5 text-cyan-600 group-hover:text-cyan-700 flex-shrink-0 mr-3" />
                           <div className="flex-1 min-w-0">
-                            <span className="text-sm font-medium text-gray-900 group-hover:text-polder-green block truncate">
+                            <span className="text-sm font-medium text-gray-900 group-hover:text-cyan-700 block truncate">
                               {item.title}
                             </span>
                           </div>
@@ -519,7 +514,7 @@ export default function ZuiderzeePage() {
                             <Badge variant="outline" className="text-xs whitespace-nowrap">
                               {item.type}
                             </Badge>
-                            <Download className="h-4 w-4 text-gray-400 group-hover:text-polder-green flex-shrink-0" />
+                            <Download className="h-4 w-4 text-gray-400 group-hover:text-cyan-600 flex-shrink-0" />
                           </div>
                         </a>
                       ))}
