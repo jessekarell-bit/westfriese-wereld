@@ -182,7 +182,7 @@ export default function KasteelRadboudPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-rose-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -192,7 +192,7 @@ export default function KasteelRadboudPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Castle className="h-5 w-5 mr-2 text-rose-600" />
+              <Castle className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -221,7 +221,7 @@ export default function KasteelRadboudPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-rose-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -231,7 +231,7 @@ export default function KasteelRadboudPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Sword className="h-5 w-5 mr-2 text-rose-600" />
+              <Sword className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -260,7 +260,7 @@ export default function KasteelRadboudPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-rose-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -270,7 +270,7 @@ export default function KasteelRadboudPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Search className="h-5 w-5 mr-2 text-rose-600" />
+              <Search className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -299,7 +299,7 @@ export default function KasteelRadboudPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-rose-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -309,7 +309,7 @@ export default function KasteelRadboudPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Gavel className="h-5 w-5 mr-2 text-rose-600" />
+              <Gavel className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -432,7 +432,7 @@ export default function KasteelRadboudPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <BookOpen className="h-5 w-5 text-rose-600 mr-2" />
+                    <BookOpen className="h-5 w-5 text-deep-water-blue mr-2" />
                     Boekenplank (rijke teksten)
                   </CardTitle>
                 </CardHeader>
@@ -471,7 +471,7 @@ export default function KasteelRadboudPage() {
               <Card className="bg-gradient-to-br from-rose-50 to-red-50 border-rose-200">
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <Users className="h-5 w-5 text-rose-800 mr-2" />
+                    <Users className="h-5 w-5 text-deep-water-blue mr-2" />
                     Partner uitgelicht
                   </CardTitle>
                 </CardHeader>
@@ -493,7 +493,7 @@ export default function KasteelRadboudPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <FileText className="h-5 w-5 text-rose-600 mr-2" />
+                    <FileText className="h-5 w-5 text-deep-water-blue mr-2" />
                     Leerkracht toolkit
                   </CardTitle>
                 </CardHeader>
@@ -506,7 +506,7 @@ export default function KasteelRadboudPage() {
                           href="#"
                           className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-rose-600 hover:bg-rose-50 transition-colors group"
                         >
-                          <FileText className="h-5 w-5 text-rose-600 group-hover:text-rose-700 flex-shrink-0 mr-3" />
+                          <FileText className="h-5 w-5 text-deep-water-blue group-hover:text-polder-green flex-shrink-0 mr-3" />
                           <div className="flex-1 min-w-0">
                             <span className="text-sm font-medium text-gray-900 group-hover:text-rose-800 block truncate">
                               {item.title}
@@ -516,7 +516,7 @@ export default function KasteelRadboudPage() {
                             <Badge variant="outline" className="text-xs whitespace-nowrap">
                               {item.type}
                             </Badge>
-                            <Download className="h-4 w-4 text-gray-400 group-hover:text-rose-600 flex-shrink-0" />
+                            <Download className="h-4 w-4 text-gray-400 group-hover:text-polder-green flex-shrink-0" />
                           </div>
                         </a>
                       ))}

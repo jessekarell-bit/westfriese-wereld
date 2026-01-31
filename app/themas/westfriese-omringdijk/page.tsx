@@ -186,7 +186,7 @@ export default function WaterWorldPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -196,7 +196,7 @@ export default function WaterWorldPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Sprout className="h-5 w-5 mr-2 text-cyan-600" />
+              <Sprout className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -225,7 +225,7 @@ export default function WaterWorldPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -235,7 +235,7 @@ export default function WaterWorldPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Lightbulb className="h-5 w-5 mr-2 text-cyan-600" />
+              <Lightbulb className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -263,7 +263,7 @@ export default function WaterWorldPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -273,7 +273,7 @@ export default function WaterWorldPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Search className="h-5 w-5 mr-2 text-cyan-600" />
+              <Search className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -301,7 +301,7 @@ export default function WaterWorldPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -311,7 +311,7 @@ export default function WaterWorldPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Gavel className="h-5 w-5 mr-2 text-cyan-600" />
+              <Gavel className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -438,7 +438,7 @@ export default function WaterWorldPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <BookOpen className="h-5 w-5 text-cyan-600 mr-2" />
+                    <BookOpen className="h-5 w-5 text-deep-water-blue mr-2" />
                     Boekenplank (rijke teksten)
                   </CardTitle>
                 </CardHeader>
@@ -499,7 +499,7 @@ export default function WaterWorldPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <FileText className="h-5 w-5 text-cyan-600 mr-2" />
+                    <FileText className="h-5 w-5 text-deep-water-blue mr-2" />
                     Leerkracht toolkit
                   </CardTitle>
                 </CardHeader>
@@ -512,9 +512,9 @@ export default function WaterWorldPage() {
                           href="#"
                           className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-cyan-600 hover:bg-cyan-50 transition-colors group"
                         >
-                          <FileText className="h-5 w-5 text-cyan-600 group-hover:text-cyan-700 flex-shrink-0 mr-3" />
+                          <FileText className="h-5 w-5 text-deep-water-blue group-hover:text-polder-green flex-shrink-0 mr-3" />
                           <div className="flex-1 min-w-0">
-                            <span className="text-sm font-medium text-gray-900 group-hover:text-cyan-700 block truncate">
+                            <span className="text-sm font-medium text-gray-900 group-hover:text-polder-green block truncate">
                               {item.title}
                             </span>
                           </div>
@@ -522,7 +522,7 @@ export default function WaterWorldPage() {
                             <Badge variant="outline" className="text-xs whitespace-nowrap">
                               {item.type}
                             </Badge>
-                            <Download className="h-4 w-4 text-gray-400 group-hover:text-cyan-600 flex-shrink-0" />
+                            <Download className="h-4 w-4 text-gray-400 group-hover:text-polder-green flex-shrink-0" />
                           </div>
                         </a>
                       ))}

@@ -69,7 +69,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
             
             <div className="relative max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-50 border border-amber-200 rounded-full mb-6">
-                <Construction className="h-5 w-5 text-amber-600" />
+                <Construction className="h-5 w-5 text-deep-water-blue" />
                 <Badge variant="outline" className="bg-amber-50 border-amber-200 text-amber-700 px-3 py-1">
                   In Ontwikkeling
                 </Badge>
@@ -100,7 +100,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-3 bg-amber-100 rounded-lg">
-                      <Construction className="h-6 w-6 text-amber-700" />
+                      <Construction className="h-6 w-6 text-deep-water-blue" />
                     </div>
                     <CardTitle className="font-serif text-xl text-deep-water-blue">
                       Wat komt eraan?

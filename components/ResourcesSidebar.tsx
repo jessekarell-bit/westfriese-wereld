@@ -18,7 +18,7 @@ export default function ResourcesSidebar({ resources = [], themeName }: Resource
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center text-lg">
-            <BookOpen className="h-5 w-5 text-polder-green mr-2" />
+            <BookOpen className="h-5 w-5 text-deep-water-blue mr-2" />
             Rijke Teksten
           </CardTitle>
         </CardHeader>
@@ -48,7 +48,7 @@ export default function ResourcesSidebar({ resources = [], themeName }: Resource
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center text-lg">
-            <MapPin className="h-5 w-5 text-brick-red mr-2" />
+            <MapPin className="h-5 w-5 text-deep-water-blue mr-2" />
             Eropuit
           </CardTitle>
         </CardHeader>

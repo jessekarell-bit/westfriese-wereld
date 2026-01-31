@@ -176,7 +176,7 @@ export default function Home() {
             {/* 5-Phase Structure */}
             <div className="bg-gray-50 rounded-lg p-8 border border-gray-200">
               <div className="flex items-center mb-6">
-                <BookOpenIcon className="h-8 w-8 text-brick-red mr-3" />
+                <BookOpenIcon className="h-8 w-8 text-deep-water-blue mr-3" />
                 <h3 className="font-serif text-2xl font-bold text-deep-water-blue">5-fase structuur</h3>
               </div>
               <div className="grid md:grid-cols-5 gap-4">
@@ -221,7 +221,7 @@ export default function Home() {
                   >
                     <Card className="h-full border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 hover:border-polder-green cursor-pointer">
                       <CardHeader>
-                        <div className={`mb-4 flex items-center justify-center ${theme.color}`}>
+                        <div className="mb-4 flex items-center justify-center text-deep-water-blue">
                           <Icon className="h-12 w-12 group-hover:scale-110 transition-transform" />
                         </div>
                         <CardTitle className="font-serif text-xl font-bold text-deep-water-blue mb-2 group-hover:text-polder-green transition-colors">

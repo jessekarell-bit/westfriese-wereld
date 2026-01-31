@@ -42,7 +42,7 @@ export default function HandelEnGoudenEeuwPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-amber-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -52,7 +52,7 @@ export default function HandelEnGoudenEeuwPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Ship className="h-5 w-5 mr-2 text-amber-600" />
+              <Ship className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -81,7 +81,7 @@ export default function HandelEnGoudenEeuwPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-amber-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -91,7 +91,7 @@ export default function HandelEnGoudenEeuwPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Ship className="h-5 w-5 mr-2 text-amber-600" />
+              <Ship className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -121,7 +121,7 @@ export default function HandelEnGoudenEeuwPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-amber-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -131,7 +131,7 @@ export default function HandelEnGoudenEeuwPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Ship className="h-5 w-5 mr-2 text-amber-600" />
+              <Ship className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -161,7 +161,7 @@ export default function HandelEnGoudenEeuwPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-amber-600" />
+              <BookOpen className="h-5 w-5 mr-2 text-deep-water-blue" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -171,7 +171,7 @@ export default function HandelEnGoudenEeuwPage() {
 
           <div>
             <h4 className="font-semibold text-deep-water-blue mb-2 flex items-center">
-              <Coins className="h-5 w-5 mr-2 text-amber-600" />
+              <Coins className="h-5 w-5 mr-2 text-deep-water-blue" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -303,7 +303,7 @@ export default function HandelEnGoudenEeuwPage() {
                             </div>
                             <div className="flex-1 min-w-0">
                               <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3 flex-wrap">
-                                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0">
+                                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-amber-100 text-deep-water-blue flex items-center justify-center flex-shrink-0">
                                   <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
                                 </div>
                                 <h4 className="font-semibold text-amber-700 text-base sm:text-lg">
@@ -368,7 +368,7 @@ export default function HandelEnGoudenEeuwPage() {
               <Card className="bg-gradient-to-br from-amber-50 to-yellow-50 border-amber-200">
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <Users className="h-5 w-5 text-amber-700 mr-2" />
+                    <Users className="h-5 w-5 text-deep-water-blue mr-2" />
                     Partner uitgelicht
                   </CardTitle>
                 </CardHeader>
@@ -403,7 +403,7 @@ export default function HandelEnGoudenEeuwPage() {
                           href="#"
                           className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-amber-600 hover:bg-amber-50 transition-colors group"
                         >
-                          <FileText className="h-5 w-5 text-amber-600 group-hover:text-amber-700 flex-shrink-0 mr-3" />
+                          <FileText className="h-5 w-5 text-deep-water-blue group-hover:text-polder-green flex-shrink-0 mr-3" />
                           <div className="flex-1 min-w-0">
                             <span className="text-sm font-medium text-gray-900 group-hover:text-amber-700 block truncate">
                               {item.title}

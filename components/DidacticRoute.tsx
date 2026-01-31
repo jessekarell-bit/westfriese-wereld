@@ -40,8 +40,8 @@ export function DidacticRoute({ phases, title, focus, colorScheme }: DidacticRou
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3 flex-wrap">
-                      <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full ${colorScheme.bg} ${colorScheme.text} flex items-center justify-center flex-shrink-0`}>
-                        <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
+                      <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full ${colorScheme.bg} flex items-center justify-center flex-shrink-0`}>
+                        <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-deep-water-blue" />
                       </div>
                       <h4 className={`font-semibold ${colorScheme.text} text-base sm:text-lg`}>
                         {item.fase}
