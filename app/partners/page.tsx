@@ -104,7 +104,7 @@ export default function PartnersPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-6 leading-relaxed text-center">
-                    Voor de koplopers van de regio. Help mee de werknemers van de toekomst te inspireren in de thema's Agritech, Water en Duurzaamheid.
+                    Voor de koplopers van de regio. Help mee de werknemers van de toekomst te inspireren in de werelden Agritech, Water en Duurzaamheid.
                   </p>
                   
                   <Button variant="default" className="w-full mt-4">

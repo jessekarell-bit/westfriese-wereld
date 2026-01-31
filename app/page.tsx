@@ -207,7 +207,7 @@ export default function Home() {
               Ontdek onze 8 Werelden
             </h2>
             <p className="text-center text-sm sm:text-base text-gray-700 mb-8 sm:mb-12 md:mb-16 max-w-2xl mx-auto px-4">
-              Ontdek de acht thema's die de kern vormen van ons curriculum, elk met aandacht voor verschillende leeftijdsgroepen.
+              Ontdek de acht werelden die de kern vormen van ons curriculum, elk met aandacht voor verschillende leeftijdsgroepen.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">

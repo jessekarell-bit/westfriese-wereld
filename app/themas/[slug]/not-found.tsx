@@ -10,10 +10,10 @@ export default function NotFound() {
       <main className="flex-grow flex items-center justify-center px-4">
         <div className="text-center">
           <h1 className="font-serif text-4xl font-bold text-deep-water-blue mb-4">
-            Thema niet gevonden
+            Wereld niet gevonden
           </h1>
           <p className="text-gray-700 mb-8">
-            Het opgevraagde thema bestaat niet of is verwijderd.
+            De opgevraagde wereld bestaat niet of is verwijderd.
           </p>
           <Link
             href="/"

@@ -387,7 +387,7 @@ export default function ZuiderzeePage() {
               Van zout naar zoet: Het grootste waterbouwkundige project ter wereld
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
-              Ooit voeren hier piraten en VOC-schepen op een woeste zoute zee. Nu is het de grootste zoetwatervoorraad van Nederland. Hoe tem je een zee? En wat gebeurt er met de vissen als het water verandert? Een thema over Cornelis Lely, de Afsluitdijk en nieuwe natuur.
+              Ooit voeren hier piraten en VOC-schepen op een woeste zoute zee. Nu is het de grootste zoetwatervoorraad van Nederland. Hoe tem je een zee? En wat gebeurt er met de vissen als het water verandert? Een wereld over Cornelis Lely, de Afsluitdijk en nieuwe natuur.
             </p>
           </div>
         </section>
@@ -399,7 +399,7 @@ export default function ZuiderzeePage() {
             className="inline-flex items-center text-cyan-700 hover:text-cyan-800 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Terug naar thema overzicht
+            Terug naar wereldoverzicht
           </Link>
 
           {/* Main Content with Sidebar - 70/30 split */}

@@ -385,7 +385,7 @@ export default function VoedselEnGroeiPage() {
               Seed Valley, Genetica & Voedseltoekomst
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
-              West-Friesland is de groentetuin van Europa. Maar hoe maken we voedsel dat resistent is tegen klimaatverandering? In dit thema duiken leerlingen in de wonderlijke wereld van groei, van het eerste zaadje bij de kleuters tot DNA-technologie in groep 8.
+              West-Friesland is de groentetuin van Europa. Maar hoe maken we voedsel dat resistent is tegen klimaatverandering? In deze wereld duiken leerlingen in de wonderlijke wereld van groei, van het eerste zaadje bij de kleuters tot DNA-technologie in groep 8.
             </p>
           </div>
         </section>
@@ -397,7 +397,7 @@ export default function VoedselEnGroeiPage() {
             className="inline-flex items-center text-lime-700 hover:text-lime-800 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Terug naar thema overzicht
+            Terug naar wereldoverzicht
           </Link>
 
           {/* Main Content with Sidebar - 70/30 split */}

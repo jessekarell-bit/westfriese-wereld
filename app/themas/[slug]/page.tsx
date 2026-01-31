@@ -31,7 +31,7 @@ const slugToTitleMap: Record<string, string> = {
 
 // Helper function to convert slug to readable title with "De Wereld van..." prefix
 function slugToTitle(slug: string): string {
-  if (!slug) return 'Thema'
+  if (!slug) return 'Wereld'
   
   // Check if we have a mapping for this slug
   if (slugToTitleMap[slug]) {
@@ -78,7 +78,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
                 De Wereld van {title}
               </h1>
               <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                Achter de schermen werken we hard aan de leerlijnen voor dit thema. We zoeken nog specifieke partners voor gastlessen en excursies.
+                Achter de schermen werken we hard aan de leerlijnen voor deze wereld. We zoeken nog specifieke partners voor gastlessen en excursies.
               </p>
             </div>
           </section>
@@ -91,7 +91,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
               className="inline-flex items-center text-deep-water-blue hover:text-polder-green mb-8 transition-colors group"
             >
               <ArrowLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-              Terug naar het overzicht
+              Terug naar wereldoverzicht
             </Link>
 
             <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -143,7 +143,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-700 mb-6">
-                    Heb jij expertise over <strong>{title}</strong>? Wij zoeken partners die kunnen bijdragen aan dit thema met gastlessen, excursies of praktijkervaringen.
+                    Heb jij expertise over <strong>{title}</strong>? Wij zoeken partners die kunnen bijdragen aan deze wereld met gastlessen, excursies of praktijkervaringen.
                   </CardDescription>
                   <Link
                     href="/partners"
@@ -164,7 +164,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
                     Binnenkort beschikbaar
                   </h2>
                   <p className="text-gray-700 leading-relaxed mb-6">
-                    We werken gestaag aan de ontwikkeling van alle thema's. Elk thema wordt zorgvuldig uitgewerkt met aandacht voor de drie doeldomeinen van Biesta (Kwalificatie, Socialisatie en Persoonsvorming) en de 5-fasen methodiek.
+                    We werken gestaag aan de ontwikkeling van alle werelden. Elke wereld wordt zorgvuldig uitgewerkt met aandacht voor de drie doeldomeinen van Biesta (Kwalificatie, Socialisatie en Persoonsvorming) en de 5-fasen methodiek.
                   </p>
                   <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
                     <div className="flex items-center gap-2">
@@ -254,7 +254,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
             className="inline-flex items-center text-deep-water-blue hover:text-polder-green mb-6 transition-colors"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Terug naar thema overzicht
+            Terug naar wereldoverzicht
           </Link>
 
           {/* Header */}
@@ -284,7 +284,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
               ) : (
                 <div className="bg-gray-50 rounded-lg p-8 border border-gray-200 text-center">
                   <p className="text-gray-600 italic">
-                    Nog in ontwikkeling - De inhoud voor dit thema wordt binnenkort toegevoegd.
+                    Nog in ontwikkeling - De inhoud voor deze wereld wordt binnenkort toegevoegd.
                   </p>
                 </div>
               )}

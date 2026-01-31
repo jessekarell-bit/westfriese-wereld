@@ -390,7 +390,7 @@ export default function LandEnPolderPage() {
               Kaarsrechte lijnen in een oud landschap: De Hollandse maakbaarheid
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
-              God schiep de wereld, maar de Nederlanders maakten Holland. Nergens zie je dat beter dan hier. Van de grillige sloten in oud West-Friesland tot de strakke liniaal-lijnen van de Wieringermeer en de Beemster. Een thema over wiskunde, gemalen en ruimte.
+              God schiep de wereld, maar de Nederlanders maakten Holland. Nergens zie je dat beter dan hier. Van de grillige sloten in oud West-Friesland tot de strakke liniaal-lijnen van de Wieringermeer en de Beemster. Een wereld over wiskunde, gemalen en ruimte.
             </p>
           </div>
         </section>
@@ -402,7 +402,7 @@ export default function LandEnPolderPage() {
             className="inline-flex items-center text-green-700 hover:text-green-800 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Terug naar thema overzicht
+            Terug naar wereldoverzicht
           </Link>
 
           {/* Main Content with Sidebar - 70/30 split */}

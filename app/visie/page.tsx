@@ -142,7 +142,7 @@ export default function VisiePage() {
                         <div className="h-full w-[30%] bg-polder-green" />
                       </div>
                       <p className="text-gray-700 mt-2">
-                        Vrije ruimte voor schooleigen accenten en lokale thema&apos;s, ingezet voor diepgaand thematisch werk en regionale verankering.
+                        Vrije ruimte voor schooleigen accenten en lokale werelden, ingezet voor diepgaand thematisch werk en regionale verankering.
                       </p>
                     </div>
                   </div>

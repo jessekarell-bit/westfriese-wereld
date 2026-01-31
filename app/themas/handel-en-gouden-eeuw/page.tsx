@@ -185,7 +185,7 @@ export default function HandelEnGoudenEeuwPage() {
     }
   ]
 
-  // 5-Fasen specifiek voor dit thema
+  // 5-Fasen specifiek voor deze wereld
   const fasen = [
     {
       fase: 'Doel',
@@ -258,7 +258,7 @@ export default function HandelEnGoudenEeuwPage() {
               Wereldhandel, Rijkdom & Schaduwkanten
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
-              Hoorn was een van de belangrijkste havensteden van de VOC. In dit thema ontdekken leerlingen de wereld van handel, rijkdom en scheepvaart. Van geurende specerijen bij de kleuters tot kritisch nadenken over kolonialisme in groep 8.
+              Hoorn was een van de belangrijkste havensteden van de VOC. In deze wereld ontdekken leerlingen de wereld van handel, rijkdom en scheepvaart. Van geurende specerijen bij de kleuters tot kritisch nadenken over kolonialisme in groep 8.
             </p>
           </div>
         </section>
@@ -270,7 +270,7 @@ export default function HandelEnGoudenEeuwPage() {
             className="inline-flex items-center text-amber-700 hover:text-amber-800 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Terug naar thema overzicht
+            Terug naar wereldoverzicht
           </Link>
 
           {/* Main Content with Sidebar - 70/30 split */}

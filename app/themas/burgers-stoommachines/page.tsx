@@ -387,7 +387,7 @@ export default function BurgersEnStoommachinesPage() {
               IJzer, rook en revolutie: De moderne tijd denderde West-Friesland binnen.
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
-              Plotseling was er lawaai. De trekschuit ging te langzaam en de paarden werden vervangen door machines. Met de komst van Stoomtram 'Bello' veranderde alles. Maar brachten die machines alleen maar goeds? Een thema over uitvinders, fabrieksarbeiders en de strijd voor een eerlijk loon.
+              Plotseling was er lawaai. De trekschuit ging te langzaam en de paarden werden vervangen door machines. Met de komst van Stoomtram 'Bello' veranderde alles. Maar brachten die machines alleen maar goeds? Een wereld over uitvinders, fabrieksarbeiders en de strijd voor een eerlijk loon.
             </p>
           </div>
         </section>
@@ -399,7 +399,7 @@ export default function BurgersEnStoommachinesPage() {
             className="inline-flex items-center text-slate-700 hover:text-slate-800 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Terug naar thema overzicht
+            Terug naar wereldoverzicht
           </Link>
 
           {/* Main Content with Sidebar - 70/30 split */}

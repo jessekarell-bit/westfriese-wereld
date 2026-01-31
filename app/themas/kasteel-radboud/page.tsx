@@ -387,7 +387,7 @@ export default function KasteelRadboudPage() {
               Ridders, macht en dwangburchten: Wie is hier eigenlijk de baas?
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
-              Kasteel Radboud in Medemblik is het enige overgebleven kasteel van Floris V in West-Friesland. Het staat er niet om ons te beschermen, maar om ons te bewaken. Een thema over de Middeleeuwen, ruzie met de graaf en leven binnen dikke muren.
+              Kasteel Radboud in Medemblik is het enige overgebleven kasteel van Floris V in West-Friesland. Het staat er niet om ons te beschermen, maar om ons te bewaken. Een wereld over de Middeleeuwen, ruzie met de graaf en leven binnen dikke muren.
             </p>
           </div>
         </section>
@@ -399,7 +399,7 @@ export default function KasteelRadboudPage() {
             className="inline-flex items-center text-rose-800 hover:text-rose-900 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Terug naar thema overzicht
+            Terug naar wereldoverzicht
           </Link>
 
           {/* Main Content with Sidebar - 70/30 split */}

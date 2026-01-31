@@ -444,7 +444,7 @@ export default function DidactiekPage() {
               Het spiraalcurriculum: verticale samenhang
             </h2>
             <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto text-lg">
-              Hoe één thema (bijv. De Dijk) meegroeit met het kind van onderbouw tot bovenbouw.
+              Hoe één wereld (bijv. De Dijk) meegroeit met het kind van onderbouw tot bovenbouw.
             </p>
             
             <div className="max-w-3xl mx-auto">

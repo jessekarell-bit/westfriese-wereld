@@ -45,7 +45,7 @@ export const themes: CurriculumData = {
     {
       id: "westfriese-omringdijk",
       name: "De West-Friese Omringdijk",
-      introduction: "De West-Friese Omringdijk is een van de oudste dijken van Nederland en vertelt het verhaal van de eeuwige strijd tegen het water. Dit thema verbindt lokale geschiedenis met actuele klimaatvraagstukken.",
+      introduction: "De West-Friese Omringdijk is een van de oudste dijken van Nederland en vertelt het verhaal van de eeuwige strijd tegen het water. Deze wereld verbindt lokale geschiedenis met actuele klimaatvraagstukken.",
       bouw: {
         onderbouw: {
           description: "Zintuiglijke ervaring, de mythe van de Waterwolf",
@@ -96,7 +96,7 @@ export const themes: CurriculumData = {
     {
       id: "grieken-romeinen",
       name: "Grieken en Romeinen",
-      introduction: "Ontdek hoe de Romeinen en de vrije Friezen elkaar ontmoetten aan de grens van het Romeinse Rijk. Dit thema verbindt lokale geschiedenis met klassieke beschavingen.",
+      introduction: "Ontdek hoe de Romeinen en de vrije Friezen elkaar ontmoetten aan de grens van het Romeinse Rijk. Deze wereld verbindt lokale geschiedenis met klassieke beschavingen.",
       bouw: {
         onderbouw: {
           description: "Schatgraven, vroeger versus nu",

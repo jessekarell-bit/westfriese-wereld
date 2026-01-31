@@ -49,7 +49,7 @@ export default function ResourcesSidebar({ resources = [], themeName, themeId }:
               </ul>
             ) : (
               <p className="text-gray-500 text-sm italic">
-                Nog geen boeken toegevoegd voor dit thema.
+                Nog geen boeken toegevoegd voor deze wereld.
               </p>
             )}
           </MemberGate>
@@ -78,7 +78,7 @@ export default function ResourcesSidebar({ resources = [], themeName, themeId }:
             </ul>
           ) : (
             <p className="text-gray-500 text-sm italic">
-              Nog geen excursies toegevoegd voor dit thema.
+              Nog geen excursies toegevoegd voor deze wereld.
             </p>
           )}
         </CardContent>

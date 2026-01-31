@@ -388,7 +388,7 @@ export default function GriekenRomeinenPage() {
               Grensland: Handel en cultuur aan de rand van het Rijk
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
-              West-Friesland lag net buiten het Romeinse Rijk. Waren wij 'barbaren'? Of slimme handelaren? In dit thema ontdekken leerlingen de invloed van de klassieke oudheid op onze taal, cultuur en het landschap.
+              West-Friesland lag net buiten het Romeinse Rijk. Waren wij 'barbaren'? Of slimme handelaren? In deze wereld ontdekken leerlingen de invloed van de klassieke oudheid op onze taal, cultuur en het landschap.
             </p>
           </div>
         </section>
@@ -400,7 +400,7 @@ export default function GriekenRomeinenPage() {
             className="inline-flex items-center text-stone-700 hover:text-stone-800 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Terug naar thema overzicht
+            Terug naar wereldoverzicht
           </Link>
 
           {/* Main Content with Sidebar - 70/30 split */}

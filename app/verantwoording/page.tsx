@@ -18,12 +18,12 @@ const SLO_MAPPING = [
       {
         id: "Kerndoel 1",
         title: "Taalcompetentie",
-        description: "Taal als basis voor alle thema's via 'Rijke Teksten'.",
+        description: "Taal als basis voor alle werelden via 'Rijke Teksten'.",
         subObjectives: [
           {
             id: "1A",
             title: "Rijke taalomgeving",
-            detail: "Gebruik van de 'Didactische Leidraad' met 16 authentieke boeken per thema (8 informatief, 8 verhalend) om woordenschat en wereldkennis op te bouwen."
+            detail: "Gebruik van de 'Didactische Leidraad' met 16 authentieke boeken per wereld (8 informatief, 8 verhalend) om woordenschat en wereldkennis op te bouwen."
           },
           {
             id: "1B",
@@ -113,7 +113,7 @@ const SLO_MAPPING = [
           {
             id: "6A",
             title: "Vorm en betekenis",
-            detail: "Etymologie van Latijnse leenwoorden (muur, straat) in het thema Grieken en Romeinen."
+            detail: "Etymologie van Latijnse leenwoorden (muur, straat) in de wereld Grieken en Romeinen."
           },
           {
             id: "6B",
@@ -253,7 +253,7 @@ const SLO_MAPPING = [
           {
             id: "16B",
             title: "Instrumenten",
-            detail: "Gebruik van de landmetersketting en waterpas in het thema De Polder."
+            detail: "Gebruik van de landmetersketting en waterpas in de wereld De Polder."
           }
         ]
       },
@@ -568,7 +568,7 @@ const SLO_MAPPING = [
           {
             id: "Status",
             title: "In ontwikkeling",
-            detail: "In het huidige ontwerp is dit een ontwikkelpunt. Uit de kwaliteitsanalyse blijkt dat de integratie van Engels (bijv. via internationale handel of Seed Valley) nog niet formeel is vastgelegd in de thema's. Dit wordt geadviseerd als vervolgstap (bijv. CLIL-activiteiten in de bovenbouw)."
+            detail: "In het huidige ontwerp is dit een ontwikkelpunt. Uit de kwaliteitsanalyse blijkt dat de integratie van Engels (bijv. via internationale handel of Seed Valley) nog niet formeel is vastgelegd in de werelden. Dit wordt geadviseerd als vervolgstap (bijv. CLIL-activiteiten in de bovenbouw)."
           }
         ]
       }
@@ -713,7 +713,7 @@ export default function VerantwoordingPage() {
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                 <div className="text-2xl font-bold text-deep-water-blue">8</div>
-                <div className="text-sm text-gray-600">Thema's</div>
+                <div className="text-sm text-gray-600">Werelden</div>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                 <div className="text-2xl font-bold text-deep-water-blue">100%</div>
@@ -736,7 +736,7 @@ export default function VerantwoordingPage() {
                   <p className="font-semibold mb-2">Verantwoordingsdocument</p>
                   <p className="mb-2">
                     Dit document toont de 1-op-1 koppeling tussen de officiële SLO Kerndoelen 2025 
-                    en de 8 thema's van 'De West-Friese Wereld'. Elke kerndoel is geconcretiseerd 
+                    en de 8 werelden van 'De West-Friese Wereld'. Elke kerndoel is geconcretiseerd 
                     met specifieke subdoelen en leeractiviteiten.
                   </p>
                   <p className="text-xs text-gray-600 mt-3 italic">

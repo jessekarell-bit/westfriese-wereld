@@ -94,9 +94,9 @@ export default function ThemesOverviewPage() {
             </p>
           </div>
 
-          {/* Themes Grid */}
+          {/* Werelden Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Sorteer thema's in de juiste volgorde zoals op homepage */}
+            {/* Sorteer werelden in de juiste volgorde zoals op homepage */}
             {(() => {
               // Definieer de volgorde zoals op homepage (1-8)
               // Gebruik de IDs uit curriculum.ts
@@ -111,7 +111,7 @@ export default function ThemesOverviewPage() {
                 'tuin-van-europa',            // 8 (mapt naar /themas/voedsel-en-groei)
               ]
               
-              // Sorteer thema's volgens de volgorde
+              // Sorteer werelden volgens de volgorde
               const sortedThemes = [...themes.themes].sort((a, b) => {
                 const indexA = themeOrder.indexOf(a.id)
                 const indexB = themeOrder.indexOf(b.id)
@@ -126,7 +126,7 @@ export default function ThemesOverviewPage() {
                 const summary = getThemeSummary(theme)
                 // Gebruik nieuwe titel als die bestaat, anders de oude naam
                 const displayTitle = themeTitleMap[theme.id] || theme.name
-                // Themakleur voor icoon (zoals op themapagina's)
+                // Wereldkleur voor icoon (zoals op wereldpagina's)
                 const colorScheme = themeColorSchemes[themeColorIdMap[theme.id]] || themeColorSchemes['westfriese-omringdijk']
               
               // Map theme IDs naar de juiste pagina links
@@ -147,7 +147,7 @@ export default function ThemesOverviewPage() {
                   <Card className="h-full flex flex-col hover:shadow-xl transition-all duration-300 border-gray-200 hover:border-polder-green cursor-pointer">
                     <CardContent className="p-6 pt-6 flex flex-col flex-grow">
                       <div className="flex flex-col items-center text-center flex-grow">
-                        {/* Icon met themakleur (zoals op themapagina's) */}
+                        {/* Icon met wereldkleur (zoals op wereldpagina's) */}
                         <div className={`${colorScheme.bg} rounded-full p-4 mb-4 group-hover:scale-110 transition-transform flex-shrink-0`}>
                           <Icon className={`h-8 w-8 ${colorScheme.text}`} />
                         </div>

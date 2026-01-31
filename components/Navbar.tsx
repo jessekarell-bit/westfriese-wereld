@@ -14,7 +14,7 @@ import {
 export default function Navbar() {
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/themas', label: 'Themas' },
+    { href: '/themas', label: 'Werelden' },
     { href: '/visie', label: 'Visie' },
     { href: '/didactiek', label: 'Didactiek' },
     { href: '/partners', label: 'Partners' },
