@@ -427,8 +427,8 @@ export default function VoedselEnGroeiPage() {
               {/* Boekenplank */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <BookOpen className="h-5 w-5 text-lime-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <BookOpen className="h-10 w-10 text-lime-700 mr-2" />
                     Boekenplank (rijke teksten)
                   </CardTitle>
                 </CardHeader>
@@ -466,8 +466,8 @@ export default function VoedselEnGroeiPage() {
               {/* Partner Card 1: Seed Valley */}
               <Card className="bg-gradient-to-br from-lime-50 to-green-50 border-lime-200">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <Sprout className="h-5 w-5 text-lime-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <Sprout className="h-10 w-10 text-lime-700 mr-2" />
                     Seed Valley
                   </CardTitle>
                 </CardHeader>
@@ -490,8 +490,8 @@ export default function VoedselEnGroeiPage() {
               {/* Partner Card 2: Sow to Grow */}
               <Card className="bg-gradient-to-br from-green-50 to-lime-50 border-green-200">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <Microscope className="h-5 w-5 text-green-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <Microscope className="h-10 w-10 text-green-700 mr-2" />
                     Sow to Grow
                   </CardTitle>
                 </CardHeader>
@@ -512,8 +512,8 @@ export default function VoedselEnGroeiPage() {
               {/* Leerkracht Toolkit */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <FileText className="h-5 w-5 text-lime-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <FileText className="h-10 w-10 text-lime-700 mr-2" />
                     Leerkracht toolkit
                   </CardTitle>
                 </CardHeader>
@@ -526,7 +526,7 @@ export default function VoedselEnGroeiPage() {
                           href="#"
                           className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-lime-600 hover:bg-lime-50 transition-colors group"
                         >
-                          <FileText className="h-5 w-5 text-lime-600 group-hover:text-lime-700 flex-shrink-0 mr-3" />
+                          <FileText className="h-10 w-10 text-lime-600 group-hover:text-lime-700 flex-shrink-0 mr-3" />
                           <div className="flex-1 min-w-0">
                             <span className="text-sm font-medium text-gray-900 group-hover:text-lime-700 block truncate">
                               {item.title}

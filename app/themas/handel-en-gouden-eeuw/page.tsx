@@ -111,11 +111,11 @@ export default function HandelEnGoudenEeuwPage() {
         <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-amber-700 mb-3">
-              Scheepsjongens van de VOC
+              Het Raadsel van de Kade
             </h3>
             <div className="bg-amber-50 rounded-lg p-4 mb-4 border-l-4 border-amber-600">
               <p className="text-sm font-semibold text-amber-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Havenleven, scheepsbouw & handel</p>
+              <p className="text-gray-700">Wereldhandel (VOC/WIC), navigatietechniek en sociale verschillen (arm/rijk) in de 17e eeuw</p>
             </div>
           </div>
 
@@ -125,7 +125,7 @@ export default function HandelEnGoudenEeuwPage() {
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Het leven aan boord van een fluitschip. Hoe bouw je een schip dat duizenden kilometers kan varen? Het verhaal van de scheepsjongens die meezeilden naar Oost-Indië.
+              &quot;Het Raadsel van de Kade&quot;: De weesjongen Pieter en de bediende Tabo vinden een mysterieus scheepskistje. Via de objecten in de kist (een aandeel, specerijen, een slavenarmband) ontdekken ze dat de Gouden Eeuw voor de één rijkdom betekende en voor de ander onvrijheid.
             </p>
           </div>
 
@@ -135,10 +135,22 @@ export default function HandelEnGoudenEeuwPage() {
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
-              <p><strong>Bezoek Halve Maen:</strong> Excursie naar het VOC-schip in Hoorn.</p>
-              <p><strong>Schip bouwen:</strong> Zelf een fluitschip maken van hout en touw.</p>
-              <p><strong>Handelsspel:</strong> Ruilen van specerijen zoals in de 17e eeuw.</p>
+              <p><strong>Navigeren en Handelen:</strong> Leerlingen bouwen zelf navigatie-instrumenten (kompas, jakobsstaf) en spelen een handelsspel met aandelen, waarbij ze risico&apos;s moeten afwegen en koersen moeten berekenen op de wereldkaart.</p>
             </div>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-amber-600 mb-2 flex items-center">
+              <Target className="h-5 w-5 mr-2 text-amber-600" />
+              Didactische route (Groep 5/6)
+            </h4>
+            <ol className="space-y-3 text-gray-700 list-decimal list-inside">
+              <li><strong>Doel</strong> — Inzicht in de werking van wereldhandel (VOC/WIC), navigatietechniek en de sociale verschillen (arm/rijk) in de 17e eeuw.</li>
+              <li><strong>Narratief</strong> &quot;Het Raadsel van de Kade&quot; — De levens van weesjongen Pieter en bediende Tabo, verbonden door een mysterieuze scheepskist.</li>
+              <li><strong>Activering</strong> Stadswandeling &amp; Archief — Een zoektocht naar gevelstenen in de binnenstad (Hoorn/Enkhuizen) of een bezoek aan het Westfries Archief om een echt VOC-aandeel en scheepsjournaal te zien.</li>
+              <li><strong>Concretisering</strong> Navigeren &amp; Handelen — Zelf een jakobsstaf en kompas bouwen (Techniek/Natuurkunde). Rekenen met winst, verlies en coördinaten op de wereldkaart.</li>
+              <li><strong>Afsluiting</strong> Het Museum van Goud en Schaduw — De klas wordt een museum met twee vleugels. Leerlingen presenteren als gidsen de &apos;Gouden kant&apos; (uitvindingen, rijkdom) en de &apos;Schaduwkant&apos; (armoede, hard werken) aan ouders.</li>
+            </ol>
           </div>
         </div>
       )
@@ -328,8 +340,8 @@ export default function HandelEnGoudenEeuwPage() {
               {/* Boekenplank */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <BookOpen className="h-5 w-5 text-amber-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <BookOpen className="h-10 w-10 text-amber-700 mr-2" />
                     Boekenplank (rijke teksten)
                   </CardTitle>
                 </CardHeader>
@@ -367,8 +379,8 @@ export default function HandelEnGoudenEeuwPage() {
               {/* Partner Uitgelicht */}
               <Card className="bg-gradient-to-br from-amber-50 to-yellow-50 border-amber-200">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <Users className="h-5 w-5 text-amber-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <Users className="h-10 w-10 text-amber-700 mr-2" />
                     Partner uitgelicht
                   </CardTitle>
                 </CardHeader>
@@ -389,8 +401,8 @@ export default function HandelEnGoudenEeuwPage() {
               {/* Leerkracht Toolkit */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <FileText className="h-5 w-5 text-amber-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <FileText className="h-10 w-10 text-amber-700 mr-2" />
                     Leerkracht toolkit
                   </CardTitle>
                 </CardHeader>

@@ -18,7 +18,7 @@ import {
   ArrowRight
 } from 'lucide-react'
 
-// THEMES array with 8 themes in de juiste volgorde
+// THEMES array met 8 werelden – kleuren zoals op de wereldpagina's
 const THEMES = [
   {
     id: 1,
@@ -26,6 +26,7 @@ const THEMES = [
     description: 'Strijd tegen het water & Klimaat',
     icon: Waves,
     color: 'text-cyan-700',
+    iconBg: 'bg-cyan-100',
     link: '/themas/westfriese-omringdijk',
   },
   {
@@ -34,6 +35,7 @@ const THEMES = [
     description: 'Grensland, Handel & Cultuur',
     icon: MessageCircle,
     color: 'text-stone-700',
+    iconBg: 'bg-stone-100',
     link: '/themas/grieken-romeinen',
   },
   {
@@ -42,6 +44,7 @@ const THEMES = [
     description: 'Maakbaarheid, Wiskunde & Ruimtelijke Ordening',
     icon: LayoutGrid,
     color: 'text-green-700',
+    iconBg: 'bg-green-100',
     link: '/themas/de-polder',
   },
   {
@@ -50,6 +53,7 @@ const THEMES = [
     description: 'Wereldhandel, Rijkdom & Schaduwkanten',
     icon: Ship,
     color: 'text-amber-700',
+    iconBg: 'bg-amber-100',
     link: '/themas/handel-en-gouden-eeuw',
   },
   {
@@ -57,7 +61,8 @@ const THEMES = [
     title: 'De Wereld van de Zuiderzee naar IJsselmeer',
     description: 'Ecologie, Transformatie & Visserij',
     icon: ShieldAlert,
-    color: 'text-cyan-700',
+    color: 'text-teal-700',
+    iconBg: 'bg-teal-100',
     link: '/themas/zuiderzee-naar-ijsselmeer',
   },
   {
@@ -66,6 +71,7 @@ const THEMES = [
     description: 'Macht, Recht & Middeleeuwen',
     icon: Castle,
     color: 'text-rose-800',
+    iconBg: 'bg-rose-100',
     link: '/themas/kasteel-radboud',
   },
   {
@@ -74,6 +80,7 @@ const THEMES = [
     description: 'Innovatie, Techniek & Sociale Kwestie',
     icon: TrainFront,
     color: 'text-slate-700',
+    iconBg: 'bg-slate-100',
     link: '/themas/burgers-stoommachines',
   },
   {
@@ -82,6 +89,7 @@ const THEMES = [
     description: 'Seed Valley, Genetica & Voedseltoekomst',
     icon: Sprout,
     color: 'text-lime-700',
+    iconBg: 'bg-lime-100',
     link: '/themas/voedsel-en-groei',
   },
 ]
@@ -221,8 +229,8 @@ export default function Home() {
                   >
                     <Card className="h-full border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 hover:border-polder-green cursor-pointer">
                       <CardHeader>
-                        <div className={`mb-4 flex items-center justify-center ${theme.color}`}>
-                          <Icon className="h-12 w-12 group-hover:scale-110 transition-transform" />
+                        <div className={`mb-4 flex items-center justify-center ${theme.iconBg} rounded-full p-4 w-fit mx-auto group-hover:scale-110 transition-transform`}>
+                          <Icon className={`h-10 w-10 ${theme.color}`} />
                         </div>
                         <CardTitle className="font-serif text-xl font-bold text-deep-water-blue mb-2 group-hover:text-polder-green transition-colors">
                           {theme.title}

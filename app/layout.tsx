@@ -31,8 +31,8 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'De West-Friese Wereld | Ontdek de wereld in je eigen regio',
-  description: 'Een ontdekkingsreis voor leerlingen, dwars door de geschiedenis, natuur en toekomst van West-Friesland. De West-Friese Wereld verbindt landelijke leerdoelen met regionale identiteit.',
+  title: 'De Zaanse Wereld | Ontdek de wereld in je eigen regio',
+  description: 'Een ontdekkingsreis voor leerlingen, dwars door de geschiedenis, natuur en toekomst van de Zaanstreek. De Zaanse Wereld verbindt landelijke leerdoelen met regionale identiteit.',
   viewport: {
     width: 'device-width',
     initialScale: 1,

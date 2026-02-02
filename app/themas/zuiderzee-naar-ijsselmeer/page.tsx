@@ -174,18 +174,18 @@ export default function ZuiderzeePage() {
       content: (
         <div className="space-y-6">
           <div>
-            <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
+            <h3 className="font-serif text-2xl font-bold text-teal-700 mb-3">
               Vissen & Boten
             </h3>
-            <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
-              <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
+            <div className="bg-teal-50 rounded-lg p-4 mb-4 border-l-4 border-teal-600">
+              <p className="text-sm font-semibold text-teal-900 mb-2">Focus:</p>
               <p className="text-gray-700">Zout vs. Zoet, Drijven & Zinken, De Vissersboot</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
+            <h4 className="font-semibold text-teal-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-teal-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -194,8 +194,8 @@ export default function ZuiderzeePage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
-              <Ship className="h-5 w-5 mr-2 text-cyan-600" />
+            <h4 className="font-semibold text-teal-600 mb-2 flex items-center">
+              <Ship className="h-5 w-5 mr-2 text-teal-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -212,18 +212,18 @@ export default function ZuiderzeePage() {
       content: (
         <div className="space-y-6">
           <div>
-            <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
+            <h3 className="font-serif text-2xl font-bold text-teal-700 mb-3">
               De Afsluitdijk
             </h3>
-            <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
-              <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
+            <div className="bg-teal-50 rounded-lg p-4 mb-4 border-l-4 border-teal-600">
+              <p className="text-sm font-semibold text-teal-900 mb-2">Focus:</p>
               <p className="text-gray-700">Cornelis Lely, Constructie & Eb/Vloed</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
+            <h4 className="font-semibold text-teal-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-teal-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -232,8 +232,8 @@ export default function ZuiderzeePage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
-              <Lightbulb className="h-5 w-5 mr-2 text-cyan-600" />
+            <h4 className="font-semibold text-teal-600 mb-2 flex items-center">
+              <Lightbulb className="h-5 w-5 mr-2 text-teal-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -250,18 +250,18 @@ export default function ZuiderzeePage() {
       content: (
         <div className="space-y-6">
           <div>
-            <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
+            <h3 className="font-serif text-2xl font-bold text-teal-700 mb-3">
               De Afsluitdijk
             </h3>
-            <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
-              <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
+            <div className="bg-teal-50 rounded-lg p-4 mb-4 border-l-4 border-teal-600">
+              <p className="text-sm font-semibold text-teal-900 mb-2">Focus:</p>
               <p className="text-gray-700">Cornelis Lely, Constructie & Eb/Vloed</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
+            <h4 className="font-semibold text-teal-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-teal-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -270,8 +270,8 @@ export default function ZuiderzeePage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
-              <Search className="h-5 w-5 mr-2 text-cyan-600" />
+            <h4 className="font-semibold text-teal-600 mb-2 flex items-center">
+              <Search className="h-5 w-5 mr-2 text-teal-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -288,18 +288,18 @@ export default function ZuiderzeePage() {
       content: (
         <div className="space-y-6">
           <div>
-            <h3 className="font-serif text-2xl font-bold text-cyan-700 mb-3">
+            <h3 className="font-serif text-2xl font-bold text-teal-700 mb-3">
               Ecologie & Economie
             </h3>
-            <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
-              <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
+            <div className="bg-teal-50 rounded-lg p-4 mb-4 border-l-4 border-teal-600">
+              <p className="text-sm font-semibold text-teal-900 mb-2">Focus:</p>
               <p className="text-gray-700">Voedselketens, Watermanagement & Visserij-transitie</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
-              <BookOpen className="h-5 w-5 mr-2 text-cyan-600" />
+            <h4 className="font-semibold text-teal-600 mb-2 flex items-center">
+              <BookOpen className="h-5 w-5 mr-2 text-teal-600" />
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -308,8 +308,8 @@ export default function ZuiderzeePage() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-cyan-600 mb-2 flex items-center">
-              <Fish className="h-5 w-5 mr-2 text-cyan-600" />
+            <h4 className="font-semibold text-teal-600 mb-2 flex items-center">
+              <Fish className="h-5 w-5 mr-2 text-teal-600" />
               Kernactiviteit
             </h4>
             <div className="space-y-2 text-gray-700">
@@ -371,19 +371,19 @@ export default function ZuiderzeePage() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-cyan-50 via-blue-50 to-cyan-100 w-full px-4 py-8 sm:px-6 sm:py-12 md:p-20 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-teal-50 via-blue-50 to-teal-100 w-full px-4 py-8 sm:px-6 sm:py-12 md:p-20 overflow-hidden">
           {/* Abstract water background */}
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-cyan-600/20 to-transparent"></div>
-            <div className="absolute top-1/4 right-10 w-64 h-64 rounded-full bg-cyan-400/10 blur-3xl hidden sm:block"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-teal-600/20 to-transparent"></div>
+            <div className="absolute top-1/4 right-10 w-64 h-64 rounded-full bg-teal-400/10 blur-3xl hidden sm:block"></div>
             <div className="absolute bottom-1/4 left-10 w-48 h-48 rounded-full bg-blue-400/10 blur-3xl hidden sm:block"></div>
           </div>
 
           <div className="relative max-w-4xl mx-auto text-center w-full">
-            <h1 className="font-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-cyan-700 mb-2 sm:mb-3 md:mb-4 leading-tight px-2">
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-teal-700 mb-2 sm:mb-3 md:mb-4 leading-tight px-2">
               De Wereld van Zuiderzee naar IJsselmeer
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-cyan-800 mb-3 sm:mb-4 md:mb-6 font-medium px-2">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-teal-800 mb-3 sm:mb-4 md:mb-6 font-medium px-2">
               Van zout naar zoet: Het grootste waterbouwkundige project ter wereld
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
@@ -396,7 +396,7 @@ export default function ZuiderzeePage() {
           {/* Back button */}
           <Link 
             href="/themas"
-            className="inline-flex items-center text-cyan-700 hover:text-cyan-800 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
+            className="inline-flex items-center text-teal-700 hover:text-teal-800 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Terug naar wereldoverzicht
@@ -429,8 +429,8 @@ export default function ZuiderzeePage() {
               {/* Boekenplank */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <BookOpen className="h-5 w-5 text-cyan-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <BookOpen className="h-10 w-10 text-teal-700 mr-2" />
                     Boekenplank (rijke teksten)
                   </CardTitle>
                 </CardHeader>
@@ -441,7 +441,7 @@ export default function ZuiderzeePage() {
                         <p className="text-sm font-semibold text-gray-700 mb-2">Informatief:</p>
                         <ul className="space-y-1">
                           {boeken.informatief.map((boek, index) => (
-                            <li key={index} className="text-sm text-gray-600 border-l-2 border-cyan-600 pl-3">
+                            <li key={index} className="text-sm text-gray-600 border-l-2 border-teal-600 pl-3">
                               {boek}
                             </li>
                           ))}
@@ -451,7 +451,7 @@ export default function ZuiderzeePage() {
                         <p className="text-sm font-semibold text-gray-700 mb-2">Leesboeken:</p>
                         <ul className="space-y-1">
                           {boeken.leesboeken.map((boek, index) => (
-                            <li key={index} className="text-sm text-gray-600 border-l-2 border-cyan-600 pl-3">
+                            <li key={index} className="text-sm text-gray-600 border-l-2 border-teal-600 pl-3">
                               {boek}
                             </li>
                           ))}
@@ -466,15 +466,15 @@ export default function ZuiderzeePage() {
               </Card>
 
               {/* Partner Uitgelicht */}
-              <Card className="bg-gradient-to-br from-cyan-50 to-blue-50 border-cyan-200">
+              <Card className="bg-gradient-to-br from-teal-50 to-blue-50 border-teal-200">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <Users className="h-5 w-5 text-cyan-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <Users className="h-10 w-10 text-teal-700 mr-2" />
                     Partner uitgelicht
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <h4 className="font-semibold text-cyan-700 mb-2">
+                  <h4 className="font-semibold text-teal-700 mb-2">
                     Zuiderzeemuseum
                   </h4>
                   <p className="text-sm text-gray-700 mb-4">
@@ -490,8 +490,8 @@ export default function ZuiderzeePage() {
               {/* Leerkracht Toolkit */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <FileText className="h-5 w-5 text-cyan-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <FileText className="h-10 w-10 text-teal-700 mr-2" />
                     Leerkracht toolkit
                   </CardTitle>
                 </CardHeader>
@@ -502,11 +502,11 @@ export default function ZuiderzeePage() {
                         <a
                           key={index}
                           href="#"
-                          className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-cyan-600 hover:bg-cyan-50 transition-colors group"
+                          className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-teal-600 hover:bg-teal-50 transition-colors group"
                         >
-                          <FileText className="h-5 w-5 text-cyan-600 group-hover:text-cyan-700 flex-shrink-0 mr-3" />
+                          <FileText className="h-10 w-10 text-teal-600 group-hover:text-teal-700 flex-shrink-0 mr-3" />
                           <div className="flex-1 min-w-0">
-                            <span className="text-sm font-medium text-gray-900 group-hover:text-cyan-700 block truncate">
+                            <span className="text-sm font-medium text-gray-900 group-hover:text-teal-700 block truncate">
                               {item.title}
                             </span>
                           </div>
@@ -514,7 +514,7 @@ export default function ZuiderzeePage() {
                             <Badge variant="outline" className="text-xs whitespace-nowrap">
                               {item.type}
                             </Badge>
-                            <Download className="h-4 w-4 text-gray-400 group-hover:text-cyan-600 flex-shrink-0" />
+                            <Download className="h-4 w-4 text-gray-400 group-hover:text-teal-600 flex-shrink-0" />
                           </div>
                         </a>
                       ))}

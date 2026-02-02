@@ -429,8 +429,8 @@ export default function KasteelRadboudPage() {
               {/* Boekenplank */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <BookOpen className="h-5 w-5 text-rose-800 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <BookOpen className="h-10 w-10 text-rose-800 mr-2" />
                     Boekenplank (rijke teksten)
                   </CardTitle>
                 </CardHeader>
@@ -468,8 +468,8 @@ export default function KasteelRadboudPage() {
               {/* Partner Uitgelicht */}
               <Card className="bg-gradient-to-br from-rose-50 to-red-50 border-rose-200">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <Users className="h-5 w-5 text-rose-800 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <Users className="h-10 w-10 text-rose-800 mr-2" />
                     Partner uitgelicht
                   </CardTitle>
                 </CardHeader>
@@ -490,8 +490,8 @@ export default function KasteelRadboudPage() {
               {/* Leerkracht Toolkit */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <FileText className="h-5 w-5 text-rose-800 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <FileText className="h-10 w-10 text-rose-800 mr-2" />
                     Leerkracht toolkit
                   </CardTitle>
                 </CardHeader>
@@ -504,7 +504,7 @@ export default function KasteelRadboudPage() {
                           href="#"
                           className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-rose-600 hover:bg-rose-50 transition-colors group"
                         >
-                          <FileText className="h-5 w-5 text-rose-600 group-hover:text-rose-700 flex-shrink-0 mr-3" />
+                          <FileText className="h-10 w-10 text-rose-600 group-hover:text-rose-700 flex-shrink-0 mr-3" />
                           <div className="flex-1 min-w-0">
                             <span className="text-sm font-medium text-gray-900 group-hover:text-rose-800 block truncate">
                               {item.title}

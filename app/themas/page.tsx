@@ -149,11 +149,11 @@ export default function ThemesOverviewPage() {
                       <div className="flex flex-col items-center text-center flex-grow">
                         {/* Icon met wereldkleur (zoals op wereldpagina's) */}
                         <div className={`${colorScheme.bg} rounded-full p-4 mb-4 group-hover:scale-110 transition-transform flex-shrink-0`}>
-                          <Icon className={`h-8 w-8 ${colorScheme.text}`} />
+                          <Icon className={`h-10 w-10 ${colorScheme.text}`} />
                         </div>
                         
                         {/* Title - gebruik nieuwe "De Wereld van..." titel */}
-                        <h3 className="font-serif text-lg font-bold text-deep-water-blue mb-3 group-hover:text-polder-green transition-colors flex-shrink-0">
+                        <h3 className="font-serif text-xl font-bold text-deep-water-blue mb-3 group-hover:text-polder-green transition-colors flex-shrink-0">
                           {displayTitle}
                         </h3>
                         

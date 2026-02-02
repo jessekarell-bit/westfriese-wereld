@@ -434,8 +434,8 @@ export default function LandEnPolderPage() {
               {/* Boekenplank */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <BookOpen className="h-5 w-5 text-green-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <BookOpen className="h-10 w-10 text-green-700 mr-2" />
                     Boekenplank (rijke teksten)
                   </CardTitle>
                 </CardHeader>
@@ -473,8 +473,8 @@ export default function LandEnPolderPage() {
               {/* Partner Uitgelicht */}
               <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <Users className="h-5 w-5 text-green-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <Users className="h-10 w-10 text-green-700 mr-2" />
                     Partner uitgelicht
                   </CardTitle>
                 </CardHeader>
@@ -495,8 +495,8 @@ export default function LandEnPolderPage() {
               {/* Leerkracht Toolkit */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <FileText className="h-5 w-5 text-green-700 mr-2" />
+                  <CardTitle className="flex items-center text-xl">
+                    <FileText className="h-10 w-10 text-green-700 mr-2" />
                     Leerkracht toolkit
                   </CardTitle>
                 </CardHeader>
@@ -509,7 +509,7 @@ export default function LandEnPolderPage() {
                           href="#"
                           className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-green-600 hover:bg-green-50 transition-colors group"
                         >
-                          <FileText className="h-5 w-5 text-green-600 group-hover:text-green-700 flex-shrink-0 mr-3" />
+                          <FileText className="h-10 w-10 text-green-600 group-hover:text-green-700 flex-shrink-0 mr-3" />
                           <div className="flex-1 min-w-0">
                             <span className="text-sm font-medium text-gray-900 group-hover:text-green-700 block truncate">
                               {item.title}
