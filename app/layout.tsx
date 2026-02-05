@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Merriweather, Montserrat, Open_Sans } from 'next/font/google'
 import './globals.css'
 import ScrollRestoration from '@/components/ScrollRestoration'
+import MaintenancePage from '@/components/MaintenancePage'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -41,6 +42,9 @@ export const metadata: Metadata = {
   },
 }
 
+// Onderhoud aan: bezoekers zien de onderhoudspagina. Zet op 'false' om de site weer te tonen.
+const MAINTENANCE_MODE = process.env.NEXT_PUBLIC_MAINTENANCE !== 'false'
+
 export default function RootLayout({
   children,
 }: {
@@ -49,8 +53,14 @@ export default function RootLayout({
   return (
     <html lang="nl" className={`${inter.variable} ${merriweather.variable} ${montserrat.variable} ${openSans.variable}`} suppressHydrationWarning>
       <body className="antialiased" suppressHydrationWarning>
-        <ScrollRestoration />
-        {children}
+        {MAINTENANCE_MODE ? (
+          <MaintenancePage />
+        ) : (
+          <>
+            <ScrollRestoration />
+            {children}
+          </>
+        )}
       </body>
     </html>
   )
