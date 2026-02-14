@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
 }
 
-// Onderhoud aan: bezoekers zien de onderhoudspagina. Zet op 'false' om de site weer te tonen.
-const MAINTENANCE_MODE = process.env.NEXT_PUBLIC_MAINTENANCE !== 'false'
+// Onderhoud: zet NEXT_PUBLIC_MAINTENANCE=true in .env.local om de onderhoudspagina te tonen
+const MAINTENANCE_MODE = process.env.NEXT_PUBLIC_MAINTENANCE === 'true'
 
 export default function RootLayout({
   children,
