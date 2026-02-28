@@ -164,7 +164,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
                     Binnenkort beschikbaar
                   </h2>
                   <p className="text-gray-700 leading-relaxed mb-6">
-                    We werken gestaag aan de ontwikkeling van alle werelden. Elke wereld wordt zorgvuldig uitgewerkt met aandacht voor de drie doeldomeinen van Biesta (Kwalificatie, Socialisatie en Persoonsvorming) en de 5-fasen methodiek.
+                    We werken gestaag aan de ontwikkeling van alle werelden. Elke wereld wordt zorgvuldig uitgewerkt met aandacht voor Biesta&apos;s Triple Qualification (Qualification, Socialization, Subjectification) en de 5-fasen methodiek.
                   </p>
                   <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
                     <div className="flex items-center gap-2">
@@ -408,7 +408,7 @@ function TeacherToolkit() {
       href: '#',
     },
     {
-      title: 'Beoordelingsrubric (Biesta Kwalificatie)',
+      title: 'Beoordelingsrubric (Biesta Qualification)',
       type: 'PDF',
       icon: FileText,
       href: '#',

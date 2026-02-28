@@ -171,45 +171,45 @@ export default function VisiePage() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <Card>
+              <Card className="border-2 border-polder-green/20">
                 <CardHeader className="pb-3 pt-8">
                   <div className="flex flex-col items-center justify-center text-center">
-                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-deep-water-blue to-blue-800 text-white shadow-lg">
+                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-polder-green to-green-700 text-white shadow-lg">
                       <Landmark className="h-8 w-8" />
                     </div>
-                    <CardTitle className="text-xl">Kwalificatie</CardTitle>
+                    <CardTitle className="text-xl">Qualification</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="text-gray-700 leading-relaxed text-center">
-                  Het verwerven van kennis en vaardigheden: rekenen, taal, techniek en vakoverstijgende competenties.
+                  Kennis en vaardigheden verwerven
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-2 border-polder-green/20">
                 <CardHeader className="pb-3 pt-8">
                   <div className="flex flex-col items-center justify-center text-center">
                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-polder-green to-green-700 text-white shadow-lg">
                       <Users className="h-8 w-8" />
                     </div>
-                    <CardTitle className="text-xl">Socialisatie</CardTitle>
+                    <CardTitle className="text-xl">Socialization</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="text-gray-700 leading-relaxed text-center">
-                  Verbinding met cultuur, traditie en democratisch burgerschap. Leren samenleven en bijdragen.
+                  Deelnemen aan culturele tradities
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-2 border-polder-green/20">
                 <CardHeader className="pb-3 pt-8">
                   <div className="flex flex-col items-center justify-center text-center">
-                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-brick-red to-terracotta text-white shadow-lg">
+                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-polder-green to-green-700 text-white shadow-lg">
                       <Compass className="h-8 w-8" />
                     </div>
-                    <CardTitle className="text-xl">Persoonsvorming</CardTitle>
+                    <CardTitle className="text-xl">Subjectification</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="text-gray-700 leading-relaxed text-center">
-                  Ontwikkeling van eigen identiteit en moreel kompas: wie ben ik in deze wereld?
+                  Eigen identiteit ontwikkelen
                 </CardContent>
               </Card>
             </div>

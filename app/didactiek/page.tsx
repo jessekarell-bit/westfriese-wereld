@@ -496,36 +496,36 @@ export default function DidactiekPage() {
                 </CardContent>
               </Card>
 
-              {/* Biesta's Drie Doeldomeinen */}
-              <Card className="bg-white border-2 border-gray-200">
+              {/* Biesta's Triple Qualification –zelfde tekst en groen als homepagina */}
+              <Card className="bg-white border-2 border-polder-green/30">
                 <CardHeader>
                   <div className="flex flex-col items-center text-center mb-4">
-                    <div className="bg-gradient-to-br from-deep-water-blue to-blue-800 rounded-lg p-3 mb-4">
+                    <div className="bg-gradient-to-br from-polder-green to-green-700 rounded-lg p-3 mb-4">
                       <Brain className="h-6 w-6 text-white" />
                     </div>
-                    <CardTitle className="font-serif text-xl">Biesta's Drie Doeldomeinen</CardTitle>
+                    <CardTitle className="font-serif text-xl text-deep-water-blue">Biesta&apos;s Triple Qualification</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div className="border-l-4 border-polder-green pl-4">
                       <h4 className="font-semibold text-deep-water-blue mb-1 flex items-center">
-                        <GraduationCap className="h-4 w-4 mr-2" />
-                        Kwalificatie
+                        <GraduationCap className="h-4 w-4 mr-2 text-polder-green" />
+                        Qualification
                       </h4>
                       <p className="text-sm text-gray-600">Kennis en vaardigheden verwerven</p>
                     </div>
-                    <div className="border-l-4 border-deep-water-blue pl-4">
+                    <div className="border-l-4 border-polder-green pl-4">
                       <h4 className="font-semibold text-deep-water-blue mb-1 flex items-center">
-                        <Users className="h-4 w-4 mr-2" />
-                        Socialisatie
+                        <Users className="h-4 w-4 mr-2 text-polder-green" />
+                        Socialization
                       </h4>
-                      <p className="text-sm text-gray-600">Cultuur en traditie (Wie ben ik in West-Friesland?)</p>
+                      <p className="text-sm text-gray-600">Deelnemen aan culturele tradities</p>
                     </div>
-                    <div className="border-l-4 border-brick-red pl-4">
+                    <div className="border-l-4 border-polder-green pl-4">
                       <h4 className="font-semibold text-deep-water-blue mb-1 flex items-center">
-                        <Sparkles className="h-4 w-4 mr-2" />
-                        Persoonsvorming
+                        <Sparkles className="h-4 w-4 mr-2 text-polder-green" />
+                        Subjectification
                       </h4>
                       <p className="text-sm text-gray-600">Eigen identiteit ontwikkelen</p>
                     </div>

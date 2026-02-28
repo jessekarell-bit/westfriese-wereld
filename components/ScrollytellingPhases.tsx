@@ -1,7 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { Target, BookOpen, MapPin, Ship, Users, ChevronLeft, ChevronRight } from 'lucide-react'
+
+const SWIPE_THRESHOLD = 50
+const MAX_DRAG_OFFSET = 120
 
 const PHASES = [
   {
@@ -44,6 +47,10 @@ const PHASES = [
 export default function ScrollytellingPhases() {
   const [activeIndex, setActiveIndex] = useState(0)
   const [reduceMotion, setReduceMotion] = useState(false)
+  const [dragOffset, setDragOffset] = useState(0)
+  const [isDragging, setIsDragging] = useState(false)
+  const startXRef = useRef(0)
+  const startYRef = useRef(0)
 
   useEffect(() => {
     setReduceMotion(
@@ -52,55 +59,127 @@ export default function ScrollytellingPhases() {
     )
   }, [])
 
-  const goTo = (index: number) => {
+  const goTo = useCallback((index: number) => {
     setActiveIndex((Math.max(0, Math.min(index, PHASES.length - 1))))
-  }
+  }, [])
 
-  const phase = PHASES[activeIndex]
-  const Icon = phase.icon
+  const handlePointerDown = useCallback((clientX: number, clientY?: number) => {
+    startXRef.current = clientX
+    startYRef.current = clientY ?? 0
+  }, [])
+
+  const handlePointerMove = useCallback((clientX: number) => {
+    const delta = clientX - startXRef.current
+    const capped = Math.max(-MAX_DRAG_OFFSET, Math.min(MAX_DRAG_OFFSET, delta))
+    setDragOffset(capped)
+  }, [])
+
+  const handlePointerUp = useCallback((clientX: number) => {
+    const delta = clientX - startXRef.current
+    if (delta < -SWIPE_THRESHOLD && activeIndex < PHASES.length - 1) {
+      goTo(activeIndex + 1)
+    } else if (delta > SWIPE_THRESHOLD && activeIndex > 0) {
+      goTo(activeIndex - 1)
+    }
+    setDragOffset(0)
+    setIsDragging(false)
+  }, [activeIndex, goTo])
+
+  useEffect(() => {
+    if (!isDragging) return
+    const onMouseMove = (e: MouseEvent) => handlePointerMove(e.clientX)
+    const onMouseUp = (e: MouseEvent) => {
+      handlePointerUp(e.clientX)
+    }
+    window.addEventListener('mousemove', onMouseMove)
+    window.addEventListener('mouseup', onMouseUp)
+    return () => {
+      window.removeEventListener('mousemove', onMouseMove)
+      window.removeEventListener('mouseup', onMouseUp)
+    }
+  }, [isDragging, handlePointerMove, handlePointerUp])
+
+  const trackStyle: React.CSSProperties = {
+    transform: `translateX(calc(-${activeIndex * 20}% + ${dragOffset}px))`,
+    transition: reduceMotion ? 'none' : (dragOffset === 0 ? 'transform 0.3s ease-out' : 'none'),
+    touchAction: 'pan-y',
+  }
 
   return (
     <section
-      className="relative py-10 md:py-14"
+      className="relative py-6 md:py-10"
       aria-label="5-fase structuur van het curriculum"
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-serif text-2xl md:text-3xl font-bold text-deep-water-blue text-center mb-2">
+        <h2 className="font-serif text-2xl md:text-3xl font-bold text-deep-water-blue text-center mb-1">
           5-fase structuur
         </h2>
-        <p className="text-center text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
+        <p className="text-center text-gray-600 mb-4 md:mb-5 max-w-2xl mx-auto text-sm md:text-base">
           De leerling doorloopt vloeiend de fasen van het model: van doel tot afsluiting.
         </p>
 
-        {/* Carousel container */}
-        <div className="relative">
-          {/* Slide */}
-          <article
-            className="rounded-xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm min-h-[220px] md:min-h-[200px] flex flex-col"
-            aria-live="polite"
-            aria-label={`Fase ${activeIndex + 1} van ${PHASES.length}: ${phase.title}`}
+        {/* Viewport: smallere kaarten, minder witruimte */}
+        <div className="relative select-none touch-pan-y overflow-hidden max-w-md mx-auto">
+          <div
+            className="flex cursor-grab active:cursor-grabbing w-[500%]"
+            style={trackStyle}
+            onTouchStart={(e) => {
+              handlePointerDown(e.touches[0].clientX, e.touches[0].clientY)
+            }}
+            onTouchMove={(e) => {
+              const touch = e.touches[0]
+              const deltaX = Math.abs(touch.clientX - startXRef.current)
+              const deltaY = Math.abs(touch.clientY - startYRef.current)
+              if (deltaX > deltaY) e.preventDefault()
+              handlePointerMove(touch.clientX)
+            }}
+            onTouchEnd={(e) => {
+              handlePointerUp(e.changedTouches[0].clientX)
+            }}
+            onMouseDown={(e) => {
+              handlePointerDown(e.clientX, e.clientY)
+              setIsDragging(true)
+            }}
           >
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start flex-1">
-              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-deep-water-blue/10 text-deep-water-blue">
-                <Icon className="w-6 h-6 sm:w-7 sm:h-7" aria-hidden />
-              </div>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-brick-red text-white text-sm font-bold">
-                    {activeIndex + 1}
-                  </span>
-                  <h3 className="font-serif text-lg sm:text-xl md:text-2xl font-bold text-deep-water-blue">
-                    {phase.title}
-                  </h3>
-                </div>
-                <p className="text-brick-red/90 font-medium text-sm sm:text-base mb-1">{phase.description}</p>
-                <p className="text-gray-700 leading-relaxed text-sm sm:text-base">{phase.longDescription}</p>
-              </div>
-            </div>
-          </article>
+            {PHASES.map((phase, index) => {
+              const PhaseIcon = phase.icon
+              return (
+                <article
+                  key={phase.id}
+                  className="flex-shrink-0 w-1/5 min-w-0"
+                  aria-hidden={activeIndex !== index}
+                  aria-label={`Fase ${index + 1} van ${PHASES.length}: ${phase.title}`}
+                >
+                  <div className="rounded-xl border border-gray-200 bg-white p-4 md:p-5 shadow-sm min-h-[260px] md:min-h-[300px] flex flex-col h-full">
+                    {/* Icoon centraal bovenaan – 10% groter */}
+                    <div className="flex justify-center mb-3">
+                      <div className="flex items-center justify-center w-12 h-12 sm:w-[3.25rem] sm:h-[3.25rem] rounded-full bg-deep-water-blue/10 text-deep-water-blue">
+                        <PhaseIcon className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0" aria-hidden />
+                      </div>
+                    </div>
+                    {/* Fasetitel gecentreerd onder het icoon */}
+                    <div className="flex flex-col items-center text-center mb-3">
+                      <div className="flex items-center justify-center gap-2.5 min-h-[2.25rem] sm:min-h-[2.5rem]">
+                        <span className="flex-shrink-0 inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-brick-red text-white text-sm font-bold">
+                          {index + 1}
+                        </span>
+                        <h3 className="font-serif text-xl sm:text-2xl font-bold text-deep-water-blue leading-tight min-w-0 break-words">
+                          {phase.title}
+                        </h3>
+                      </div>
+                      <p className="text-brick-red/90 font-medium text-base mt-0.5">{phase.description}</p>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed text-base sm:text-lg flex-1 text-center">
+                      {phase.longDescription}
+                    </p>
+                  </div>
+                </article>
+              )
+            })}
+          </div>
 
           {/* Navigation: pijlen */}
-          <div className="flex items-center justify-center gap-4 mt-6">
+          <div className="flex items-center justify-center gap-3 mt-4">
             <button
               type="button"
               onClick={() => goTo(activeIndex - 1)}
@@ -145,7 +224,7 @@ export default function ScrollytellingPhases() {
           </div>
 
           {/* Tekstuele indicator */}
-          <p className="text-center text-gray-500 text-xs sm:text-sm mt-2">
+          <p className="text-center text-gray-500 text-xs sm:text-sm mt-1">
             Fase {activeIndex + 1} van {PHASES.length}
           </p>
         </div>
