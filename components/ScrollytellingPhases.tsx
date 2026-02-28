@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-import { Target, BookOpen, MapPin, Ship, Users } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Target, BookOpen, MapPin, Ship, Users, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const PHASES = [
   {
@@ -42,8 +42,7 @@ const PHASES = [
 ] as const
 
 export default function ScrollytellingPhases() {
-  const sectionRefs = useRef<(HTMLElement | null)[]>([])
-  const [visible, setVisible] = useState<Set<number>>(new Set())
+  const [activeIndex, setActiveIndex] = useState(0)
   const [reduceMotion, setReduceMotion] = useState(false)
 
   useEffect(() => {
@@ -53,98 +52,102 @@ export default function ScrollytellingPhases() {
     )
   }, [])
 
-  useEffect(() => {
-    if (reduceMotion) {
-      setVisible(new Set(PHASES.map((_, i) => i)))
-      return
-    }
+  const goTo = (index: number) => {
+    setActiveIndex((Math.max(0, Math.min(index, PHASES.length - 1))))
+  }
 
-    const observers = sectionRefs.current.map((el, index) => {
-      if (!el) return null
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setVisible((prev) => new Set([...prev, index]))
-            }
-          })
-        },
-        {
-          rootMargin: '0px 0px -15% 0px',
-          threshold: 0.1,
-        }
-      )
-      observer.observe(el)
-      return observer
-    })
-
-    return () => {
-      observers.forEach((obs) => obs?.disconnect())
-    }
-  }, [reduceMotion])
+  const phase = PHASES[activeIndex]
+  const Icon = phase.icon
 
   return (
     <section
-      className="relative py-16 md:py-24"
+      className="relative py-10 md:py-14"
       aria-label="5-fase structuur van het curriculum"
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-serif text-2xl md:text-3xl font-bold text-deep-water-blue text-center mb-4">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="font-serif text-2xl md:text-3xl font-bold text-deep-water-blue text-center mb-2">
           5-fase structuur
         </h2>
-        <p className="text-center text-gray-600 mb-12 md:mb-16 max-w-2xl mx-auto">
+        <p className="text-center text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
           De leerling doorloopt vloeiend de fasen van het model: van doel tot afsluiting.
         </p>
 
-        <div className="space-y-8 md:space-y-12">
-          {PHASES.map((phase, index) => {
-            const Icon = phase.icon
-            const isVisible = visible.has(index)
-            const isReducedMotion = reduceMotion
+        {/* Carousel container */}
+        <div className="relative">
+          {/* Slide */}
+          <article
+            className="rounded-xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm min-h-[220px] md:min-h-[200px] flex flex-col"
+            aria-live="polite"
+            aria-label={`Fase ${activeIndex + 1} van ${PHASES.length}: ${phase.title}`}
+          >
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start flex-1">
+              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-deep-water-blue/10 text-deep-water-blue">
+                <Icon className="w-6 h-6 sm:w-7 sm:h-7" aria-hidden />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-brick-red text-white text-sm font-bold">
+                    {activeIndex + 1}
+                  </span>
+                  <h3 className="font-serif text-lg sm:text-xl md:text-2xl font-bold text-deep-water-blue">
+                    {phase.title}
+                  </h3>
+                </div>
+                <p className="text-brick-red/90 font-medium text-sm sm:text-base mb-1">{phase.description}</p>
+                <p className="text-gray-700 leading-relaxed text-sm sm:text-base">{phase.longDescription}</p>
+              </div>
+            </div>
+          </article>
 
-            return (
-              <article
-                key={phase.id}
-                ref={(el) => {
-                  sectionRefs.current[index] = el
-                }}
-                className={`
-                  scrollytelling-phase
-                  relative flex flex-col md:flex-row gap-6 md:gap-8 items-start
-                  rounded-xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm
-                  transition-all duration-700 ease-out
-                  ${isReducedMotion ? 'opacity-100' : ''}
-                  ${!isReducedMotion && !isVisible ? 'scrollytelling-phase--hidden' : ''}
-                  ${!isReducedMotion && isVisible ? 'scrollytelling-phase--visible' : ''}
-                `}
-                style={
-                  isReducedMotion
-                    ? undefined
-                    : {
-                        // Fallback voor browsers zonder de class
-                        transitionProperty: 'transform, opacity',
-                        willChange: isVisible ? 'auto' : 'transform, opacity',
-                      }
-                }
-              >
-                <div className="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-full bg-deep-water-blue/10 text-deep-water-blue">
-                  <Icon className="w-7 h-7" aria-hidden />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-brick-red text-white text-sm font-bold">
-                      {index + 1}
-                    </span>
-                    <h3 className="font-serif text-xl md:text-2xl font-bold text-deep-water-blue">
-                      {phase.title}
-                    </h3>
-                  </div>
-                  <p className="text-brick-red/90 font-medium mb-2">{phase.description}</p>
-                  <p className="text-gray-700 leading-relaxed">{phase.longDescription}</p>
-                </div>
-              </article>
-            )
-          })}
+          {/* Navigation: pijlen */}
+          <div className="flex items-center justify-center gap-4 mt-6">
+            <button
+              type="button"
+              onClick={() => goTo(activeIndex - 1)}
+              disabled={activeIndex === 0}
+              className="p-2 rounded-full border border-gray-300 bg-white text-deep-water-blue shadow-sm hover:bg-gray-50 disabled:opacity-40 disabled:pointer-events-none transition-colors focus:outline-none focus:ring-2 focus:ring-deep-water-blue focus:ring-offset-2"
+              aria-label="Vorige fase"
+            >
+              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+            </button>
+
+            {/* Dots */}
+            <div className="flex items-center gap-2" role="tablist" aria-label="Fase navigatie">
+              {PHASES.map((_, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  role="tab"
+                  aria-selected={activeIndex === index}
+                  aria-label={`Ga naar fase ${index + 1}: ${PHASES[index].title}`}
+                  onClick={() => goTo(index)}
+                  className={`
+                    w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-deep-water-blue focus:ring-offset-2
+                    ${activeIndex === index
+                      ? 'bg-deep-water-blue scale-125'
+                      : 'bg-gray-300 hover:bg-gray-400'
+                    }
+                    ${reduceMotion ? '' : 'duration-200'}
+                  `}
+                />
+              ))}
+            </div>
+
+            <button
+              type="button"
+              onClick={() => goTo(activeIndex + 1)}
+              disabled={activeIndex === PHASES.length - 1}
+              className="p-2 rounded-full border border-gray-300 bg-white text-deep-water-blue shadow-sm hover:bg-gray-50 disabled:opacity-40 disabled:pointer-events-none transition-colors focus:outline-none focus:ring-2 focus:ring-deep-water-blue focus:ring-offset-2"
+              aria-label="Volgende fase"
+            >
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+            </button>
+          </div>
+
+          {/* Tekstuele indicator */}
+          <p className="text-center text-gray-500 text-xs sm:text-sm mt-2">
+            Fase {activeIndex + 1} van {PHASES.length}
+          </p>
         </div>
       </div>
     </section>
