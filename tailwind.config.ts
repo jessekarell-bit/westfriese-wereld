@@ -60,21 +60,15 @@ const config: Config = {
   		},
   		fontFamily: {
   			sans: [
-  				'var(--font-inter)',
+  				'var(--font-ubuntu)',
   				'sans-serif'
   			],
   			serif: [
-  				'var(--font-merriweather)',
-  				'serif'
-  			],
-  			'montserrat': [
-  				'var(--font-montserrat)',
+  				'var(--font-ubuntu)',
   				'sans-serif'
   			],
-  			'open-sans': [
-  				'var(--font-open-sans)',
-  				'sans-serif'
-  			]
+  			'montserrat': ['var(--font-ubuntu)', 'sans-serif'],
+  			'open-sans': ['var(--font-ubuntu)', 'sans-serif']
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

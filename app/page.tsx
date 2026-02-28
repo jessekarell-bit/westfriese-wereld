@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import ScrollytellingPhases from '@/components/ScrollytellingPhases'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { 
   Waves, 
@@ -13,7 +14,6 @@ import {
   Sprout,
   Target,
   Users,
-  BookOpen as BookOpenIcon,
   Percent,
   ArrowRight
 } from 'lucide-react'
@@ -180,32 +180,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* 5-Phase Structure */}
-            <div className="bg-gray-50 rounded-lg p-8 border border-gray-200">
-              <div className="flex items-center mb-6">
-                <BookOpenIcon className="h-8 w-8 text-brick-red mr-3" />
-                <h3 className="font-serif text-2xl font-bold text-deep-water-blue">5-fase structuur</h3>
-              </div>
-              <div className="grid md:grid-cols-5 gap-4">
-                {[
-                  { phase: 'Doel', description: 'Leerdoel bepalen' },
-                  { phase: 'Narratief', description: 'Verhaal introduceren' },
-                  { phase: 'Activering/Excursie', description: 'Ervaring opdoen' },
-                  { phase: 'Concretisering/Onderzoek', description: 'Verdiepen en onderzoeken' },
-                  { phase: 'Afsluiting', description: 'Reflecteren en presenteren' },
-                ].map((step, index) => (
-                  <div key={index} className="text-center">
-                    <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-brick-red font-bold text-lg shadow-md">
-                      {index + 1}
-                    </div>
-                    <h4 className="font-semibold text-deep-water-blue mb-1">{step.phase}</h4>
-                    <p className="text-sm text-gray-600">{step.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
+        </section>
+
+        {/* 5-fase structuur – scrollytelling */}
+        <section className="bg-gray-50">
+          <ScrollytellingPhases />
         </section>
 
         {/* Ontdek onze 8 Werelden Section */}

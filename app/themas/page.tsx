@@ -82,8 +82,28 @@ export default function ThemesOverviewPage() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <main className="flex-grow">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <main className="flex-grow relative">
+        {/* Achtergrond regio West-Friesland: water, polder, land – subtiel voor leesbaarheid */}
+        <div 
+          className="absolute inset-0 pointer-events-none overflow-hidden"
+          aria-hidden
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-cyan-50/40 to-green-50/50" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(34,211,238,0.08),transparent)]" />
+          <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-green-50/30 to-transparent" />
+          {/* Subtiel golfpatroon (water) */}
+          <svg className="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="waves" x="0" y="0" width="120" height="40" patternUnits="userSpaceOnUse">
+                <path d="M0 20 Q30 10 60 20 T120 20" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-deep-water-blue" />
+                <path d="M0 28 Q30 18 60 28 T120 28" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-deep-water-blue" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#waves)" />
+          </svg>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-deep-water-blue mb-6">
