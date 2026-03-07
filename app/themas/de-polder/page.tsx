@@ -143,7 +143,7 @@ export default function LandEnPolderPage() {
         },
         {
           fase: 'Narratief',
-          beschrijving: '"West-Friesland 2050: Grijs, Groen of Goud?": De leerlingen vormen het \'Planbureau voor de Leefomgeving\'. Er is een conflict in de Wieringermeer: Tech-reuzen willen datacenters, boeren willen landbouwgrond, en natuurorganisaties willen waterberging. Wie krijgt de ruimte?',
+          beschrijving: '"West-Friesland 2050: Grijs, groen of goud?": De leerlingen vormen het \'Planbureau voor de Leefomgeving\'. Er is een conflict in de Wieringermeer: tech-reuzen willen datacenters, boeren willen landbouwgrond, en natuurorganisaties willen waterberging. Wie krijgt de ruimte?',
           icon: BookOpen
         },
         {
@@ -306,7 +306,7 @@ export default function LandEnPolderPage() {
               Het verhaal (narratief)
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              "West-Friesland 2050: Grijs, Groen of Goud?": De leerlingen vormen het 'Planbureau voor de Leefomgeving'. Er is een conflict in de Wieringermeer: Tech-reuzen willen datacenters, boeren willen landbouwgrond, en natuurorganisaties willen waterberging. Wie krijgt de ruimte?
+              "West-Friesland 2050: Grijs, groen of goud?": De leerlingen vormen het 'Planbureau voor de Leefomgeving'. Er is een conflict in de Wieringermeer: tech-reuzen willen datacenters, boeren willen landbouwgrond, en natuurorganisaties willen waterberging. Wie krijgt de ruimte?
             </p>
           </div>
 

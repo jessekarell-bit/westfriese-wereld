@@ -41,7 +41,7 @@ export default function ZuiderzeePage() {
   const routes = {
     onderbouw: {
       titel: 'Vissen & Boten',
-      focus: 'Zout vs. Zoet, Drijven & Zinken, De Vissersboot',
+      focus: 'Zout vs. zoet, drijven & zinken, de vissersboot',
       fasen: [
         {
           fase: 'Verwondering',
@@ -72,7 +72,7 @@ export default function ZuiderzeePage() {
     },
     middenbouw34: {
       titel: 'De Afsluitdijk',
-      focus: 'Cornelis Lely, Constructie & Eb/Vloed',
+      focus: 'Cornelis Lely, constructie & eb/vloed',
       fasen: [
         {
           fase: 'Verwondering',
@@ -103,7 +103,7 @@ export default function ZuiderzeePage() {
     },
     middenbouw56: {
       titel: 'De Afsluitdijk',
-      focus: 'Cornelis Lely, Constructie & Eb/Vloed',
+      focus: 'Cornelis Lely, constructie & eb/vloed',
       fasen: [
         {
           fase: 'Verwondering',
@@ -134,7 +134,7 @@ export default function ZuiderzeePage() {
     },
     bovenbouw: {
       titel: 'Ecologie & Economie',
-      focus: 'Voedselketens, Watermanagement & Visserij-transitie',
+      focus: 'Voedselketens, watermanagement & visserij-transitie',
       fasen: [
         {
           fase: 'Verwondering',
@@ -179,7 +179,7 @@ export default function ZuiderzeePage() {
             </h3>
             <div className="bg-teal-50 rounded-lg p-4 mb-4 border-l-4 border-teal-600">
               <p className="text-sm font-semibold text-teal-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Zout vs. Zoet, Drijven & Zinken, De Vissersboot</p>
+              <p className="text-gray-700">Zout vs. zoet, drijven & zinken, de vissersboot</p>
             </div>
           </div>
 
@@ -217,7 +217,7 @@ export default function ZuiderzeePage() {
             </h3>
             <div className="bg-teal-50 rounded-lg p-4 mb-4 border-l-4 border-teal-600">
               <p className="text-sm font-semibold text-teal-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Cornelis Lely, Constructie & Eb/Vloed</p>
+              <p className="text-gray-700">Cornelis Lely, constructie & eb/vloed</p>
             </div>
           </div>
 
@@ -255,7 +255,7 @@ export default function ZuiderzeePage() {
             </h3>
             <div className="bg-teal-50 rounded-lg p-4 mb-4 border-l-4 border-teal-600">
               <p className="text-sm font-semibold text-teal-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Cornelis Lely, Constructie & Eb/Vloed</p>
+              <p className="text-gray-700">Cornelis Lely, constructie & eb/vloed</p>
             </div>
           </div>
 
@@ -293,7 +293,7 @@ export default function ZuiderzeePage() {
             </h3>
             <div className="bg-teal-50 rounded-lg p-4 mb-4 border-l-4 border-teal-600">
               <p className="text-sm font-semibold text-teal-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Voedselketens, Watermanagement & Visserij-transitie</p>
+              <p className="text-gray-700">Voedselketens, watermanagement & visserij-transitie</p>
             </div>
           </div>
 

@@ -193,7 +193,7 @@ export default function DidactiekPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-4 leading-relaxed">
-                    Landelijke eisen, Taal, Rekenen, Burgerschap. Wij tornen niet aan de basis, wij verrijken hem.
+                    Landelijke eisen, taal, rekenen, burgerschap. Wij tornen niet aan de basis, wij verrijken hem.
                   </p>
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li className="flex items-center">

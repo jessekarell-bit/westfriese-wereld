@@ -209,7 +209,7 @@ export default function SKOWFStrategicPartner() {
               </h4>
               
               <p>
-                Onze kernwaarden – Kwaliteit, Ontwikkeling en Samenwerking – komen in dit project tot leven. We werken niet alleen binnen de schoolmuren, maar trekken eropuit. Samen met lokale musea, bedrijven en natuurorganisaties creëren we een rijke leeromgeving waarin elk talent tot bloei komt.
+                Onze kernwaarden – kwaliteit, ontwikkeling en samenwerking – komen in dit project tot leven. We werken niet alleen binnen de schoolmuren, maar trekken eropuit. Samen met lokale musea, bedrijven en natuurorganisaties creëren we een rijke leeromgeving waarin elk talent tot bloei komt.
               </p>
               
               <p className="font-montserrat font-semibold text-lg md:text-xl text-[#463f8a] mt-8 pt-6 border-t-2 border-[#463f8a]/20">

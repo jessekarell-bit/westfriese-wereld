@@ -380,7 +380,7 @@ const SLO_MAPPING = [
       {
         id: "Kerndoel 25",
         title: "Vraagstukken",
-        description: "Tijd, Ruimte en Samenleving in regionaal perspectief.",
+        description: "Tijd, ruimte en samenleving in regionaal perspectief.",
         subObjectives: [
           {
             id: "25B",

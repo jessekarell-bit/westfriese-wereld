@@ -36,7 +36,7 @@ export default function KasteelRadboudPage() {
   // Routes per bouw
   const routes = {
     onderbouw: {
-      titel: 'Mythe, Bescherming & Fantasie',
+      titel: 'Mythe, bescherming & fantasie',
       focus: 'De wereld van Gerrie de Leeuwdraak',
       fasen: [
         {
@@ -67,7 +67,7 @@ export default function KasteelRadboudPage() {
       ]
     },
     middenbouw34: {
-      titel: 'Taken, Rollen & Zorg',
+      titel: 'Taken, rollen & zorg',
       focus: 'Het dagelijks leven: dienen, schrijven en genezen',
       fasen: [
         {
@@ -98,7 +98,7 @@ export default function KasteelRadboudPage() {
       ]
     },
     middenbouw56: {
-      titel: 'Strategie, Constructie & Conflict',
+      titel: 'Strategie, constructie & conflict',
       focus: 'De dwangburcht: architectuur als wapen',
       fasen: [
         {
@@ -129,7 +129,7 @@ export default function KasteelRadboudPage() {
       ]
     },
     bovenbouw: {
-      titel: 'Rechtsstaat, Ethiek & Democratie',
+      titel: 'Rechtsstaat, ethiek & democratie',
       focus: 'Van vuistrecht naar rechtsstaat',
       fasen: [
         {
@@ -171,7 +171,7 @@ export default function KasteelRadboudPage() {
         <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-rose-800 mb-3">
-              Mythe, Bescherming & Fantasie
+              Mythe, bescherming & fantasie
             </h3>
             <div className="bg-rose-50 rounded-lg p-4 mb-4 border-l-4 border-rose-600">
               <p className="text-sm font-semibold text-rose-900 mb-2">Focus:</p>
@@ -210,7 +210,7 @@ export default function KasteelRadboudPage() {
         <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-rose-800 mb-3">
-              Taken, Rollen & Zorg
+              Taken, rollen & zorg
             </h3>
             <div className="bg-rose-50 rounded-lg p-4 mb-4 border-l-4 border-rose-600">
               <p className="text-sm font-semibold text-rose-900 mb-2">Focus:</p>
@@ -249,7 +249,7 @@ export default function KasteelRadboudPage() {
         <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-rose-800 mb-3">
-              Strategie, Constructie & Conflict
+              Strategie, constructie & conflict
             </h3>
             <div className="bg-rose-50 rounded-lg p-4 mb-4 border-l-4 border-rose-600">
               <p className="text-sm font-semibold text-rose-900 mb-2">Focus:</p>
@@ -288,7 +288,7 @@ export default function KasteelRadboudPage() {
         <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-rose-800 mb-3">
-              Rechtsstaat, Ethiek & Democratie
+              Rechtsstaat, ethiek & democratie
             </h3>
             <div className="bg-rose-50 rounded-lg p-4 mb-4 border-l-4 border-rose-600">
               <p className="text-sm font-semibold text-rose-900 mb-2">Focus:</p>

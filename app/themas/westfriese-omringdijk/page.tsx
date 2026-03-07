@@ -134,7 +134,7 @@ export default function WaterWorldPage() {
     },
     bovenbouw: {
       titel: 'Architecten van het Voedsel',
-      focus: 'Genetica (DNA), Ethiek en Wereldvoedselvoorziening',
+      focus: 'Genetica (DNA), ethiek en wereldvoedselvoorziening',
       fasen: [
         {
           fase: 'Doel',
@@ -293,7 +293,7 @@ export default function WaterWorldPage() {
             </h3>
             <div className="bg-cyan-50 rounded-lg p-4 mb-4 border-l-4 border-cyan-600">
               <p className="text-sm font-semibold text-cyan-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Genetica (DNA), Ethiek en Wereldvoedselvoorziening</p>
+              <p className="text-gray-700">Genetica (DNA), ethiek en wereldvoedselvoorziening</p>
             </div>
           </div>
 

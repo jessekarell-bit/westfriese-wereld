@@ -33,7 +33,7 @@ const THEMES = [
   {
     id: 2,
     title: 'De Wereld van Grieken & Romeinen',
-    description: 'Grensland, Handel & Cultuur',
+    description: 'Grensland, handel & cultuur',
     icon: MessageCircle,
     color: 'text-stone-700',
     iconBg: 'bg-stone-100',
@@ -42,7 +42,7 @@ const THEMES = [
   {
     id: 3,
     title: 'De Wereld van de Polder',
-    description: 'Maakbaarheid, Wiskunde & Ruimtelijke Ordening',
+    description: 'Maakbaarheid, wiskunde & ruimtelijke ordening',
     icon: LayoutGrid,
     color: 'text-green-700',
     iconBg: 'bg-green-100',
@@ -51,7 +51,7 @@ const THEMES = [
   {
     id: 4,
     title: 'De Wereld van de Gouden Eeuw',
-    description: 'Wereldhandel, Rijkdom & Schaduwkanten',
+    description: 'Wereldhandel, rijkdom & schaduwkanten',
     icon: Ship,
     color: 'text-amber-700',
     iconBg: 'bg-amber-100',
@@ -60,7 +60,7 @@ const THEMES = [
   {
     id: 5,
     title: 'De Wereld van de Zuiderzee naar IJsselmeer',
-    description: 'Ecologie, Transformatie & Visserij',
+    description: 'Ecologie, transformatie & visserij',
     icon: ShieldAlert,
     color: 'text-teal-700',
     iconBg: 'bg-teal-100',
@@ -69,7 +69,7 @@ const THEMES = [
   {
     id: 6,
     title: 'De Wereld van Kasteel Radboud',
-    description: 'Macht, Recht & Middeleeuwen',
+    description: 'Macht, recht & middeleeuwen',
     icon: Castle,
     color: 'text-rose-800',
     iconBg: 'bg-rose-100',
@@ -78,7 +78,7 @@ const THEMES = [
   {
     id: 7,
     title: 'De Wereld van de burgers & stoommachines',
-    description: 'Innovatie, Techniek & Sociale Kwestie',
+    description: 'Innovatie, techniek & sociale kwestie',
     icon: TrainFront,
     color: 'text-slate-700',
     iconBg: 'bg-slate-100',
@@ -87,7 +87,7 @@ const THEMES = [
   {
     id: 8,
     title: 'De Wereld van de Tuin van Europa',
-    description: 'Seed Valley, Genetica & Voedseltoekomst',
+    description: 'Seed Valley, genetica & voedseltoekomst',
     icon: Sprout,
     color: 'text-lime-700',
     iconBg: 'bg-lime-100',

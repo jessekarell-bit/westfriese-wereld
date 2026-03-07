@@ -36,7 +36,7 @@ export default function BurgersEnStoommachinesPage() {
   // Routes per bouw
   const routes = {
     onderbouw: {
-      titel: 'Kracht, Rook en Reizen',
+      titel: 'Kracht, rook en reizen',
       focus: 'Bello de Stoomtram en de magie van beweging',
       fasen: [
         {
@@ -171,7 +171,7 @@ export default function BurgersEnStoommachinesPage() {
         <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-slate-700 mb-3">
-              Kracht, Rook en Reizen
+              Kracht, rook en reizen
             </h3>
             <div className="bg-slate-50 rounded-lg p-4 mb-4 border-l-4 border-slate-600">
               <p className="text-sm font-semibold text-slate-900 mb-2">Focus:</p>

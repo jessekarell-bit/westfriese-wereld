@@ -267,7 +267,7 @@ export default function HandelEnGoudenEeuwPage() {
               De Wereld van de Gouden Eeuw
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-amber-800 mb-3 sm:mb-4 md:mb-6 font-medium px-2">
-              Wereldhandel, Rijkdom & Schaduwkanten
+              Wereldhandel, rijkdom & schaduwkanten
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
               Hoorn was een van de belangrijkste havensteden van de VOC. In deze wereld ontdekken leerlingen de wereld van handel, rijkdom en scheepvaart. Van geurende specerijen bij de kleuters tot kritisch nadenken over kolonialisme in groep 8.

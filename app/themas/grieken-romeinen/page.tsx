@@ -133,7 +133,7 @@ export default function GriekenRomeinenPage() {
       ]
     },
     bovenbouw: {
-      titel: 'Democratie, Dwang en de Friese Vrijheidsstrijd',
+      titel: 'Democratie, dwang en de Friese vrijheidsstrijd',
       focus: 'Politiek, staatsinrichting, conflict en multiperspectiviteit',
       fasen: [
         {
@@ -289,7 +289,7 @@ export default function GriekenRomeinenPage() {
         <div className="space-y-6">
           <div>
             <h3 className="font-serif text-2xl font-bold text-stone-700 mb-3">
-              Democratie, Dwang en de Friese Vrijheidsstrijd
+              Democratie, dwang en de Friese vrijheidsstrijd
             </h3>
             <div className="bg-stone-50 rounded-lg p-4 mb-4 border-l-4 border-stone-600">
               <p className="text-sm font-semibold text-stone-900 mb-2">Focus:</p>

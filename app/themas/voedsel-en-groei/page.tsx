@@ -131,7 +131,7 @@ export default function VoedselEnGroeiPage() {
     },
     bovenbouw: {
       titel: 'Architecten van het Voedsel',
-      focus: 'Genetica (DNA), Ethiek en Wereldvoedselvoorziening',
+      focus: 'Genetica (DNA), ethiek en wereldvoedselvoorziening',
       fasen: [
         {
           fase: 'Doel',
@@ -290,7 +290,7 @@ export default function VoedselEnGroeiPage() {
             </h3>
             <div className="bg-lime-50 rounded-lg p-4 mb-4 border-l-4 border-lime-600">
               <p className="text-sm font-semibold text-lime-900 mb-2">Focus:</p>
-              <p className="text-gray-700">Genetica (DNA), Ethiek en Wereldvoedselvoorziening</p>
+              <p className="text-gray-700">Genetica (DNA), ethiek en wereldvoedselvoorziening</p>
             </div>
           </div>
 
@@ -382,7 +382,7 @@ export default function VoedselEnGroeiPage() {
               De Wereld van de Tuin van Europa
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-green-800 mb-3 sm:mb-4 md:mb-6 font-medium px-2">
-              Seed Valley, Genetica & Voedseltoekomst
+              Seed Valley, genetica & voedseltoekomst
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed px-2">
               West-Friesland is de groentetuin van Europa. Maar hoe maken we voedsel dat resistent is tegen klimaatverandering? In deze wereld duiken leerlingen in de wonderlijke wereld van groei, van het eerste zaadje bij de kleuters tot DNA-technologie in groep 8.

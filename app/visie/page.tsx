@@ -169,6 +169,9 @@ export default function VisiePage() {
               <Compass className="h-6 w-6 text-brick-red" />
               <h2 className="font-serif text-3xl font-bold text-deep-water-blue">Het Pedagogisch Fundament</h2>
             </div>
+            <p className="text-gray-600 text-center max-w-2xl mx-auto">
+              We werken volgens <strong>Biesta&apos;s Triple Qualification</strong>: Qualification, Socialization en Subjectification.
+            </p>
 
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="border-2 border-polder-green/20">
