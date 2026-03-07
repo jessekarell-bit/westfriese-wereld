@@ -131,7 +131,7 @@ export default function Home() {
               Het Model
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_280px_1fr] gap-4 sm:gap-6 md:gap-6 items-stretch">
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_360px_1fr] gap-4 sm:gap-6 md:gap-6 items-stretch">
               {/* 70/30 Rule Card –zelfde hoogte als foto, uitgelijnd met groen blok */}
               <div className="bg-gradient-to-br from-deep-water-blue to-blue-800 rounded-lg p-8 text-white shadow-lg flex flex-col items-center text-center min-h-[420px] md:min-h-0 md:h-full">
                 <div className="flex items-center justify-center min-h-[4rem] mb-4">
@@ -163,15 +163,15 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* 70/30 methode in actie – foto tussen de twee blokken, gelijke ruimte links en rechts */}
-              <div className="w-full max-w-[280px] mx-auto md:max-w-none md:w-[280px] h-[420px] md:h-full md:min-h-[420px] rounded-xl overflow-hidden shadow-md">
+              {/* 70/30 methode in actie – foto tussen de twee blokken, breder voor leesbare tekst */}
+              <div className="w-full max-w-[360px] mx-auto md:max-w-none md:w-[360px] h-[420px] md:h-full md:min-h-[420px] rounded-xl overflow-hidden shadow-md">
                 <Image
                   src="/70-30-methode-in-actie.png"
                   alt="De 70/30 methode in actie: leerlingen en begeleider in het veld met West-Friese molen op de achtergrond. Verbind kerndoelen direct met de West-Friese klei en de lokale cultuur."
-                  width={280}
+                  width={360}
                   height={420}
                   className="w-full h-full rounded-xl object-cover"
-                  sizes="(max-width: 768px) 280px, 280px"
+                  sizes="(max-width: 768px) 360px, 360px"
                   priority={false}
                 />
               </div>
