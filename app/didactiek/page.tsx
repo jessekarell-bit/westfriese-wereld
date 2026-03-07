@@ -263,176 +263,36 @@ export default function DidactiekPage() {
               Dit is de kern van onze didactiek. Elke fase bouwt voort op de vorige en zorgt voor diepgaand, betekenisvol leren.
             </p>
             
-            {/* Zig-Zag Timeline */}
-            <div className="relative max-w-6xl mx-auto">
-              {/* Central vertical line (desktop only) */}
-              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 border-l-2 border-dashed border-gray-300 transform -translate-x-1/2"></div>
-              
-              {/* Mobile: Vertical line on left */}
-              <div className="md:hidden absolute left-8 top-0 bottom-0 w-0.5 bg-gray-300"></div>
-              
-              <div className="space-y-8 md:space-y-12">
-                {fasen.map((fase, index) => {
-                  const Icon = fase.icon
-                  const isEven = index % 2 === 0
-                  const isLast = index === fasen.length - 1
-                  
-                  // Color variations for visual interest
-                  const colorClasses = [
-                    'bg-deep-water-blue',
-                    'bg-polder-green',
-                    'bg-brick-red',
-                    'bg-polder-green',
-                    'bg-deep-water-blue'
-                  ]
-                  const currentColor = colorClasses[index] || fase.kleurClass
-                  
-                  // Trapsgewijze positie: fase 1 beneden, fase 5 boven
-                  // Op mobile: kleinere stappen, op desktop: duidelijkere trap
-                  // Desktop: Fase 1: 0rem, Fase 2: 2rem, Fase 3: 4rem, Fase 4: 6rem, Fase 5: 8rem
-                  // Mobile: Fase 1: 0rem, Fase 2: 1rem, Fase 3: 2rem, Fase 4: 3rem, Fase 5: 4rem
-                  const desktopOffset = index * 2.0
-                  const mobileOffset = index * 1.0
-                  
-                  return (
-                    <div 
-                      key={fase.nummer} 
-                      className={`relative transition-all duration-300 ${
-                        index === 0 ? '' : index === 1 ? 'md:-mt-8' : index === 2 ? 'md:-mt-16' : index === 3 ? 'md:-mt-24' : 'md:-mt-32'
-                      }`}
-                      style={{
-                        marginTop: index === 0 ? '0' : `-${mobileOffset}rem`,
-                      }}
-                    >
-                      {/* Mobile Layout: Cards stacked vertically with left line */}
-                      <div className="md:hidden relative pl-20">
-                        {/* Icon on left line */}
-                        <div className={`absolute left-0 top-8 w-16 h-16 rounded-full ${currentColor} flex items-center justify-center text-white shadow-lg z-10 transform -translate-x-1/2`}>
-                          <Icon className="h-8 w-8" />
-                          <span className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-xs font-bold text-gray-700">
-                            {fase.nummer}
-                          </span>
-                        </div>
-                        
-                        {/* Card */}
-                        <div className="bg-white rounded-2xl p-6 pt-8 shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center">
-                          <div className={`w-16 h-16 rounded-full ${currentColor} flex items-center justify-center text-white shadow-lg mb-4`}>
-                            <Icon className="h-8 w-8" />
-                          </div>
-                          <h3 className="font-serif text-xl font-bold text-deep-water-blue mb-2 text-center">
-                            {fase.titel}
-                          </h3>
-                          <p className="text-gray-700 leading-relaxed text-center">
-                            {fase.beschrijving}
-                          </p>
-                        </div>
-                      </div>
-                      
-                      {/* Desktop Layout: Zig-Zag pattern */}
-                      <div 
-                        className="hidden md:flex items-center relative"
-                      >
-                        {/* Left Card (even indices) */}
-                        {isEven && (
-                          <>
-                            <div className="flex-1 pr-8">
-                              <div className="bg-white rounded-2xl p-6 pt-8 shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative group flex flex-col items-center justify-center">
-                                {/* Arrow pointing right to center */}
-                                <div className="absolute right-0 top-1/2 transform translate-x-4 -translate-y-1/2 z-10">
-                                  {currentColor === 'bg-deep-water-blue' && (
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-l-[16px] border-l-deep-water-blue"></div>
-                                  )}
-                                  {currentColor === 'bg-polder-green' && (
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-l-[16px] border-l-polder-green"></div>
-                                  )}
-                                  {currentColor === 'bg-brick-red' && (
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-l-[16px] border-l-brick-red"></div>
-                                  )}
-                                </div>
-                                <div className={`w-20 h-20 rounded-full ${currentColor} flex items-center justify-center text-white shadow-xl mb-6`}>
-                                  <Icon className="h-10 w-10" />
-                                </div>
-                                <span className="absolute top-2 right-2 w-7 h-7 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center text-xs font-bold text-gray-700 shadow-md">
-                                  {fase.nummer}
-                                </span>
-                                <h3 className="font-serif text-xl font-bold text-deep-water-blue mb-2 text-center">
-                                  {fase.titel}
-                                </h3>
-                                <p className="text-gray-700 leading-relaxed text-center">
-                                  {fase.beschrijving}
-                                </p>
-                              </div>
-                            </div>
-                            
-                            {/* Central number indicator on line - trapsgewijs omhoog */}
-                            <div 
-                              className={`relative z-10 flex-shrink-0 transition-transform duration-300 ${
-                                index === 0 ? '' : index === 1 ? '-translate-y-2' : index === 2 ? '-translate-y-4' : index === 3 ? '-translate-y-6' : '-translate-y-8'
-                              }`}
-                            >
-                              <div className="w-12 h-12 rounded-full bg-white border-4 border-gray-300 flex items-center justify-center text-sm font-bold text-gray-700 shadow-lg">
-                                {fase.nummer}
-                              </div>
-                            </div>
-                            
-                            {/* Empty space on right */}
-                            <div className="flex-1 pl-8"></div>
-                          </>
-                        )}
-                        
-                        {/* Right Card (odd indices) */}
-                        {!isEven && (
-                          <>
-                            {/* Empty space on left */}
-                            <div className="flex-1 pr-8"></div>
-                            
-                            {/* Central number indicator on line - trapsgewijs omhoog */}
-                            <div 
-                              className={`relative z-10 flex-shrink-0 transition-transform duration-300 ${
-                                index === 0 ? '' : index === 1 ? '-translate-y-2' : index === 2 ? '-translate-y-4' : index === 3 ? '-translate-y-6' : '-translate-y-8'
-                              }`}
-                            >
-                              <div className="w-12 h-12 rounded-full bg-white border-4 border-gray-300 flex items-center justify-center text-sm font-bold text-gray-700 shadow-lg">
-                                {fase.nummer}
-                              </div>
-                            </div>
-                            
-                            {/* Right Card */}
-                            <div className="flex-1 pl-8">
-                              <div className="bg-white rounded-2xl p-6 pt-8 shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative group flex flex-col items-center justify-center">
-                                {/* Arrow pointing left to center */}
-                                <div className="absolute left-0 top-1/2 transform -translate-x-4 -translate-y-1/2 z-10">
-                                  {currentColor === 'bg-deep-water-blue' && (
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-r-[16px] border-r-deep-water-blue"></div>
-                                  )}
-                                  {currentColor === 'bg-polder-green' && (
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-r-[16px] border-r-polder-green"></div>
-                                  )}
-                                  {currentColor === 'bg-brick-red' && (
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-r-[16px] border-r-brick-red"></div>
-                                  )}
-                                </div>
-                                <div className={`w-20 h-20 rounded-full ${currentColor} flex items-center justify-center text-white shadow-xl mb-6`}>
-                                  <Icon className="h-10 w-10" />
-                                </div>
-                                <span className="absolute top-2 right-2 w-7 h-7 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center text-xs font-bold text-gray-700 shadow-md">
-                                  {fase.nummer}
-                                </span>
-                                <h3 className="font-serif text-xl font-bold text-deep-water-blue mb-2 text-center">
-                                  {fase.titel}
-                                </h3>
-                                <p className="text-gray-700 leading-relaxed text-center">
-                                  {fase.beschrijving}
-                                </p>
-                              </div>
-                            </div>
-                          </>
-                        )}
+            {/* 5-fase cards –zelfde stijl en kleuren als homepagina */}
+            <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-4 sm:gap-6">
+              {fasen.map((fase) => {
+                const Icon = fase.icon
+                return (
+                  <div
+                    key={fase.nummer}
+                    className="rounded-xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col"
+                  >
+                    <div className="flex justify-center mb-3">
+                      <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-deep-water-blue/10 text-deep-water-blue">
+                        <Icon className="w-6 h-6 sm:w-7 sm:h-7 flex-shrink-0" aria-hidden />
                       </div>
                     </div>
-                  )
-                })}
-              </div>
+                    <div className="flex flex-col items-center text-center mb-2">
+                      <div className="flex items-center justify-center gap-2.5 min-h-[2.25rem]">
+                        <span className="flex-shrink-0 inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-brick-red text-white text-sm font-bold">
+                          {fase.nummer}
+                        </span>
+                        <h3 className="font-serif text-lg sm:text-xl font-bold text-deep-water-blue leading-tight">
+                          {fase.titel}
+                        </h3>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed text-sm sm:text-base text-center flex-1">
+                      {fase.beschrijving}
+                    </p>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </section>

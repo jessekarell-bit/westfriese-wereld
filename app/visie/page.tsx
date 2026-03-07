@@ -227,27 +227,36 @@ export default function VisiePage() {
               <h2 className="font-serif text-3xl font-bold text-deep-water-blue">De Didactische Methodiek</h2>
             </div>
 
-            <Card>
-              <CardContent className="py-8">
-                <div className="grid md:grid-cols-5 gap-6">
-                  {steps.map((step, index) => {
-                    const StepIcon = step.icon
-                    return (
-                      <div key={step.title} className="flex flex-col items-center justify-center text-center gap-3 pt-4">
-                        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-deep-water-blue text-white shadow-lg">
-                          <StepIcon className="h-8 w-8" />
-                        </div>
-                        <div className="text-sm font-semibold text-deep-water-blue">Stap {index + 1}</div>
-                        <div>
-                          <h4 className="font-serif text-lg font-bold text-deep-water-blue">{step.title}</h4>
-                          <p className="text-gray-700 text-sm leading-relaxed mt-1">{step.description}</p>
-                        </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-5">
+              {steps.map((step, index) => {
+                const StepIcon = step.icon
+                return (
+                  <div
+                    key={step.title}
+                    className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col"
+                  >
+                    <div className="flex justify-center mb-3">
+                      <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-deep-water-blue/10 text-deep-water-blue">
+                        <StepIcon className="w-6 h-6 sm:w-7 sm:h-7 flex-shrink-0" aria-hidden />
                       </div>
-                    )
-                  })}
-                </div>
-              </CardContent>
-            </Card>
+                    </div>
+                    <div className="flex flex-col items-center text-center mb-2">
+                      <div className="flex items-center justify-center gap-2 min-h-[2rem]">
+                        <span className="flex-shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full bg-brick-red text-white text-sm font-bold">
+                          {index + 1}
+                        </span>
+                        <h4 className="font-serif text-base sm:text-lg font-bold text-deep-water-blue leading-tight">
+                          {step.title}
+                        </h4>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed text-center flex-1">
+                      {step.description}
+                    </p>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </section>
 
