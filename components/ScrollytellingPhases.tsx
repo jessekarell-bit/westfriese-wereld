@@ -150,7 +150,7 @@ export default function ScrollytellingPhases({
   }
 
   const content = (
-    <div className={`max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 ${className}`}>
+    <div className={`w-full min-w-0 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 ${className}`}>
       {!noSection && (
         <>
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-deep-water-blue text-center mb-1">
@@ -162,7 +162,7 @@ export default function ScrollytellingPhases({
         </>
       )}
 
-      <div className="relative select-none touch-pan-y overflow-hidden max-w-md mx-auto">
+      <div className="relative select-none touch-pan-y overflow-hidden w-full min-w-0 max-w-md mx-auto">
         <div
           className="flex cursor-grab active:cursor-grabbing"
           style={{
@@ -192,33 +192,33 @@ export default function ScrollytellingPhases({
             return (
               <article
                 key={phase.id ?? index}
-                className="flex-shrink-0 min-w-0"
+                className="flex-shrink-0 min-w-0 w-full"
                 style={{ width: `${percentPerSlide}%` }}
                 aria-hidden={activeIndex !== index}
                 aria-label={`Fase ${index + 1} van ${count}: ${phase.title}`}
               >
                 <div
-                  className={`rounded-xl border border-gray-200 bg-white p-4 md:p-5 shadow-sm flex flex-col h-full ${
-                    compact ? 'min-h-[200px]' : 'min-h-[260px] md:min-h-[300px]'
+                  className={`rounded-xl border border-gray-200 bg-white p-3 sm:p-4 md:p-5 shadow-sm flex flex-col h-full min-w-0 overflow-hidden ${
+                    compact ? 'min-h-[180px] sm:min-h-[200px]' : 'min-h-[260px] md:min-h-[300px]'
                   }`}
                 >
-                  <div className="flex justify-center mb-3">
-                    <div className="flex items-center justify-center w-12 h-12 sm:w-[3.25rem] sm:h-[3.25rem] rounded-full bg-deep-water-blue/10 text-deep-water-blue">
-                      <PhaseIcon className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0" aria-hidden />
+                  <div className="flex justify-center mb-2 sm:mb-3 flex-shrink-0">
+                    <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-deep-water-blue/10 text-deep-water-blue">
+                      <PhaseIcon className="w-5 h-5 sm:w-7 sm:h-7 flex-shrink-0" aria-hidden />
                     </div>
                   </div>
-                  <div className="flex flex-col items-center text-center mb-3">
-                    <div className="flex items-center justify-center gap-2.5 min-h-[2.25rem] sm:min-h-[2.5rem]">
-                      <span className="flex-shrink-0 inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-brick-red text-white text-sm font-bold">
+                  <div className="flex flex-col items-center text-center mb-2 sm:mb-3 flex-shrink-0 min-w-0">
+                    <div className="flex items-center justify-center gap-2 min-h-[2rem] sm:min-h-[2.25rem] flex-wrap">
+                      <span className="flex-shrink-0 inline-flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-brick-red text-white text-xs sm:text-sm font-bold">
                         {index + 1}
                       </span>
-                      <h3 className="font-serif text-xl sm:text-2xl font-bold text-deep-water-blue leading-tight min-w-0 break-words">
+                      <h3 className="font-serif text-base sm:text-xl font-bold text-deep-water-blue leading-tight min-w-0 break-words">
                         {phase.title}
                       </h3>
                     </div>
-                    <p className="text-brick-red/90 font-medium text-base mt-0.5">{phase.description}</p>
+                    <p className="text-brick-red/90 font-medium text-sm sm:text-base mt-0.5 break-words">{phase.description}</p>
                   </div>
-                  <p className="text-gray-700 leading-relaxed text-base sm:text-lg flex-1 text-center">
+                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base flex-1 text-center min-w-0 break-words">
                     {phase.longDescription}
                   </p>
                 </div>

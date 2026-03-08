@@ -405,7 +405,7 @@ export default function KasteelRadboudPage() {
           {/* Main Content with Sidebar - 70/30 split */}
           <div className="grid lg:grid-cols-10 gap-6 lg:gap-8">
             {/* Main Content - 70% */}
-            <div className="lg:col-span-7 px-2 sm:px-0">
+            <div className="lg:col-span-7 min-w-0 px-2 sm:px-0">
               {/* Tabs System */}
               <ThemeTabs 
                 tabs={tabs as ThemeTab[]} 

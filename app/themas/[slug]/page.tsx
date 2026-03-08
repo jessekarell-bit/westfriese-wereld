@@ -277,7 +277,7 @@ export default async function ThemeDetailPage({ params }: PageProps) {
           {/* Main Content with Sidebar - 70/30 split */}
           <div className="grid lg:grid-cols-10 gap-8">
             {/* Main Content - 70% */}
-            <div className="lg:col-span-7">
+            <div className="lg:col-span-7 min-w-0">
               {/* Tabs System */}
               {tabs.length > 0 ? (
                 <Tabs tabs={tabs} defaultTab={tabs[0]?.id} />

@@ -19,8 +19,8 @@ export function DidacticRoute({ phases, title, focus }: DidacticRouteProps) {
   }))
 
   return (
-    <div className="mt-8 sm:mt-12">
-      <div className="mb-4 sm:mb-6 px-2 sm:px-0">
+    <div className="mt-8 sm:mt-12 w-full min-w-0 overflow-hidden">
+      <div className="mb-4 sm:mb-6 px-0">
         <h3 className="font-serif text-xl sm:text-2xl font-bold text-deep-water-blue mb-2">
           De didactische route
         </h3>
