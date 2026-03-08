@@ -46,27 +46,27 @@ export default function GriekenRomeinenPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen ontdekken dat er spullen in de grond zitten die van mensen van \'héél lang geleden\' zijn en maken kennis met het verschil tussen de lokale bewoners (Friezen) en de reizigers (Romeinen).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"De Vondst van de Scherf": Het verhaal van Aak (een Fries kind in een boerderij) en Marcus (een Romeins kind met vreemde sandalen en glimmende munten). Ze vinden een mysterieuze kist of scherf in de zandbak.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'De Opgraving: De zandtafel wordt een archeologische vindplaats. Leerlingen worden \'hulp-archeologen\' en graven met kwastjes naar verstopte (plastic) munten en scherven.',
-          icon: Search
+          iconId: 'Search'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Maken en Spelen: Ambacht: Zelf een potje kleien (zoals Aak) of een munt stempelen in zoutdeeg (zoals Marcus). Spel: Een \'Romeinse markt\' in de huishoek waar geruild wordt (wol voor een potje).',
-          icon: Hammer
+          iconId: 'Hammer'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'Het Mini-Museum: Een tentoonstelling in de klas waar de gevonden en gemaakte \'schatten\' worden getoond aan ouders. De kinderen vertellen wat oud is en wat nieuw.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -77,27 +77,27 @@ export default function GriekenRomeinenPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen begrijpen dat de Romeinen nieuwe dingen brachten (schrift, wegen, geld) en leren over de verschillen in wonen en leven tussen de Friezen en Romeinen.',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"De Ontmoeting bij de Grenspaal": Aak en Marcus ontmoeten elkaar bij de grens. Ze verbazen zich over elkaars gewoonten: Marcus draagt sandalen (koud!) en Aak woont in een huis van riet en poep (warm!). Het gaat over vriendschap ondanks verschillen.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Bezoek aan Huis van Hilde: Een excursie naar het archeologiecentrum om te zien hoe de mensen hier echt uitzagen (gezichtsreconstructies) en hoe ze woonden.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Onderzoeken en Maken: Rekenen: Een klok maken met Romeinse cijfers (I t/m XII). Techniek: Het verschil testen tussen een Fries dak (riet) en een Romeins dak (dakpannen van klei) met een gieter. Taal: Latijnse woorden leren die wij nog gebruiken (muur, straat, fruit).',
-          icon: Hammer
+          iconId: 'Hammer'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'Museum van de Tijd: De klas wordt een museum waar leerlingen als gidsen optreden, verkleed als Friezen of Romeinen, en uitleggen hoe men vroeger leefde en handelde.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -108,27 +108,27 @@ export default function GriekenRomeinenPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen leren hoe archeologen door middel van stratigrafie (aardlagen) en materiaalonderzoek het verleden reconstrueren. Ze begrijpen de superieure Romeinse techniek (wegen, bogen).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"Het Raadsel van de Grens" / "De Tijdcapsule": De klas vindt een kist met objecten die ze moeten dateren en determineren. Het verhaal volgt een Romeinse landmeter die de \'wilde\' Noord-Hollandse gebieden in kaart moet brengen.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Gastles of Excursie: Een bezoek van een archeoloog (bijv. Archeologie West-Friesland) met een metaaldetector en echte vondsten, of een verdiepend bezoek aan Huis van Hilde gericht op techniek.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Ontwerpend Leren: Techniek: Een Romeinse boog (aquaduct) bouwen zonder lijm (krachtenverdeling met sluitsteen). Onderzoek: Een stratigrafie-proef doen in een doorzichtige bak (lagen afgraven en loggen). Kunst: Een mozaïek ontwerpen op basis van geometrische patronen.',
-          icon: Hammer
+          iconId: 'Hammer'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'Het Pop-up Museum: Leerlingen presenteren hun technische maquettes (aquaducten/wegen) en onderzoeksverslagen over de vondsten aan een publiek.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -139,27 +139,27 @@ export default function GriekenRomeinenPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen analyseren de machtsverhoudingen tussen een wereldrijk (Rome) en lokale autonomie (Vrije Friezen). Ze vergelijken de Atheense/Romeinse staatsvorm met onze moderne democratie en rechtsstaat.',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"De Friese Opstand (28 n.Chr.)": Het dilemma van de jonge Fries Hylke. Zijn vader moet onmogelijke belastingen betalen (koeienhuiden) aan de Romeinse landvoogd Olennius. Kiest hij voor onderwerping of verzet?',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Bronnenonderzoek en Debat: Analyse van teksten van de Romeinse geschiedschrijver Tacitus over de slag in het Baduhenna-woud. Is deze bron betrouwbaar? Analyse van digitale kaarten van het Oer-IJ en de strategische ligging van forten (bijv. Velsen).',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Simulatie en Retorica: Burgerschap: Het naspelen van de \'Senaat\' of \'Volksvergadering\'. Debatteren over stellingen als: "Veiligheid is belangrijker dan vrijheid". Techniek: Het bouwen van een werkend belegeringswapen (katapult/trebuchet) en berekenen van de baan. Taal: Het schrijven van een retorische toespraak (pleidooi) voor of tegen de opstand.',
-          icon: Gavel
+          iconId: 'Gavel'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'Het Historisch Tribunaal: Een rechtszaak waarin Olennius (de Romeinse belastinginner) en de Friese leiders worden aangeklaagd. Leerlingen zijn rechters, advocaten en getuigen en vellen een vonnis op basis van argumenten.',
-          icon: Scale
+          iconId: 'Scale'
         }
       ]
     }

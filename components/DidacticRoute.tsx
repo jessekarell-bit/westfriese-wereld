@@ -15,7 +15,7 @@ export function DidacticRoute({ phases, title, focus }: DidacticRouteProps) {
     title: p.fase,
     description: p.fase,
     longDescription: p.beschrijving,
-    icon: p.icon,
+    iconId: p.iconId,
   }))
 
   return (

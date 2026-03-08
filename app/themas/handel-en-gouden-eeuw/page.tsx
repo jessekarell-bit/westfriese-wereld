@@ -4,6 +4,8 @@ import Footer from '@/components/Footer'
 import PhaseIndicator from '@/components/PhaseIndicator'
 import Tabs from '@/components/Tabs'
 import MemberGate from '@/components/MemberGate'
+import { DidacticRoute } from '@/components/DidacticRoute'
+import { getThemeConfig } from '@/src/data/theme-config'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -22,6 +24,9 @@ import {
 } from 'lucide-react'
 
 export default function HandelEnGoudenEeuwPage() {
+  const themeConfig = getThemeConfig('handel-en-gouden-eeuw')
+  const colorScheme = themeConfig.colorScheme!
+
   // Tabs data voor de drie bouwen
   const tabs = [
     {
@@ -202,27 +207,27 @@ export default function HandelEnGoudenEeuwPage() {
     {
       fase: 'Doel',
       beschrijving: 'Besef van handel, rijkdom en de prijs daarvan (Mens & Maatschappij)',
-      icon: Target
+      iconId: 'Target'
     },
     {
       fase: 'Narratief',
       beschrijving: 'Het Pakhuis (OB) / Scheepsjongens van de VOC (MB) / J.P. Coen controverse (BB)',
-      icon: BookOpen
+      iconId: 'BookOpen'
     },
     {
       fase: 'Activering',
       beschrijving: 'OB: Specerijen ontdekken in het pakhuis | MB: Bezoek Halve Maen in Hoorn | BB: Westfries Museum met kritische rondleiding',
-      icon: MapPin
+      iconId: 'MapPin'
     },
     {
       fase: 'Concretisering',
       beschrijving: 'Pakhuis naspelen, fluitschip bouwen, multiperspectief debat over kolonialisme',
-      icon: Ship
+      iconId: 'Ship'
     },
     {
       fase: 'Afsluiting',
       beschrijving: 'De \'Specerijenmarkt\' voor ouders (OB) of een \'Waarheid & Verzoening\' tentoonstelling (BB)',
-      icon: Users
+      iconId: 'Users'
     }
   ]
 
@@ -292,47 +297,13 @@ export default function HandelEnGoudenEeuwPage() {
               {/* Tabs System */}
               <Tabs tabs={tabs} defaultTab="onderbouw" />
 
-              {/* 5-Fasen Verticale Lijst */}
-              <div className="mt-8 sm:mt-12">
-                <div className="mb-4 sm:mb-6 px-2 sm:px-0">
-                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-amber-700 mb-2">
-                    De didactische route
-                  </h3>
-                </div>
-                <div className="space-y-3 sm:space-y-4">
-                  {fasen.map((item, index) => {
-                    const Icon = item.icon
-                    return (
-                      <Card 
-                        key={index} 
-                        className="border-l-4 border-l-amber-600"
-                      >
-                        <CardContent className="p-5 sm:p-6 lg:p-8">
-                          <div className="flex items-start gap-3 sm:gap-4">
-                            {/* Phase number badge */}
-                            <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-600 text-white flex items-center justify-center text-base sm:text-lg font-bold shadow-lg">
-                              {index + 1}
-                            </div>
-                            <div className="flex-1 min-w-0">
-                              <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3 flex-wrap">
-                                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0">
-                                  <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
-                                </div>
-                                <h4 className="font-semibold text-amber-700 text-base sm:text-lg">
-                                  {item.fase}
-                                </h4>
-                              </div>
-                              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                                {item.beschrijving}
-                              </p>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    )
-                  })}
-                </div>
-              </div>
+              {/* 5-fase structuur – carousel (zelfde als overige themapagina's) */}
+              <DidacticRoute
+                phases={fasen}
+                title="Wereldhandel, rijkdom & schaduwkanten"
+                focus="VOC/WIC, navigatie, multiperspectiviteit"
+                colorScheme={colorScheme}
+              />
             </div>
 
             {/* Sidebar - 30% */}

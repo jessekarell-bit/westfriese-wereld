@@ -46,27 +46,27 @@ export default function ZuiderzeePage() {
         {
           fase: 'Verwondering',
           beschrijving: 'Proef het verschil! (Zout water vs. Zoet water experiment).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Historie',
           beschrijving: 'De watersnood van 1916 en het gedurfde plan van Lely.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Ervaring',
           beschrijving: 'Excursie naar het Zuiderzeemuseum (Enkhuizen) of het Vlietermonument (Afsluitdijk).',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Onderzoek',
           beschrijving: 'Hoe werkt een sluis? Zelf een sluizencomplex bouwen in de watertafel.',
-          icon: Search
+          iconId: 'Search'
         },
         {
           fase: 'Presentatie',
           beschrijving: 'De Toekomst van het IJsselmeer: Leerlingen ontwerpen drijvende huizen.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -77,27 +77,27 @@ export default function ZuiderzeePage() {
         {
           fase: 'Verwondering',
           beschrijving: 'Proef het verschil! (Zout water vs. Zoet water experiment).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Historie',
           beschrijving: 'De watersnood van 1916 en het gedurfde plan van Lely.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Ervaring',
           beschrijving: 'Excursie naar het Zuiderzeemuseum (Enkhuizen) of het Vlietermonument (Afsluitdijk).',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Onderzoek',
           beschrijving: 'Bouw je eigen dijk: In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?',
-          icon: Search
+          iconId: 'Search'
         },
         {
           fase: 'Presentatie',
           beschrijving: 'De Toekomst van het IJsselmeer: Leerlingen ontwerpen drijvende huizen.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -108,27 +108,27 @@ export default function ZuiderzeePage() {
         {
           fase: 'Verwondering',
           beschrijving: 'Proef het verschil! (Zout water vs. Zoet water experiment).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Historie',
           beschrijving: 'De watersnood van 1916 en het gedurfde plan van Lely.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Ervaring',
           beschrijving: 'Excursie naar het Zuiderzeemuseum (Enkhuizen) of het Vlietermonument (Afsluitdijk).',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Onderzoek',
           beschrijving: 'Bouw je eigen dijk: In de zandbak met verschillende materialen (klei, zand, stenen). Houdt hij het water tegen?',
-          icon: Search
+          iconId: 'Search'
         },
         {
           fase: 'Presentatie',
           beschrijving: 'De Toekomst van het IJsselmeer: Leerlingen ontwerpen drijvende huizen.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -139,27 +139,27 @@ export default function ZuiderzeePage() {
         {
           fase: 'Verwondering',
           beschrijving: 'Proef het verschil! (Zout water vs. Zoet water experiment).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Historie',
           beschrijving: 'De watersnood van 1916 en het gedurfde plan van Lely.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Ervaring',
           beschrijving: 'Excursie naar het Zuiderzeemuseum (Enkhuizen) of het Vlietermonument (Afsluitdijk).',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Onderzoek',
           beschrijving: 'Het Grote Visse-Spel: Wat gebeurt er als de haring verdwijnt en de aal verschijnt? En hoe werkt de Vismigratierivier?',
-          icon: Fish
+          iconId: 'Fish'
         },
         {
           fase: 'Presentatie',
           beschrijving: 'De Toekomst van het IJsselmeer: Leerlingen ontwerpen drijvende huizen.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     }

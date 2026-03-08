@@ -19,31 +19,11 @@ import {
 } from 'lucide-react'
 
 const steps = [
-  {
-    title: 'Doelbepaling',
-    description: 'Koppeling aan kerndoelen en leerlijnen.',
-    icon: Target,
-  },
-  {
-    title: 'Narratieve Inbedding',
-    description: 'Een pakkend verhaal of mythe als haakje.',
-    icon: BookOpen,
-  },
-  {
-    title: 'Activering',
-    description: 'De school uit (excursie) of expert in de klas.',
-    icon: MapPin,
-  },
-  {
-    title: 'Concretisering',
-    description: 'Onderzoeken, ontwerpen en maken.',
-    icon: Hammer,
-  },
-  {
-    title: 'Authentieke Afsluiting',
-    description: 'Presenteren aan een echt publiek.',
-    icon: Megaphone,
-  },
+  { title: 'Doelbepaling', description: 'Koppeling aan kerndoelen en leerlijnen.', iconId: 'Target' as const },
+  { title: 'Narratieve Inbedding', description: 'Een pakkend verhaal of mythe als haakje.', iconId: 'BookOpen' as const },
+  { title: 'Activering', description: 'De school uit (excursie) of expert in de klas.', iconId: 'MapPin' as const },
+  { title: 'Concretisering', description: 'Onderzoeken, ontwerpen en maken.', iconId: 'Hammer' as const },
+  { title: 'Authentieke Afsluiting', description: 'Presenteren aan een echt publiek.', iconId: 'Megaphone' as const },
 ]
 
 export default function VisiePage() {
@@ -228,7 +208,7 @@ export default function VisiePage() {
                 title: s.title,
                 description: s.title,
                 longDescription: s.description,
-                icon: s.icon,
+                iconId: s.iconId,
               }))}
               title="De Didactische Methodiek"
               subtitle="Van doelbepaling tot authentieke afsluiting: dezelfde 5 fasen als motor van ons leren."

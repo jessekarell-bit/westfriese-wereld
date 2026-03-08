@@ -1,56 +1,65 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { LucideIcon, Target, BookOpen, MapPin, Ship, Users, ChevronLeft, ChevronRight } from 'lucide-react'
+import {
+  LucideIcon,
+  Target,
+  BookOpen,
+  MapPin,
+  Ship,
+  Users,
+  ChevronLeft,
+  ChevronRight,
+  Lightbulb,
+  Megaphone,
+  Hammer,
+  Shield,
+  Sprout,
+  Search,
+  Gavel,
+  Cog,
+  Fish,
+  Scale,
+} from 'lucide-react'
 
 const SWIPE_THRESHOLD = 50
 const MAX_DRAG_OFFSET = 120
 
-/** Fase-item voor het carousel; hergebruik op alle pagina's met 5-fase structuur */
+/** Icon-map voor serialiseerbare iconId (Server → Client); geëxporteerd voor gebruik in themapagina's */
+export const PHASE_ICON_MAP: Record<string, LucideIcon> = {
+  Target,
+  BookOpen,
+  MapPin,
+  Ship,
+  Users,
+  Lightbulb,
+  Megaphone,
+  Hammer,
+  Shield,
+  Sprout,
+  Search,
+  Gavel,
+  Cog,
+  Fish,
+  Scale,
+}
+
+/** Fase-item voor het carousel; iconId is serialiseerbaar voor Server Components */
 export interface PhaseItem {
   id?: string
   title: string
   description: string
   longDescription: string
-  icon: LucideIcon
+  /** Naam van Lucide-icoon (bv. 'Target') – wordt in client opgelost */
+  iconId: string
 }
 
 const DEFAULT_PHASES: PhaseItem[] = [
-  {
-    id: 'doel',
-    title: 'Doel',
-    description: 'Leerdoel bepalen',
-    longDescription: 'De leerling weet wat hij gaat leren en waarom het relevant is voor zijn wereld.',
-    icon: Target,
-  },
-  {
-    id: 'narratief',
-    title: 'Narratief',
-    description: 'Verhaal introduceren',
-    longDescription: 'Een verhaal of context brengt het onderwerp tot leven en verbindt met de belevingswereld.',
-    icon: BookOpen,
-  },
-  {
-    id: 'activering',
-    title: 'Activering / Excursie',
-    description: 'Ervaring opdoen',
-    longDescription: 'Leren door te doen: excursies, bezoeken en ervaringen in de echte wereld.',
-    icon: MapPin,
-  },
-  {
-    id: 'concretisering',
-    title: 'Concretisering / Onderzoek',
-    description: 'Verdiepen en onderzoeken',
-    longDescription: 'Verdieping door onderzoek, vragen stellen en verbanden leggen.',
-    icon: Ship,
-  },
-  {
-    id: 'afsluiting',
-    title: 'Afsluiting',
-    description: 'Reflecteren en presenteren',
-    longDescription: 'Terugblik, presentatie aan anderen en betekenis geven aan wat geleerd is.',
-    icon: Users,
-  },
+  { id: 'doel', title: 'Doel', description: 'Leerdoel bepalen', longDescription: 'De leerling weet wat hij gaat leren en waarom het relevant is voor zijn wereld.', iconId: 'Target' },
+  { id: 'narratief', title: 'Narratief', description: 'Verhaal introduceren', longDescription: 'Een verhaal of context brengt het onderwerp tot leven en verbindt met de belevingswereld.', iconId: 'BookOpen' },
+  { id: 'activering', title: 'Activering / Excursie', description: 'Ervaring opdoen', longDescription: 'Leren door te doen: excursies, bezoeken en ervaringen in de echte wereld.', iconId: 'MapPin' },
+  { id: 'concretisering', title: 'Concretisering / Onderzoek', description: 'Verdiepen en onderzoeken', longDescription: 'Verdieping door onderzoek, vragen stellen en verbanden leggen.', iconId: 'Ship' },
+  { id: 'afsluiting', title: 'Afsluiting', description: 'Reflecteren en presenteren', longDescription: 'Terugblik, presentatie aan anderen en betekenis geven aan wat geleerd is.', iconId: 'Users' },
 ]
 
 export interface ScrollytellingPhasesProps {
@@ -179,7 +188,7 @@ export default function ScrollytellingPhases({
           }}
         >
           {phases.map((phase, index) => {
-            const PhaseIcon = phase.icon
+            const PhaseIcon = PHASE_ICON_MAP[phase.iconId] ?? Target
             return (
               <article
                 key={phase.id ?? index}

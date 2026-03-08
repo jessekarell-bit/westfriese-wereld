@@ -42,27 +42,27 @@ export default function KasteelRadboudPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen ontwikkelen een eerste tijdsbesef (\'riddertijd\' vs. \'nu\') en verkennen begrippen rondom wonen en verdedigen (muur, toren, veiligheid). Ze leren dat een kasteel een "groot, sterk huis" is om de baas te zijn.',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"Gerrie de Leeuwdraak is zijn spullen kwijt." Gerrie, de mascotte van het kasteel, is vergeetachtig. Hij is zijn helm, zwaard en beker verloren. De leerlingen moeten hem helpen zoeken in het grote kasteel van de strenge graaf Floris.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Een bezoek aan Kasteel Radboud met het programma "Verwonder en Beleef". De kinderen gaan fysiek op speurtocht door de ruimtes (ridderzaal, gevangenis) om de spullen van Gerrie te vinden en voelen aan de dikke muren.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Bouwhoek: Experimenteren met stabiliteit. Hoe bouw je een toren die niet omvalt? Gebruik van blokken om muren en kantelen te maken. Kruiden: Zintuiglijke activiteit met \'Kruidje en Billie Bij\'. Ruiken en voelen aan middeleeuwse kruiden zoals munt en lavendel.',
-          icon: Search
+          iconId: 'Search'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'Het Kasteelfeest. De klas wordt een ridderzaal. Ouders komen kijken naar de tentoonstelling van zelfgemaakte wapenschilden en de kinderen voeren een middeleeuwse kringdans op.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -73,27 +73,27 @@ export default function KasteelRadboudPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen begrijpen dat een samenleving drijft op taakverdeling. Ze leren over middeleeuwse beroepen (page, monnik, kruidenvrouw) en de geneeskrachtige werking van de natuur (biologie).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"De Page en de Kruidenvrouw." Het verhaal van Boudewijn (een 7-jarige page in opleiding) en Lobbrecht Aerntsdochter (de historische kruidenvrouw/mater). Boudewijn heeft zich bezeerd en heeft de hulp van Lobbrecht nodig. Samen lossen ze het "Geheim van de Kasteeltuin" op.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Excursie naar Kasteel Radboud met het programma "Kruip in de Huid". Leerlingen voeren fysieke taken uit die horen bij de bewoners (tafel dekken, wachtlopen) en bezoeken de kruidentuin om planten te determineren.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Het Scriptorium: Schrijven met een ganzenveer en het maken van een \'initiaal\' (versierde letter), om het monnikenwerk te ervaren. Het Kruidenlab: Zelf \'medicijnen\' (thee of zalf) maken van goudsbloem en kamille. Leren welke plant waarvoor dient (bijv. kamille voor rust).',
-          icon: Search
+          iconId: 'Search'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'De Gildedag. De klas wordt een middeleeuwse markt. Leerlingen presenteren in gilden hun ambachten (het Bouwersgilde toont maquettes, het Heelmeestersgilde de thee) aan ouders en andere klassen.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -104,27 +104,27 @@ export default function KasteelRadboudPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen analyseren de strategische functie van kastelen (dwangburchten) en begrijpen de natuurkundige principes achter middeleeuwse bouwtechniek (waarom zijn ronde torens sterker?). Ze leren historisch redeneren vanuit multiperspectiviteit (Floris V: held of bezetter?).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"Het Dilemma van de West-Fries." We volgen Aelbrecht, een West-Friese boerenzoon in 1288. Zijn vader haat de Hollandse graaf die hun vrijheid afnam, maar Aelbrecht is gefascineerd door de ingenieuze bouw van de dwangburcht. Hij twijfelt tussen loyaliteit aan zijn stam en bewondering voor de vooruitgang.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Bezoek aan Kasteel Radboud met het programma "Ontdek en Speur". Focus op de militaire architectuur: schootsvelden, mezekouwen en de locatie aan de Zuiderzee. Tevens een bezoek aan Huis van Hilde om wapens en skeletten uit de strijd te zien.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'De Onneembare Vesting: Techniekproef. Leerlingen bouwen vierkante en ronde torens en beschieten deze met knikkers om te ontdekken dat ronde torens projectielen beter afketsen en geen dode hoeken hebben. Cold Case: Een bronnenonderzoek naar de moord op Floris V. Wie waren de daders? Wat was hun motief?',
-          icon: Search
+          iconId: 'Search'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'Het Historisch Tribunaal (Deel 1). Een rechtszaak waarin geoordeeld wordt over de schuldvraag: Was de West-Friese opstand terrorisme of vrijheidsstrijd? Leerlingen presenteren hun \'dossiers\' en maquettes als bewijsmateriaal.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -135,27 +135,27 @@ export default function KasteelRadboudPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen vergelijken het middeleeuwse rechtssysteem (privileges, marteling, klassenjustitie) met de moderne democratische rechtsstaat. Ze ontwikkelen inzicht in staatsinrichting en ethische dilemma\'s rondom geweld en macht.',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"Het Complot: Wie heeft het recht om te straffen?" De klas fungeert als een onderzoekscommissie die de legitimiteit van de macht van Floris V en de edelen onderzoekt. Centraal staat de vraag of tirannenmoord gerechtvaardigd is.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Verdiepend bezoek aan Kasteel Radboud met focus op de gevangenis en de \'Vierschaar\' (rechtspraak). Gastles van een jurist of bezoek van ProDemos over de moderne rechtsstaat.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Ballistiek: Het ontwerpen en bouwen van een werkende blijde (trebuchet). Natuurkundige berekeningen van hefboomwerking en banen van projectielen. Retorica: Het schrijven van een juridisch pleidooi. Leerlingen oefenen met argumenteren vanuit een rol (aanklager of verdediger van de graaf).',
-          icon: Gavel
+          iconId: 'Gavel'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'Het Grote Tribunaal (Deel 2). Een formele zitting waarbij ouders of experts de jury vormen. Er wordt vonnis gewezen over Floris V en zijn moordenaars op basis van argumenten over staatsbelang versus mensenrechten. Dit is de ultieme proeve van burgerschap.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     }

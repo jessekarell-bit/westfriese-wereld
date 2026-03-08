@@ -46,27 +46,27 @@ export default function LandEnPolderPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen ontdekken het verschil tussen \'natuur\' (krom, wild water) en \'cultuur\' (recht, polder, land). Ze leren dat mensen (zoals Leeghwater) het landschap hebben gemaakt om er te kunnen wonen en werken (ruimtelijke oriëntatie/meetkunde).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"De Tovenaar met de Liniaal": Het verhaal van Jan (Adriaanszoon Leeghwater). Jan hield niet van natte voeten en wilde van het wilde water een mooie tuin maken. Hij gebruikte geen toverstaf, maar een hele grote liniaal en molens om het water weg te toveren.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'De Polder-Expeditie: Een wandeling in de buurt met \'toverbrillen\' (kokers). De kinderen zoeken naar rechte lijnen (sloten, wegen) en kromme lijnen (bomen, wolken). Ze kijken naar het waterpeil: "Is de sloot lager dan de weg?".',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Maken en Spelen: Zandtafel: De \'Grote Droogmaak-Actie\'. Een bak met water en zand. Kinderen moeten dijken bouwen en het water eruit scheppen naar de \'ringvaart\' (de rand) om droog land te maken. Kunst/Rekenen: De "Polderdeken". Een klassikaal kunstwerk van vierkante vellen papier (kavels) die samen een strak patroon vormen, net als de Beemster vanuit de lucht.',
-          icon: Hammer
+          iconId: 'Hammer'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'De Polderopening: Ouders komen kijken in het \'nieuwe land\' in de klas. De kinderen, verkleed als bouwers of Jan Leeghwater, leggen uit hoe ze de huizen (blokken) droog hebben gehouden.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -77,27 +77,27 @@ export default function LandEnPolderPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen leren dat de polder (specifiek de Beemster) is ontworpen als een perfect vierkant raster. Ze oefenen met meten, schaal en geometrische vormen en herkennen de stolpboerderij als typisch West-Fries gebouw.',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"De Vierkante Wereld": De leerlingen worden benoemd tot "Junior Landmeters". Ze krijgen de opdracht van Leeghwater om de \'warboel\' van het oude land (West-Friesland binnen de dijk) te vergelijken met de \'nieuwe orde\' van de droogmakerij. Alles moet eerlijk verdeeld worden in rechte stukken.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Expeditie Beemster: Een bezoek aan Droogmakerij de Beemster (UNESCO Werelderfgoed) of een polder in de buurt. Ze meten met een landmetersketting (touw met knopen) hoe groot een stukje land is en bekijken een stolpboerderij.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Ontwerpen en Programmeren: Wiskunde/Kunst: Het ontwerpen van de "Ideale Polder" op ruitjespapier. Elk vakje is een stuk land. Waar komt de weg? Waar de sloot? Alles moet recht zijn. Digitaal: BeeBot in de Beemster. De robot programmeren op een mat met een rasterkaart. De BeeBot mag niet in de sloot (blauwe vakjes) rijden, maar moet de weg volgen.',
-          icon: Lightbulb
+          iconId: 'Lightbulb'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'Het Polder-Symposium: De leerlingen presenteren hun ontworpen polderkaarten en maquettes van stolpboerderijen aan een \'hoofdingenieur\' (directeur of ouder). Ze leggen uit waarom hun polder handig is ingedeeld.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -108,27 +108,27 @@ export default function LandEnPolderPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen begrijpen dat de droogmakerijen in de Gouden Eeuw economische projecten waren (investeren voor winst). Ze leren de technische transitie van windmolens naar stoomgemalen en de natuurkunde achter waterverplaatsing.',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"De Investeerders van de Gouden Eeuw": Het is 1612. De leerlingen zijn rijke kooplieden uit Amsterdam. Durven zij hun geld te steken in het droogmalen van het grote meer? Het is riskant, maar de grond is vruchtbaar. Het verhaal verschuift later naar de 19e eeuw: de strijd om de polder droog te houden met nieuwe stoommachines.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Bezoek aan het Stoommachinemuseum: Excursie naar Medemblik (Gemaal Vier Noorder Koggen). Leerlingen ervaren de kracht van stoom, halen hun \'stookdiploma\' en zien het verschil in capaciteit tussen een molen en een gemaal.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Onderzoek en Constructie: Techniek: Het bouwen van een werkende Archimedes-schroef (vijzel). Hoe krijg je water omhoog? Rekenen: Oppervlakte en inhoud berekenen. Hoeveel kuub water moet eruit? Hoeveel hectare land winnen we? Economie: Een aandelenspel. Wat gebeurt er met je investering als de dijk doorbreekt?',
-          icon: Search
+          iconId: 'Search'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'De Maquette: De klas bouwt een werkend watermodel van een polder (laag) en ringvaart (hoog). Ze demonstreren met hun zelfgebouwde vijzels of pompen hoe ze het land drooghouden.',
-          icon: Hammer
+          iconId: 'Hammer'
         }
       ]
     },
@@ -139,27 +139,27 @@ export default function LandEnPolderPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen analyseren de polder als een \'maakbaar\' maar \'schaars\' gebied. Ze onderzoeken moderne conflicten in de ruimtelijke ordening (bijv. Agriport A7 vs. UNESCO erfgoed) en ontwikkelen een visie voor de toekomst (klimaatadaptatie).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"West-Friesland 2050: Grijs, groen of goud?": De leerlingen vormen het \'Planbureau voor de Leefomgeving\'. Er is een conflict in de Wieringermeer: tech-reuzen willen datacenters, boeren willen landbouwgrond, en natuurorganisaties willen waterberging. Wie krijgt de ruimte?',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Contrast-Excursie: Een veldbezoek aan de klassieke Beemster (harmonie, erfgoed) gevolgd door een tocht langs Agriport A7 (grootschaligheid, kassen, datacenters). Ze analyseren het verschil in landschap en functie.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Analyse en Debat: Onderzoek: Gebruik van EduGIS (digitale kaarten) om lagen over elkaar te leggen (bodem, water, bebouwing). Waar is nog ruimte? Burgerschap: Het simuleren van een Inspraakavond. Leerlingen nemen rollen aan (boze buurman, wethouder, actievoerder) en debatteren over een nieuw bestemmingsplan. Techniek: Onderzoek naar energietransitie en restwarmte (thermodynamica).',
-          icon: Gavel
+          iconId: 'Gavel'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'De Omgevingsvisie 2050: De leerlingen presenteren hun definitieve plan voor de inrichting van de polder aan een jury (bijv. een lokaal raadslid). Ze moeten hun keuzes verantwoorden: waarom hebben ze gekozen voor woningbouw, natuur of industrie?',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     }

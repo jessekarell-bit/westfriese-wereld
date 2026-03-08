@@ -46,27 +46,27 @@ export default function WaterWorldPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen ontdekken dat een \'dood\' zaadje een levende plant wordt als je er goed voor zorgt (licht, water, aarde). Ze maken kennis met de kassen in hun omgeving als \'glazen paleizen\' waar planten wonen.',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"Het Geheim van het Kleine Zakje": De klas vindt een mysterieuze kist met \'toverbolletjes\' (zaden) en een brief van Kasper de Tuinder (of de Plantendokter). Hij vraagt de kinderen om op zijn kostbare zaden te passen en ze wakker te maken.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Expeditie Seed Valley: Een wandeling in de buurt om te kijken naar de grote kassen en akkers. De kinderen zetten een \'toverbril\' op om te zoeken naar dingen die groeien. Of een bezoek aan een lokale schooltuin/volkstuin.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Het Grote Groei-Experiment: Biologie: Bonen planten in doorzichtige potten om de wortels te zien groeien. Spel: De huishoek wordt een Tuincentrum/Groentewinkel waar zaden en bloemen worden verkocht. Techniek: Bouwen van een kas met blokken en doorzichtig plastic in de bouwhoek.',
-          icon: Sprout
+          iconId: 'Sprout'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'Het Oogstfeest: Ouders komen op bezoek in de \'Tuin van de Klas\'. De kinderen verkopen hun zelfgekweekte stekjes of tuinkers-beschuitjes en laten hun groei-dagboek zien.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -77,27 +77,27 @@ export default function WaterWorldPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen leren over de geschiedenis van Nanne Jansz. Groot (de grondlegger van de zaadhandel) en begrijpen wat een plant nodig heeft om gezond te blijven. Ze leren dat zaden verhandeld worden.',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"De Man met de Mand": Het verhaal van Nanne Groot die met zijn mand vol zakjes (\'builtjes\') door het land liep om zaden te verkopen na de \'Karwijstorm\'. De leerlingen worden hulpjes van de Plantendokter die een zieke plant beter moeten maken.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Bezoek aan Sow to Grow: Een excursie naar het museum in Enkhuizen. Leerlingen doen een speurtocht naar de herkomst van voedsel en zien hoe zaden vroeger en nu werden bewaard.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Onderzoek en Ambacht: Onderzoek: Het Groei-Laboratorium: experimenteren met variabelen (wel/geen licht, wel/geen water) en dit bijhouden in een logboek. Geschiedenis: Naspelen van de reis van Nanne Groot: zaden afwegen op een balansweegschaal en verpakken in zakjes. Techniek: Zelf een mini-kas bouwen van kosteloos materiaal om het broeikaseffect te testen.',
-          icon: Lightbulb
+          iconId: 'Lightbulb'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'De West-Friese Oogstmarkt: De klas wordt een marktplein. Leerlingen presenteren hun mini-kassen en verkopen hun gekweekte planten of zaden. Ze vertellen het verhaal van Nanne Groot aan het publiek.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -108,27 +108,27 @@ export default function WaterWorldPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen begrijpen dat moderne landbouw technologie is. Ze leren over fotosynthese (planten als energiefabrieken) en hoe techniek (kassen, robots) de natuur een handje helpt.',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"De Slimme Kas": De leerlingen worden ontwerpers. Er is een probleem: het klimaat verandert en we hebben een kas nodig die zelf kan \'denken\' (temperatuur regelen, water geven).',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Bedrijfsbezoek of Gastles: Een bezoek aan een modern veredelingsbedrijf (zoals Enza of Syngenta) om robots en klimaatkamers te zien, of een practicum in het lab van Sow to Grow.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Ontwerpend Leren: Techniek/Digitaal: Het ontwerpen van een \'Slimme Kas\'. Gebruik van sensoren (bijv. Micro:bit) om vocht of temperatuur te meten. Biologie: Proefjes met fotosynthese (blad afplakken om effect van licht te zien).',
-          icon: Search
+          iconId: 'Search'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'De Techniek-Expo: Leerlingen presenteren hun ontwerpen voor de kas van de toekomst en demonstreren hun sensoren of irrigatiesystemen aan experts of ouders.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -139,27 +139,27 @@ export default function WaterWorldPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen analyseren de rol van West-Friesland (Seed Valley) in de wereld. Ze leren over erfelijkheid (Mendel, DNA), veredeling en debatteren over ethische dilemma\'s (GMO, patenten).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"Het Future Food Team": Een scenario vanuit het jaar 2050. De wereldbevolking groeit, het klimaat is extreem. De leerlingen krijgen de opdracht om een \'Supergewas\' te ontwikkelen dat de wereld kan voeden.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Lab-Experience: Een verdiepend bezoek aan Sow to Grow of een gastles van een veredelaar waarbij DNA zichtbaar wordt gemaakt (bijv. uit een kiwi of banaan). Of de inzet van de Plant Rover in de klas.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Wetenschap en Ethiek: Onderzoek: Simulatie van kruisingen (Mendel) om te zien hoe eigenschappen worden doorgegeven. Burgerschap: Het Grote GGO-Debat: "Mag je sleutelen aan de natuur om honger op te lossen?". Ontwerp: Het ontwerpen van het \'Supergewas\' met specifieke eigenschappen (bijv. zouttolerant).',
-          icon: Gavel
+          iconId: 'Gavel'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'Het Wereldvoedselcongres: Een formele conferentie waar leerlingen hun \'Supergewas\' pitchen aan een jury en hun visie geven op de voedseltoekomst.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     }

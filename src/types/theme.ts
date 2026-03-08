@@ -1,5 +1,4 @@
 import { ReactElement } from 'react'
-import { LucideIcon } from 'lucide-react'
 
 export interface ThemeTab {
   id: string
@@ -8,10 +7,12 @@ export interface ThemeTab {
   content: ReactElement
 }
 
+/** Fase voor didactische route; iconId is serialiseerbaar (Server → Client) */
 export interface DidacticPhase {
   fase: string
   beschrijving: string
-  icon: LucideIcon
+  /** Naam van Lucide-icoon, bv. 'Target', 'BookOpen' */
+  iconId: string
 }
 
 export interface ColorScheme {

@@ -42,27 +42,27 @@ export default function BurgersEnStoommachinesPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen ontwikkelen een eerste tijdsbesef (\'toen waren er geen auto\'s\') en verkennen het fenomeen \'kracht\'. Ze leren dat water en vuur samen stoom maken, en dat stoom sterk genoeg is om iets te bewegen (oorzaak-gevolg).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"Bello heeft honger." Het verhaal van de stoomtram Bello die niet wil rijden omdat zijn buik (de ketel) leeg is. Hij moet \'gevoerd\' worden met kolen en water. De kinderen helpen de machinist om Bello wakker te maken zodat hij de mensen van Hoorn naar Medemblik kan brengen.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Het Fluitketel-experiment: De leerkracht laat water koken. De kinderen zien de stoom, horen het fluiten en zien hoe de stoom een papieren molentje laat draaien. Conclusie: stoom kan duwen! Bezoek: Een ritje met de Museumstoomtram of een bezoek aan het perron om de grote zwarte locomotief te zien en te ruiken.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Het Station: Rollenspel in de huishoek die is omgebouwd tot loket. Kaartjes knippen, fluiten en op tijd vertrekken. Bouwen: In de bouwhoek een trein bouwen van dozen en wielen. Hoe maak je de wagons aan elkaar vast?',
-          icon: Search
+          iconId: 'Search'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'De Stoomparade. De kinderen rijden met hun zelfgebouwde trein door de school of over het plein, maken stoomgeluiden en leggen aan toeschouwers uit dat Bello rijdt op "water en vuur".',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -73,27 +73,27 @@ export default function BurgersEnStoommachinesPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen begrijpen de basiswerking van mechanische overbrengingen (wielen, assen) en ontwikkelen historisch besef door hun eigen leven te vergelijken met dat van kinderen in de 19e eeuw (het Kinderwetje van Van Houten).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"De Brief van Jet." Het verhaal van Jet, een meisje dat in de fabriek werkt, en Klaas, de zoon van de machinist van het stoomgemaal. Jet schrijft een brief omdat ze liever naar school wil. De leerlingen worden "Junior Uitvinders" die oplossingen bedenken om het zware werk makkelijker te maken.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Bezoek: Excursie naar het Nederlands Stoommachinemuseum of de Stoomtram. Focus op de beleving: het lawaai, de hitte en het vele werk (kolen scheppen). Ervaring: In de klas een simpele lopende band simuleren (bijv. bonen sorteren) om te voelen hoe saai fabriekswerk is.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Garage Gust: Naar aanleiding van het boek Garage Gust zelf machines ontwerpen en knutselen van kosteloos materiaal. Hoe werkt een tandwiel? Sociale vergelijking: Een dagrooster maken van een kind in 1874 vs. een kind nu. Waarom was het Kinderwetje nodig?',
-          icon: Cog
+          iconId: 'Cog'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'De Uitvindersbeurs. De leerlingen presenteren hun zelfgemaakte "Handige Machine" (die een probleem oplost) aan ouders of medeleerlingen en leggen uit hoe deze werkt.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -104,27 +104,27 @@ export default function BurgersEnStoommachinesPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen leren de principes van luchtdruk en stoomdruk (expansie) en begrijpen de historische transitie van windmolens naar stoomgemalen voor het drooghouden van West-Friesland. Ze halen hun \'stookdiploma\'.',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"De Stoomrevolutie." De polder loopt onder en de windmolens werken niet want het is windstil. De enige redding is de nieuwe techniek: het stoomgemaal Vier Noorder Koggen. De leerlingen fungeren als ingenieurs die deze nieuwe kracht moeten beheersen.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Stookdiploma: In het Nederlands Stoommachinemuseum mogen leerlingen onder begeleiding machines smeren, druk aflezen en de miniatuurstoommachines bedienen. Proefjes: Experimenten met luchtdruk, zoals het laten imploderen van een blikje door condensatie (vacuüm) of het lanceren van een waterraket (actie-reactie).',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Blauwdrukken: Het maken van een technische tekening (blauwdruk) van een eigen uitvinding, inclusief zijaanzicht en bovenaanzicht. Debat: "Is kinderarbeid noodzakelijk voor de economie?" Een rollenspel tussen een fabrieksdirecteur en een arts, gebaseerd op historische bronnen.',
-          icon: Search
+          iconId: 'Search'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'De Wereldtentoonstelling. Een presentatie van de technische modellen en de resultaten van de proefjes. Leerlingen demonstreren live de kracht van stoom/luchtdruk aan het publiek.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     },
@@ -135,27 +135,27 @@ export default function BurgersEnStoommachinesPage() {
         {
           fase: 'Doel',
           beschrijving: 'De leerlingen analyseren de Industriële Revolutie als een sociaal-economisch breekpunt. Ze koppelen natuurkunde (wet van behoud van energie) aan maatschappelijke veranderingen (opkomst socialisme, kiesrecht, Aletta Jacobs).',
-          icon: Shield
+          iconId: 'Shield'
         },
         {
           fase: 'Narratief',
           beschrijving: '"Vooruitgang of Verlies?" De klas onderzoekt de impact van de industrialisatie. Bracht de stoommachine welvaart voor iedereen, of creëerde het nieuwe armoede? Centraal staat de figuur van Aletta Jacobs en de strijd voor gelijke rechten.',
-          icon: BookOpen
+          iconId: 'BookOpen'
         },
         {
           fase: 'Activering',
           beschrijving: 'Energie-analyse: Bezoek aan Gemaal Lely of het Stoommachinemuseum met focus op rendement. Hoeveel energie gaat erin (kolen) en hoeveel arbeid komt eruit? Sociale Sporen: Een stadswandeling of bronnenonderzoek naar de leefomstandigheden van arbeiders in de 19e eeuw in Hoorn/Enkhuizen.',
-          icon: MapPin
+          iconId: 'MapPin'
         },
         {
           fase: 'Concretisering',
           beschrijving: 'Thermodynamica: Rekenen met de formule E_in = E_uit + Q (Toegevoegde energie = Arbeid + Warmteverlies). Leerlingen berekenen de efficiëntie van machines. Vergelijking: De leerlingen vergelijken de Industriële Revolutie (stoom) met de huidige AI-revolutie (data). Wat zijn de overeenkomsten in angst voor baanverlies en de verandering van de samenleving? (Kerndoel Digitale Geletterdheid).',
-          icon: Gavel
+          iconId: 'Gavel'
         },
         {
           fase: 'Afsluiting',
           beschrijving: 'Het Grote Debat. Een debat over de stelling: "Technologische vooruitgang heiligt alle middelen." Of het schrijven van een manifest voor de rechten van de werknemer/het kind, geïnspireerd op Aletta Jacobs en Domela Nieuwenhuis.',
-          icon: Users
+          iconId: 'Users'
         }
       ]
     }

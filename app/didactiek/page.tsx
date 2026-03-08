@@ -118,43 +118,13 @@ export default function DidactiekPage() {
     }
   ]
 
-  // 5-Fasen methodiek data
+  // 5-Fasen methodiek data (iconId voor Server → Client serialisatie)
   const fasen = [
-    {
-      nummer: 1,
-      titel: 'Doelbepaling',
-      beschrijving: 'We starten vanuit de leerlijnen (SLO), niet vanuit de activiteit.',
-      icon: Target,
-      kleurClass: 'bg-deep-water-blue'
-    },
-    {
-      nummer: 2,
-      titel: 'Narratieve inbedding',
-      beschrijving: 'Een pakkend verhaal (bijv. de Waterwolf) als \'haakje\' voor het leren.',
-      icon: BookOpen,
-      kleurClass: 'bg-polder-green'
-    },
-    {
-      nummer: 3,
-      titel: 'Activering',
-      beschrijving: 'De klas uit! Naar het museum, de dijk of het bedrijf (Authentiek leren).',
-      icon: MapPin,
-      kleurClass: 'bg-brick-red'
-    },
-    {
-      nummer: 4,
-      titel: 'Concretisering',
-      beschrijving: 'Verwerking in de klas (onderzoek, experimenten, maken).',
-      icon: Lightbulb,
-      kleurClass: 'bg-polder-green'
-    },
-    {
-      nummer: 5,
-      titel: 'Authentieke afsluiting',
-      beschrijving: 'Presenteren aan een echt publiek (ouders, experts), niet alleen een toetsje.',
-      icon: Megaphone,
-      kleurClass: 'bg-deep-water-blue'
-    }
+    { nummer: 1, titel: 'Doelbepaling', beschrijving: 'We starten vanuit de leerlijnen (SLO), niet vanuit de activiteit.', iconId: 'Target' as const },
+    { nummer: 2, titel: 'Narratieve inbedding', beschrijving: 'Een pakkend verhaal (bijv. de Waterwolf) als \'haakje\' voor het leren.', iconId: 'BookOpen' as const },
+    { nummer: 3, titel: 'Activering', beschrijving: 'De klas uit! Naar het museum, de dijk of het bedrijf (Authentiek leren).', iconId: 'MapPin' as const },
+    { nummer: 4, titel: 'Concretisering', beschrijving: 'Verwerking in de klas (onderzoek, experimenten, maken).', iconId: 'Lightbulb' as const },
+    { nummer: 5, titel: 'Authentieke afsluiting', beschrijving: 'Presenteren aan een echt publiek (ouders, experts), niet alleen een toetsje.', iconId: 'Megaphone' as const },
   ]
 
   return (
@@ -262,7 +232,7 @@ export default function DidactiekPage() {
                 title: f.titel,
                 description: f.titel,
                 longDescription: f.beschrijving,
-                icon: f.icon,
+                iconId: f.iconId,
               }))}
               title="De 5-fasen methodiek: de motor"
               subtitle="Dit is de kern van onze didactiek. Elke fase bouwt voort op de vorige en zorgt voor diepgaand, betekenisvol leren."
