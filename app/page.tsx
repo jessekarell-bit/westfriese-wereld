@@ -102,18 +102,18 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section – Welkom in de West-Friese Wereld */}
-        <section className="relative py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[320px] sm:min-h-[380px] md:min-h-[420px] flex items-center justify-center">
-          {/* Achtergrondfoto */}
+        <section className="relative py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[300px] sm:min-h-[380px] md:min-h-[420px] flex items-center justify-center bg-deep-water-blue">
+          {/* Achtergrondfoto – op mobiel center-top zodat beeld goed cropt */}
           <Image
             src="/welkom-west-friese-wereld-bg.png"
             alt=""
             fill
-            className="object-cover object-center"
+            className="object-cover object-center object-[center_top] sm:object-center"
             sizes="100vw"
             priority
           />
-          {/* Donkere overlay voor leesbare witte tekst */}
-          <div className="absolute inset-0 bg-black/40" aria-hidden />
+          {/* Donkere overlay voor leesbare witte tekst – iets lichter op mobiel zodat foto zichtbaar blijft */}
+          <div className="absolute inset-0 bg-black/30 sm:bg-black/40" aria-hidden />
           <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
               Welkom in De West-Friese Wereld
@@ -163,14 +163,14 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* 70/30 methode in actie – foto tussen de twee blokken; op mobiel aspect ratio voor mooie crop */}
+              {/* 70/30 methode in actie – op mobiel onderkant in beeld zodat tekst "in actie" niet wordt afgesneden */}
               <div className="w-full max-w-[360px] mx-auto md:max-w-none md:w-[360px] aspect-[360/420] md:aspect-auto md:h-full md:min-h-[420px] rounded-xl overflow-hidden shadow-md">
                 <Image
                   src="/70-30-methode-in-actie.png"
                   alt="De 70/30 methode in actie: leerlingen en begeleider in het veld met West-Friese molen op de achtergrond. Verbind kerndoelen direct met de West-Friese klei en de lokale cultuur."
                   width={360}
                   height={420}
-                  className="w-full h-full rounded-xl object-cover object-[center_center] md:object-center"
+                  className="w-full h-full rounded-xl object-cover object-[center_bottom] md:object-center"
                   sizes="(max-width: 768px) 100vw, 360px"
                   priority={false}
                 />
