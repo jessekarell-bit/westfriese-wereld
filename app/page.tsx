@@ -163,15 +163,15 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* 70/30 methode in actie – foto tussen de twee blokken, breder voor leesbare tekst */}
-              <div className="w-full max-w-[360px] mx-auto md:max-w-none md:w-[360px] h-[420px] md:h-full md:min-h-[420px] rounded-xl overflow-hidden shadow-md">
+              {/* 70/30 methode in actie – foto tussen de twee blokken; op mobiel aspect ratio voor mooie crop */}
+              <div className="w-full max-w-[360px] mx-auto md:max-w-none md:w-[360px] aspect-[360/420] md:aspect-auto md:h-full md:min-h-[420px] rounded-xl overflow-hidden shadow-md">
                 <Image
                   src="/70-30-methode-in-actie.png"
                   alt="De 70/30 methode in actie: leerlingen en begeleider in het veld met West-Friese molen op de achtergrond. Verbind kerndoelen direct met de West-Friese klei en de lokale cultuur."
                   width={360}
                   height={420}
-                  className="w-full h-full rounded-xl object-cover"
-                  sizes="(max-width: 768px) 360px, 360px"
+                  className="w-full h-full rounded-xl object-cover object-[center_center] md:object-center"
+                  sizes="(max-width: 768px) 100vw, 360px"
                   priority={false}
                 />
               </div>

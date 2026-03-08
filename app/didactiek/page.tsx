@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Tabs from '@/components/Tabs'
+import ScrollytellingPhases, { type PhaseItem } from '@/components/ScrollytellingPhases'
 import { 
   Target,
   BookOpen,
@@ -253,47 +254,19 @@ export default function DidactiekPage() {
           </div>
         </section>
 
-        {/* De 5-Fasen Methodiek Section */}
+        {/* De 5-Fasen Methodiek Section – carousel zoals homepagina */}
         <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-deep-water-blue text-center mb-4">
-              De 5-fasen methodiek: de motor
-            </h2>
-            <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-              Dit is de kern van onze didactiek. Elke fase bouwt voort op de vorige en zorgt voor diepgaand, betekenisvol leren.
-            </p>
-            
-            {/* 5-fase cards –zelfde stijl en kleuren als homepagina */}
-            <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-4 sm:gap-6">
-              {fasen.map((fase) => {
-                const Icon = fase.icon
-                return (
-                  <div
-                    key={fase.nummer}
-                    className="rounded-xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col"
-                  >
-                    <div className="flex justify-center mb-3">
-                      <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-deep-water-blue/10 text-deep-water-blue">
-                        <Icon className="w-6 h-6 sm:w-7 sm:h-7 flex-shrink-0" aria-hidden />
-                      </div>
-                    </div>
-                    <div className="flex flex-col items-center text-center mb-2">
-                      <div className="flex items-center justify-center gap-2.5 min-h-[2.25rem]">
-                        <span className="flex-shrink-0 inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-brick-red text-white text-sm font-bold">
-                          {fase.nummer}
-                        </span>
-                        <h3 className="font-serif text-lg sm:text-xl font-bold text-deep-water-blue leading-tight">
-                          {fase.titel}
-                        </h3>
-                      </div>
-                    </div>
-                    <p className="text-gray-700 leading-relaxed text-sm sm:text-base text-center flex-1">
-                      {fase.beschrijving}
-                    </p>
-                  </div>
-                )
-              })}
-            </div>
+            <ScrollytellingPhases
+              phases={fasen.map((f): PhaseItem => ({
+                title: f.titel,
+                description: f.titel,
+                longDescription: f.beschrijving,
+                icon: f.icon,
+              }))}
+              title="De 5-fasen methodiek: de motor"
+              subtitle="Dit is de kern van onze didactiek. Elke fase bouwt voort op de vorige en zorgt voor diepgaand, betekenisvol leren."
+            />
           </div>
         </section>
 
